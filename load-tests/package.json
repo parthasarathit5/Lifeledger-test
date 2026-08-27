@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha tests/load-real-tests.js --reporter spec"
+    "test": "node baseline-load-test.js",
+    "test:baseline": "node baseline-load-test.js",
+    "test:mocha": "mocha tests/load-real-tests.js --reporter spec"
   },
   "keywords": [],
   "author": "",
