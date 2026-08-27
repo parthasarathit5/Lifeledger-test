@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'dart:math' as math;
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 import 'login_screen.dart';
@@ -9,68 +10,81 @@ class SignupScreen extends StatefulWidget {
   _SignupScreenState createState() => _SignupScreenState();
 }
 
-class _SignupScreenState extends State<SignupScreen> {
+class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderStateMixin {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   bool _passwordVisible = false;
   bool _isLoading = false;
 
+  late AnimationController _waveController;
+
+  @override
+  void initState() {
+    super.initState();
+    _waveController = AnimationController(
+      vsync: this,
+      duration: const Duration(seconds: 6),
+    )..repeat();
+  }
+
   @override
   void dispose() {
     nameController.dispose();
     emailController.dispose();
     passwordController.dispose();
+    _waveController.dispose();
     super.dispose();
   }
 
   void signupUser() async {
-  if (nameController.text.isEmpty ||
-      emailController.text.isEmpty ||
-      passwordController.text.isEmpty) {
-    _showSnack("Please fill in all fields");
-    return;
-  }
-
-  setState(() => _isLoading = true);
-
-  try {
-    var url = Uri.parse("https://lifeledger-backend.onrender.com/signup/");
-
-    var response = await http
-        .post(
-          url,
-          headers: {"Content-Type": "application/json"},
-          body: jsonEncode({
-            "name": nameController.text.trim(),
-            "email": emailController.text.trim(),
-            "password": passwordController.text.trim(),
-          }),
-        )
-        .timeout(Duration(seconds: 180));
-
-    var data = jsonDecode(response.body);
-
-    if (data["status"] == "success") {
-      Navigator.pushReplacement(
-        context,
-        MaterialPageRoute(
-          builder: (_) => DashboardScreen(
-            userName: nameController.text.trim(),
-            userId: data["user_id"],
-          ),
-        ),
-      );
-    } else {
-      _showSnack(data["message"] ?? "Signup failed");
+    if (nameController.text.isEmpty ||
+        emailController.text.isEmpty ||
+        passwordController.text.isEmpty) {
+      _showSnack("Please fill in all fields");
+      return;
     }
-  }catch (e) {
-  print("ERROR: $e");
-  _showSnack("Server is starting, please wait and try again...");
-} finally {
-    setState(() => _isLoading = false);
+
+    setState(() => _isLoading = true);
+
+    try {
+      var url = Uri.parse("https://lifeledger-backend.onrender.com/signup/");
+
+      var response = await http
+          .post(
+            url,
+            headers: {"Content-Type": "application/json"},
+            body: jsonEncode({
+              "name": nameController.text.trim(),
+              "email": emailController.text.trim(),
+              "password": passwordController.text.trim(),
+            }),
+          )
+          .timeout(Duration(seconds: 180));
+
+      var data = jsonDecode(response.body);
+
+      if (data["status"] == "success") {
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(
+            builder: (_) => DashboardScreen(
+              userName: nameController.text.trim(),
+              userId: data["user_id"],
+            ),
+          ),
+        );
+      } else {
+        _showSnack(data["message"] ?? "Signup failed");
+      }
+    } catch (e) {
+      print("ERROR: $e");
+      _showSnack("Server is starting, please wait and try again...");
+    } finally {
+      setState(() => _isLoading = false);
+    }
   }
-}
+
   void _showSnack(String msg) {
     ScaffoldMessenger.of(context).showSnackBar(
       SnackBar(
@@ -85,29 +99,46 @@ class _SignupScreenState extends State<SignupScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF0a0f1e), Color(0xFF101828), Color(0xFF0d1533)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-        ),
-        child: SafeArea(
-          child: Center(
-            child: SingleChildScrollView(
-              padding: EdgeInsets.symmetric(horizontal: 28, vertical: 40),
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  _buildBrand(),
-                  SizedBox(height: 36),
-                  _buildCard(),
-                ],
+      body: Stack(
+        children: [
+          // Base dark gradient
+          Container(
+            decoration: BoxDecoration(
+              gradient: LinearGradient(
+                colors: [Color(0xFF061019), Color(0xFF0a1a2e), Color(0xFF0d1533)],
+                begin: Alignment.topLeft,
+                end: Alignment.bottomRight,
               ),
             ),
           ),
-        ),
+          // Animated ocean waves (same as login)
+          Positioned.fill(
+            child: AnimatedBuilder(
+              animation: _waveController,
+              builder: (context, _) {
+                return CustomPaint(
+                  painter: _OceanWavePainter(_waveController.value),
+                  size: Size.infinite,
+                );
+              },
+            ),
+          ),
+          SafeArea(
+            child: Center(
+              child: SingleChildScrollView(
+                padding: EdgeInsets.symmetric(horizontal: 28, vertical: 40),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    _buildBrand(),
+                    SizedBox(height: 36),
+                    _buildCard(),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -145,7 +176,7 @@ class _SignupScreenState extends State<SignupScreen> {
         SizedBox(height: 6),
         Text("Your personal life companion",
             style: TextStyle(
-                color: Colors.white.withOpacity(0.45), fontSize: 13)),
+                color: Colors.white.withOpacity(0.55), fontSize: 13)),
       ],
     );
   }
@@ -153,9 +184,9 @@ class _SignupScreenState extends State<SignupScreen> {
   Widget _buildCard() {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.05),
+        color: Colors.white.withOpacity(0.07),
         borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.08)),
+        border: Border.all(color: Colors.white.withOpacity(0.12)),
         boxShadow: [
           BoxShadow(
               color: Colors.black.withOpacity(0.4),
@@ -175,7 +206,7 @@ class _SignupScreenState extends State<SignupScreen> {
           SizedBox(height: 6),
           Text("Start managing your life today",
               style: TextStyle(
-                  color: Colors.white.withOpacity(0.45), fontSize: 13)),
+                  color: Colors.white.withOpacity(0.5), fontSize: 13)),
           SizedBox(height: 28),
           _buildInput(
             controller: nameController,
@@ -207,15 +238,15 @@ class _SignupScreenState extends State<SignupScreen> {
           SizedBox(height: 24),
           Row(
             children: [
-              Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+              Expanded(child: Divider(color: Colors.white.withOpacity(0.12))),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 12),
                 child: Text("or",
                     style: TextStyle(
-                        color: Colors.white.withOpacity(0.3),
+                        color: Colors.white.withOpacity(0.4),
                         fontSize: 12)),
               ),
-              Expanded(child: Divider(color: Colors.white.withOpacity(0.1))),
+              Expanded(child: Divider(color: Colors.white.withOpacity(0.12))),
             ],
           ),
           SizedBox(height: 24),
@@ -224,7 +255,7 @@ class _SignupScreenState extends State<SignupScreen> {
             children: [
               Text("Already have an account? ",
                   style: TextStyle(
-                      color: Colors.white.withOpacity(0.45),
+                      color: Colors.white.withOpacity(0.5),
                       fontSize: 13)),
               GestureDetector(
                 onTap: () => Navigator.pushReplacement(
@@ -233,7 +264,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
                 child: Text("Sign in",
                     style: TextStyle(
-                        color: Color(0xFF6c8fff),
+                        color: Color(0xFF7dd3fc),
                         fontSize: 13,
                         fontWeight: FontWeight.w600)),
               ),
@@ -259,7 +290,7 @@ class _SignupScreenState extends State<SignupScreen> {
       children: [
         Text(label,
             style: TextStyle(
-                color: Colors.white.withOpacity(0.45),
+                color: Colors.white.withOpacity(0.5),
                 fontSize: 11,
                 fontWeight: FontWeight.w600,
                 letterSpacing: 0.8)),
@@ -271,37 +302,37 @@ class _SignupScreenState extends State<SignupScreen> {
           style: TextStyle(color: Colors.white, fontSize: 15),
           decoration: InputDecoration(
             hintText: hint,
-            hintStyle: TextStyle(color: Colors.white.withOpacity(0.25)),
+            hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
             prefixIcon: Icon(icon,
-                color: Colors.white.withOpacity(0.4), size: 20),
+                color: Colors.white.withOpacity(0.5), size: 20),
             suffixIcon: isPassword
                 ? IconButton(
                     icon: Icon(
                       isVisible
                           ? Icons.visibility_off
                           : Icons.visibility,
-                      color: Colors.white.withOpacity(0.4),
+                      color: Colors.white.withOpacity(0.5),
                       size: 20,
                     ),
                     onPressed: onToggle,
                   )
                 : null,
             filled: true,
-            fillColor: Colors.white.withOpacity(0.06),
+            fillColor: Colors.white.withOpacity(0.08),
             contentPadding:
                 EdgeInsets.symmetric(horizontal: 16, vertical: 14),
             border: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide:
-                    BorderSide(color: Colors.white.withOpacity(0.1))),
+                    BorderSide(color: Colors.white.withOpacity(0.12))),
             enabledBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide:
-                    BorderSide(color: Colors.white.withOpacity(0.1))),
+                    BorderSide(color: Colors.white.withOpacity(0.12))),
             focusedBorder: OutlineInputBorder(
                 borderRadius: BorderRadius.circular(12),
                 borderSide:
-                    BorderSide(color: Color(0xFF6c8fff), width: 1.5)),
+                    BorderSide(color: Color(0xFF7dd3fc), width: 1.5)),
           ),
         ),
       ],
@@ -315,11 +346,11 @@ class _SignupScreenState extends State<SignupScreen> {
       child: DecoratedBox(
         decoration: BoxDecoration(
           gradient: LinearGradient(
-              colors: [Color(0xFF6c8fff), Color(0xFFa78bfa)]),
+              colors: [Color(0xFF38bdf8), Color(0xFF6366f1)]),
           borderRadius: BorderRadius.circular(12),
           boxShadow: [
             BoxShadow(
-                color: Color(0xFF6c8fff).withOpacity(0.35),
+                color: Color(0xFF38bdf8).withOpacity(0.4),
                 blurRadius: 20,
                 spreadRadius: 1)
           ],
@@ -347,4 +378,70 @@ class _SignupScreenState extends State<SignupScreen> {
       ),
     );
   }
+}
+
+/// Same layered ocean wave painter as login_screen.dart, kept in sync
+/// so both auth screens feel visually consistent.
+class _OceanWavePainter extends CustomPainter {
+  final double t;
+
+  _OceanWavePainter(this.t);
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    _drawWaveLayer(
+      canvas,
+      size,
+      baseHeight: size.height * 0.72,
+      amplitude: 18,
+      speed: 1.0,
+      color: const Color(0xFF1e3a5f).withOpacity(0.55),
+    );
+    _drawWaveLayer(
+      canvas,
+      size,
+      baseHeight: size.height * 0.80,
+      amplitude: 24,
+      speed: 1.6,
+      color: const Color(0xFF14304d).withOpacity(0.6),
+    );
+    _drawWaveLayer(
+      canvas,
+      size,
+      baseHeight: size.height * 0.90,
+      amplitude: 14,
+      speed: 0.7,
+      color: const Color(0xFF0b2038).withOpacity(0.75),
+    );
+  }
+
+  void _drawWaveLayer(
+    Canvas canvas,
+    Size size, {
+    required double baseHeight,
+    required double amplitude,
+    required double speed,
+    required Color color,
+  }) {
+    final path = Path();
+    final phase = t * 2 * math.pi * speed;
+
+    path.moveTo(0, baseHeight);
+
+    for (double x = 0; x <= size.width; x += 4) {
+      final y = baseHeight +
+          amplitude * math.sin((x / size.width * 2 * math.pi) + phase);
+      path.lineTo(x, y);
+    }
+
+    path.lineTo(size.width, size.height);
+    path.lineTo(0, size.height);
+    path.close();
+
+    final paint = Paint()..color = color;
+    canvas.drawPath(path, paint);
+  }
+
+  @override
+  bool shouldRepaint(covariant _OceanWavePainter oldDelegate) => oldDelegate.t != t;
 }

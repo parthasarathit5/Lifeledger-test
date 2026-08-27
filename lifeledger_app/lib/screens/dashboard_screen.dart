@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+
 import 'login_screen.dart';
 import 'expense_screen.dart';
 import 'income_screen.dart';
@@ -8,513 +9,438 @@ import 'habit_screen.dart';
 import 'task_screen.dart';
 import 'history_screen.dart';
 import 'mood_screen.dart';
+import 'analytics_screen.dart';
+import 'lifescore_screen.dart';
+import 'budget_screen.dart';
+import 'predictor_screen.dart';
+import 'compare_screen.dart';
+import 'behavior_screen.dart';
+import 'profile_screen.dart';
+import 'goals_screen.dart';
+import 'achievements_screen.dart';
+import 'streak_screen.dart';
+import 'networth_screen.dart';
+import 'alerts_screen.dart';
+
+import 'yearly_heatmap_screen.dart';
+import 'summary_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
+
   final String userName;
+
   final int userId;
-  DashboardScreen({required this.userName, required this.userId});
+
+  const DashboardScreen({
+
+    super.key,
+
+    required this.userName,
+
+    required this.userId,
+  });
 
   @override
-  _DashboardScreenState createState() => _DashboardScreenState();
+  State<DashboardScreen> createState() =>
+      _DashboardScreenState();
 }
 
-class _DashboardScreenState extends State<DashboardScreen> {
+class _DashboardScreenState
+    extends State<DashboardScreen> {
+
   bool _isLoading = true;
+
   double balance = 0;
+
   double totalIncome = 0;
+
   double totalExpense = 0;
+
   int pendingTasks = 0;
+
   int completedTasks = 0;
+
   int completedHabits = 0;
+
   int totalHabits = 0;
+
   List transactions = [];
 
   @override
   void initState() {
+
     super.initState();
+
     fetchDashboard();
   }
 
-  void fetchDashboard() async {
+  Future<void> fetchDashboard() async {
+
     try {
+
       var url = Uri.parse(
-          "https://lifeledger-backend.onrender.com/dashboard/${widget.userId}/");
-      var response = await http.get(url);
-      var data = jsonDecode(response.body);
+        "https://lifeledger-backend.onrender.com/dashboard/${widget.userId}/",
+      );
+
+      var res = await http.get(url);
+
+      var data = jsonDecode(res.body);
+
       if (data["status"] == "success") {
+
         setState(() {
-          balance = data["balance"].toDouble();
-          totalIncome = data["total_income"].toDouble();
-          totalExpense = data["total_expense"].toDouble();
-          pendingTasks = data["pending_tasks"];
-          completedTasks = data["completed_tasks"] ?? 0;
-          completedHabits = data["completed_habits"];
-          totalHabits = data["total_habits"];
-          transactions = data["transactions"];
+
+          balance =
+              (data["balance"] ?? 0)
+                  .toDouble();
+
+          totalIncome =
+              (data["total_income"] ?? 0)
+                  .toDouble();
+
+          totalExpense =
+              (data["total_expense"] ?? 0)
+                  .toDouble();
+
+          pendingTasks =
+              data["pending_tasks"] ?? 0;
+
+          completedTasks =
+              data["completed_tasks"] ?? 0;
+
+          completedHabits =
+              data["completed_habits"] ?? 0;
+
+          totalHabits =
+              data["total_habits"] ?? 0;
+
+          transactions =
+              data["transactions"] ?? [];
+
           _isLoading = false;
         });
       }
+
     } catch (e) {
-      setState(() => _isLoading = false);
+
+      setState(() {
+
+        _isLoading = false;
+      });
     }
   }
 
-  String _greeting() {
-    int hour = DateTime.now().hour;
-    if (hour < 12) return "Good morning";
-    if (hour < 17) return "Good afternoon";
-    return "Good evening";
+  String greet() {
+
+    int h = DateTime.now().hour;
+
+    if (h < 12) {
+      return "Good Morning";
+    }
+
+    if (h < 17) {
+      return "Good Afternoon";
+    }
+
+    return "Good Evening";
   }
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
-      body: Container(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            colors: [Color(0xFF0a0f1e), Color(0xFF101828), Color(0xFF0d1533)],
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-          ),
-        ),
-        child: SafeArea(
-          child: RefreshIndicator(
-            onRefresh: () async => fetchDashboard(),
-            color: Color(0xFF6c8fff),
-            backgroundColor: Color(0xFF101828),
-            child: SingleChildScrollView(
-              physics: AlwaysScrollableScrollPhysics(),
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  _buildTopBar(),
-                  SizedBox(height: 24),
-                  _buildBalanceCard(),
-                  SizedBox(height: 24),
-                  _buildQuickActions(),
-                  SizedBox(height: 24),
-                  _buildStatsRow(),
-                  SizedBox(height: 24),
-                  _buildRecentTransactions(),
-                  SizedBox(height: 20),
+
+      body: Stack(
+        children: [
+          // Base dark gradient (same tone as before)
+          Container(
+            decoration: const BoxDecoration(
+              gradient: LinearGradient(
+                colors: [
+                  Color(0xFF0a0f1e),
+                  Color(0xFF101828),
                 ],
               ),
             ),
           ),
-        ),
-      ),
-    );
-  }
 
-  Widget _buildTopBar() {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("${_greeting()}, ${widget.userName} 👋",
-                style: TextStyle(
-                    color: Colors.white.withOpacity(0.5),
-                    fontSize: 13)),
-            Text("LifeLedger",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 22,
-                    fontWeight: FontWeight.w700,
-                    letterSpacing: -0.5)),
-          ],
-        ),
-        GestureDetector(
-          onTap: () => Navigator.pushReplacement(
-            context,
-            MaterialPageRoute(builder: (_) => LoginScreen()),
-          ),
-          child: Container(
-            padding: EdgeInsets.symmetric(horizontal: 14, vertical: 8),
-            decoration: BoxDecoration(
-              color: Colors.white.withOpacity(0.06),
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.white.withOpacity(0.08)),
-            ),
-            child: Row(
-              children: [
-                Icon(Icons.logout_rounded,
-                    color: Colors.white.withOpacity(0.6), size: 14),
-                SizedBox(width: 6),
-                Text("Logout",
-                    style: TextStyle(
-                        color: Colors.white.withOpacity(0.7),
-                        fontSize: 13)),
-              ],
+          // Subtle glowing ambient orbs — decorative, doesn't affect layout/scroll
+          Positioned(
+            top: -60,
+            right: -40,
+            child: _glowOrb(
+              size: 220,
+              color: const Color(0xFF6c8fff),
+              opacity: 0.18,
             ),
           ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildBalanceCard() {
-    return Container(
-      width: double.infinity,
-      padding: EdgeInsets.all(24),
-      decoration: BoxDecoration(
-        gradient: LinearGradient(
-          colors: [Color(0xFF6c8fff), Color(0xFFa78bfa)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(20),
-        boxShadow: [
-          BoxShadow(
-              color: Color(0xFF6c8fff).withOpacity(0.35),
-              blurRadius: 30,
-              spreadRadius: 2)
-        ],
-      ),
-      child: _isLoading
-          ? Center(
-              child: CircularProgressIndicator(
-                  color: Colors.white, strokeWidth: 2))
-          : Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text("Total Balance",
-                    style: TextStyle(
-                        color: Colors.white.withOpacity(0.8),
-                        fontSize: 13)),
-                SizedBox(height: 8),
-                Text("₹ ${balance.toStringAsFixed(2)}",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 32,
-                        fontWeight: FontWeight.w700,
-                        letterSpacing: -1)),
-                SizedBox(height: 16),
-                Row(
-                  children: [
-                    _statChip("↑ Income",
-                        "₹ ${totalIncome.toStringAsFixed(0)}"),
-                    SizedBox(width: 12),
-                    _statChip("↓ Expense",
-                        "₹ ${totalExpense.toStringAsFixed(0)}"),
-                  ],
-                )
-              ],
+          Positioned(
+            top: 260,
+            left: -70,
+            child: _glowOrb(
+              size: 180,
+              color: const Color(0xFFa78bfa),
+              opacity: 0.14,
             ),
-    );
-  }
-
-  Widget _buildQuickActions() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text("Quick Actions",
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 16,
-                fontWeight: FontWeight.w600)),
-        SizedBox(height: 16),
-        // Row 1
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            _actionButton(
-              icon: Icons.remove_circle_outline_rounded,
-              label: "Expense",
-              color: Color(0xFFf87171),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ExpenseScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-            _actionButton(
-              icon: Icons.add_circle_outline_rounded,
-              label: "Income",
-              color: Color(0xFF4ade80),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => IncomeScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-            _actionButton(
-              icon: Icons.track_changes_rounded,
-              label: "Habits",
-              color: Color(0xFF6c8fff),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => HabitScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-            _actionButton(
-              icon: Icons.check_circle_outline_rounded,
-              label: "Tasks",
-              color: Color(0xFFa78bfa),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => TaskScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-          ],
-        ),
-        SizedBox(height: 12),
-        // Row 2
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            _actionButton(
-              icon: Icons.mood_rounded,
-              label: "Mood",
-              color: Color(0xFFf472b6),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => MoodScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-            _actionButton(
-              icon: Icons.history_rounded,
-              label: "History",
-              color: Color(0xFFfbbf24),
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => HistoryScreen(userId: widget.userId),
-                ),
-              ).then((_) => fetchDashboard()),
-            ),
-            SizedBox(width: 76),
-            SizedBox(width: 76),
-          ],
-        ),
-      ],
-    );
-  }
-
-  Widget _actionButton({
-    required IconData icon,
-    required String label,
-    required Color color,
-    required VoidCallback onTap,
-  }) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        width: 76,
-        padding: EdgeInsets.symmetric(vertical: 16),
-        decoration: BoxDecoration(
-          color: color.withOpacity(0.1),
-          borderRadius: BorderRadius.circular(16),
-          border: Border.all(color: color.withOpacity(0.2)),
-        ),
-        child: Column(
-          children: [
-            Icon(icon, color: color, size: 26),
-            SizedBox(height: 8),
-            Text(label,
-                style: TextStyle(
-                    color: Colors.white.withOpacity(0.8),
-                    fontSize: 11,
-                    fontWeight: FontWeight.w500)),
-          ],
-        ),
-      ),
-    );
-  }
-
-  Widget _buildStatsRow() {
-    return Row(
-      children: [
-        Expanded(
-          child: _statCard(
-            icon: Icons.track_changes_rounded,
-            label: "Habits Today",
-            value: "$completedHabits / $totalHabits",
-            color: Color(0xFF6c8fff),
           ),
-        ),
-        SizedBox(width: 12),
-        Expanded(
-          child: _statCard(
-            icon: Icons.pending_actions_rounded,
-            label: "Pending Tasks",
-            value: "$pendingTasks",
-            color: Color(0xFFfbbf24),
-          ),
-        ),
-        SizedBox(width: 12),
-        Expanded(
-          child: _statCard(
-            icon: Icons.task_alt_rounded,
-            label: "Completed",
-            value: "$completedTasks",
-            color: Color(0xFF4ade80),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _statCard({
-    required IconData icon,
-    required String label,
-    required String value,
-    required Color color,
-  }) {
-    return Container(
-      padding: EdgeInsets.all(12),
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.04),
-        borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: Colors.white.withOpacity(0.07)),
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            padding: EdgeInsets.all(8),
-            decoration: BoxDecoration(
-              color: color.withOpacity(0.1),
-              borderRadius: BorderRadius.circular(10),
+          Positioned(
+            bottom: 40,
+            right: -50,
+            child: _glowOrb(
+              size: 200,
+              color: const Color(0xFF4ade80),
+              opacity: 0.12,
             ),
-            child: Icon(icon, color: color, size: 18),
           ),
-          SizedBox(height: 8),
-          Text(label,
-              style: TextStyle(
-                  color: Colors.white.withOpacity(0.45),
-                  fontSize: 10)),
-          SizedBox(height: 2),
-          Text(value,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 15,
-                  fontWeight: FontWeight.w700)),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildRecentTransactions() {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-          children: [
-            Text("Recent Transactions",
-                style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 16,
-                    fontWeight: FontWeight.w600)),
-            GestureDetector(
-              onTap: () => Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => HistoryScreen(userId: widget.userId),
-                ),
-              ),
-              child: Text("See all",
-                  style: TextStyle(
-                      color: Color(0xFF6c8fff), fontSize: 13)),
+          Positioned(
+            bottom: 300,
+            left: -40,
+            child: _glowOrb(
+              size: 150,
+              color: const Color(0xFFfbbf24),
+              opacity: 0.10,
             ),
-          ],
-        ),
-        SizedBox(height: 16),
-        transactions.isEmpty
-            ? Container(
-                width: double.infinity,
-                padding: EdgeInsets.all(32),
-                decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.04),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(
-                      color: Colors.white.withOpacity(0.07)),
-                ),
+          ),
+
+          // Actual dashboard content, untouched
+          SafeArea(
+
+            child: RefreshIndicator(
+
+              onRefresh: fetchDashboard,
+
+              child: SingleChildScrollView(
+
+                physics:
+                    const AlwaysScrollableScrollPhysics(),
+
+                padding:
+                    const EdgeInsets.all(20),
+
                 child: Column(
+
+                  crossAxisAlignment:
+                      CrossAxisAlignment.start,
+
                   children: [
-                    Icon(Icons.receipt_long_outlined,
-                        color: Colors.white.withOpacity(0.15),
-                        size: 40),
-                    SizedBox(height: 10),
-                    Text("No transactions yet",
-                        style: TextStyle(
-                            color: Colors.white.withOpacity(0.3),
-                            fontSize: 13)),
+
+                    _topBar(),
+
+                    const SizedBox(height: 20),
+
+                    _balanceCard(),
+
+                    const SizedBox(height: 20),
+
+                    _smartInsights(),
+
+                    const SizedBox(height: 20),
+
+                    _quickActions(),
+
+                    const SizedBox(height: 20),
+
+                    _alerts(),
+
+                    const SizedBox(height: 20),
+
+                    _stats(),
+
+                    const SizedBox(height: 20),
+
+                    _transactions(),
                   ],
                 ),
-              )
-            : Column(
-                children: transactions
-                    .map((t) => _transactionItem(t))
-                    .toList(),
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // Soft blurred glowing circle used for ambient background decoration
+  Widget _glowOrb({
+    required double size,
+    required Color color,
+    required double opacity,
+  }) {
+    return IgnorePointer(
+      child: Container(
+        width: size,
+        height: size,
+        decoration: BoxDecoration(
+          shape: BoxShape.circle,
+          gradient: RadialGradient(
+            colors: [
+              color.withOpacity(opacity),
+              color.withOpacity(0),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  // 🔝 TOP BAR
+
+  Widget _topBar() {
+
+    return Row(
+
+      mainAxisAlignment:
+          MainAxisAlignment.spaceBetween,
+
+      children: [
+
+        Text(
+
+          "${greet()}, ${widget.userName}",
+
+          style: const TextStyle(
+
+            color: Colors.white,
+
+            fontSize: 18,
+
+            fontWeight:
+                FontWeight.bold,
+          ),
+        ),
+
+        Row(
+
+          children: [
+
+            IconButton(
+
+              icon: const Icon(
+
+                Icons.person,
+
+                color: Colors.white,
+              ),
+
+              onPressed: () {
+
+                Navigator.push(
+
+                  context,
+
+                  MaterialPageRoute(
+
+                    builder: (_) =>
+
+                        ProfileScreen(
+
+                      userName:
+                          widget.userName,
+
+                      userId:
+                          widget.userId,
+                    ),
+                  ),
+                );
+              },
+            ),
+
+            IconButton(
+
+              icon: const Icon(
+
+                Icons.logout,
+
+                color: Colors.white,
+              ),
+
+              onPressed: () {
+
+                Navigator.pushReplacement(
+
+                  context,
+
+                  MaterialPageRoute(
+
+                    builder: (_) =>
+                        LoginScreen(),
+                  ),
+                );
+              },
+            ),
+          ],
+        ),
       ],
     );
   }
 
-  Widget _transactionItem(Map t) {
-    bool isIncome = t["type"] == "income";
+  // 💰 BALANCE CARD
+
+  Widget _balanceCard() {
+
     return Container(
-      margin: EdgeInsets.only(bottom: 10),
-      padding: EdgeInsets.all(16),
+
+      width: double.infinity,
+
+      padding: EdgeInsets.all(20),
+
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.04),
-        borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: Colors.white.withOpacity(0.07)),
+
+        gradient: LinearGradient(
+
+          colors: [
+
+            Color(0xFF6c8fff),
+
+            Color(0xFFa78bfa),
+          ],
+        ),
+
+        borderRadius:
+            BorderRadius.circular(20),
+
+        boxShadow: [
+
+          BoxShadow(
+
+            color: Color(0xFF6c8fff)
+                .withOpacity(0.4),
+
+            blurRadius: 25,
+          ),
+        ],
       ),
-      child: Row(
+
+      child: Column(
+
+        crossAxisAlignment:
+            CrossAxisAlignment.start,
+
         children: [
-          Container(
-            width: 42, height: 42,
-            decoration: BoxDecoration(
-              color: isIncome
-                  ? Color(0xFF4ade80).withOpacity(0.1)
-                  : Color(0xFFf87171).withOpacity(0.1),
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Icon(
-              isIncome
-                  ? Icons.arrow_downward_rounded
-                  : Icons.arrow_upward_rounded,
-              color: isIncome ? Color(0xFF4ade80) : Color(0xFFf87171),
-              size: 18,
-            ),
-          ),
-          SizedBox(width: 14),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(t["title"],
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 14,
-                        fontWeight: FontWeight.w500)),
-                SizedBox(height: 2),
-                Text(t["category"],
-                    style: TextStyle(
-                        color: Colors.white.withOpacity(0.4),
-                        fontSize: 12)),
-              ],
-            ),
-          ),
+
           Text(
-            "${isIncome ? '+' : '-'}₹ ${t["amount"].toStringAsFixed(0)}",
+
+            "Total Balance",
+
             style: TextStyle(
-              color: isIncome ? Color(0xFF4ade80) : Color(0xFFf87171),
-              fontSize: 14,
-              fontWeight: FontWeight.w600,
+
+              color: Colors.white70,
+            ),
+          ),
+
+          SizedBox(height: 8),
+
+          Text(
+
+            "₹ $balance",
+
+            style: TextStyle(
+
+              color: Colors.white,
+
+              fontSize: 30,
+
+              fontWeight:
+                  FontWeight.bold,
             ),
           ),
         ],
@@ -522,27 +448,612 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
-  Widget _statChip(String label, String value) {
+  // 🧠 SMART INSIGHTS
+
+  Widget _smartInsights() {
+
+    String msg =
+        "You're doing great ✅";
+
+    if (totalExpense > totalIncome) {
+
+      msg =
+          "⚠ Expenses exceed income!";
+    }
+
+    else if (balance < 1000) {
+
+      msg =
+          "⚠ Low balance — be careful";
+    }
+
     return Container(
-      padding: EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+
+      padding: EdgeInsets.all(14),
+
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.15),
-        borderRadius: BorderRadius.circular(10),
+
+        color:
+            Colors.white.withOpacity(0.06),
+
+        borderRadius:
+            BorderRadius.circular(14),
       ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+
+      child: Row(
+
         children: [
-          Text(label,
+
+          Text(
+            "🧠 ",
+            style: TextStyle(fontSize: 18),
+          ),
+
+          Expanded(
+
+            child: Text(
+
+              msg,
+
               style: TextStyle(
-                  color: Colors.white.withOpacity(0.7), fontSize: 11)),
-          SizedBox(height: 2),
-          Text(value,
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 14,
-                  fontWeight: FontWeight.w600)),
+
+                color: Colors.white70,
+              ),
+            ),
+          ),
         ],
       ),
+    );
+  }
+
+  // ⚡ ACTIONS
+
+  Widget _quickActions() {
+
+    return Wrap(
+
+      spacing: 10,
+
+      runSpacing: 10,
+
+      children: [
+
+        btn(
+          "Income",
+          Icons.attach_money,
+          IncomeScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Expense",
+          Icons.money_off,
+          ExpenseScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Habit",
+          Icons.track_changes,
+          HabitScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Task",
+          Icons.check_circle,
+          TaskScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Mood",
+          Icons.mood,
+          MoodScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "History",
+          Icons.history,
+          HistoryScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Analytics",
+          Icons.bar_chart,
+          AnalyticsScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Life Score",
+          Icons.star,
+          LifeScoreScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Budget",
+          Icons.wallet,
+          BudgetScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Predict",
+          Icons.trending_up,
+          PredictorScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Behavior",
+          Icons.psychology,
+          BehaviorScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Goals",
+          Icons.flag,
+          GoalsScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Streaks",
+          Icons.local_fire_department,
+          StreakScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Wealth",
+          Icons.account_balance_wallet,
+          NetWorthScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        btn(
+          "Awards",
+          Icons.emoji_events,
+          AchievementsScreen(
+            userId: widget.userId,
+          ),
+        ),
+
+        // 🔥 NEW CALENDAR
+
+        btn(
+          "Calendar",
+          Icons.calendar_month,
+          YearlyHeatmapScreen(),
+        ),
+
+        // 🔥 SMART SUMMARY
+
+        btn(
+          "Summary",
+          Icons.auto_graph,
+          SummaryScreen(),
+        ),
+
+        // 🔥 SMART ALERTS (now using the real AlertsScreen with live backend data)
+        btn(
+          "Alerts",
+          Icons.notifications_active,
+          AlertsScreen(userId: widget.userId),
+        ),
+      ],
+    );
+  }
+
+  Widget btn(
+    String text,
+    IconData icon,
+    Widget screen,
+  ) {
+
+    return GestureDetector(
+
+      onTap: () {
+
+        Navigator.push(
+
+          context,
+
+          MaterialPageRoute(
+
+            builder: (_) => screen,
+          ),
+        ).then((_) {
+
+          fetchDashboard();
+        });
+      },
+
+      child: Container(
+
+        width: 85,
+
+        padding:
+            EdgeInsets.symmetric(vertical: 14),
+
+        decoration: BoxDecoration(
+
+          color:
+              Colors.white.withOpacity(0.05),
+
+          borderRadius:
+              BorderRadius.circular(14),
+        ),
+
+        child: Column(
+
+          children: [
+
+            Icon(
+
+              icon,
+
+              color: Color(0xFF6c8fff),
+            ),
+
+            SizedBox(height: 6),
+
+            Text(
+
+              text,
+
+              textAlign: TextAlign.center,
+
+              style: TextStyle(
+
+                color: Colors.white70,
+
+                fontSize: 11,
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  // 🚨 ALERTS
+
+  Widget _alerts() {
+
+    List<String> alerts = [];
+
+    if (totalExpense > totalIncome) {
+
+      alerts.add(
+        "Overspending detected",
+      );
+    }
+
+    if (pendingTasks > 0) {
+
+      alerts.add(
+        "$pendingTasks tasks pending",
+      );
+    }
+
+    if (alerts.isEmpty) {
+
+      alerts.add(
+        "No alerts",
+      );
+    }
+
+    return Column(
+
+      children: alerts.map((a) {
+
+        return Container(
+
+          width: double.infinity,
+
+          margin:
+              EdgeInsets.only(bottom: 8),
+
+          padding: EdgeInsets.all(12),
+
+          decoration: BoxDecoration(
+
+            color:
+                Colors.orange.withOpacity(0.1),
+
+            borderRadius:
+                BorderRadius.circular(12),
+          ),
+
+          child: Text(
+
+            "⚠ $a",
+
+            style: TextStyle(
+
+              color: Colors.orange,
+            ),
+          ),
+        );
+
+      }).toList(),
+    );
+  }
+
+  // 📊 STATS
+
+  Widget _stats() {
+
+    return Row(
+
+      children: [
+
+        Expanded(
+
+          child: _statCard(
+
+            "Tasks",
+
+            "$pendingTasks",
+
+            Colors.orange,
+          ),
+        ),
+
+        SizedBox(width: 10),
+
+        Expanded(
+
+          child: _statCard(
+
+            "Done",
+
+            "$completedTasks",
+
+            Colors.green,
+          ),
+        ),
+
+        SizedBox(width: 10),
+
+        Expanded(
+
+          child: _statCard(
+
+            "Habits",
+
+            "$completedHabits/$totalHabits",
+
+            Colors.blue,
+          ),
+        ),
+      ],
+    );
+  }
+
+  Widget _statCard(
+
+    String title,
+
+    String value,
+
+    Color color,
+  ) {
+
+    return Container(
+
+      padding: EdgeInsets.all(12),
+
+      decoration: BoxDecoration(
+
+        color:
+            Colors.white.withOpacity(0.05),
+
+        borderRadius:
+            BorderRadius.circular(14),
+      ),
+
+      child: Column(
+
+        children: [
+
+          Text(
+
+            title,
+
+            style: TextStyle(
+
+              color: Colors.white54,
+            ),
+          ),
+
+          SizedBox(height: 6),
+
+          Text(
+
+            value,
+
+            style: TextStyle(
+
+              color: color,
+
+              fontSize: 16,
+
+              fontWeight:
+                  FontWeight.bold,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+
+  // 📄 TRANSACTIONS
+
+  Widget _transactions() {
+
+    if (_isLoading) {
+
+      return const Center(
+        child:
+            CircularProgressIndicator(),
+      );
+    }
+
+    if (transactions.isEmpty) {
+
+      return const Center(
+
+        child: Text(
+
+          "No data yet",
+
+          style: TextStyle(
+            color: Colors.white54,
+          ),
+        ),
+      );
+    }
+
+    return Column(
+
+      crossAxisAlignment:
+          CrossAxisAlignment.start,
+
+      children: [
+
+        const Text(
+
+          "Recent Transactions",
+
+          style: TextStyle(
+
+            color: Colors.white,
+
+            fontSize: 16,
+
+            fontWeight:
+                FontWeight.w600,
+          ),
+        ),
+
+        SizedBox(height: 12),
+
+        ...transactions.map((t) {
+
+          bool isIncome =
+              t["type"] == "income";
+
+          return Container(
+
+            margin:
+                EdgeInsets.only(bottom: 10),
+
+            padding: EdgeInsets.all(12),
+
+            decoration: BoxDecoration(
+
+              color:
+                  Colors.white.withOpacity(0.04),
+
+              borderRadius:
+                  BorderRadius.circular(12),
+            ),
+
+            child: Row(
+
+              children: [
+
+                Icon(
+
+                  isIncome
+
+                      ? Icons.arrow_downward
+
+                      : Icons.arrow_upward,
+
+                  color:
+
+                      isIncome
+
+                          ? Colors.green
+
+                          : Colors.red,
+                ),
+
+                SizedBox(width: 10),
+
+                Expanded(
+
+                  child: Column(
+
+                    crossAxisAlignment:
+                        CrossAxisAlignment.start,
+
+                    children: [
+
+                      Text(
+
+                        t["title"] ?? "",
+
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
+                      ),
+
+                      Text(
+
+                        t["category"] ?? "",
+
+                        style: TextStyle(
+                          color: Colors.white54,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+
+                Text(
+
+                  "₹${t["amount"]}",
+
+                  style: TextStyle(
+
+                    color:
+
+                        isIncome
+
+                            ? Colors.green
+
+                            : Colors.red,
+                  ),
+                ),
+              ],
+            ),
+          );
+
+        }).toList(),
+      ],
     );
   }
 }

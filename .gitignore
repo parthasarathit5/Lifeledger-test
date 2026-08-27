@@ -1,0 +1,12 @@
+node_modules/
+**/node_modules/
+.dart_tool/
+**/.dart_tool/
+build/
+**/build/
+.idea/
+.vscode/
+*.apk
+*.aab
+.env
+**/.env

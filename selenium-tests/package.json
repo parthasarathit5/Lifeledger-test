@@ -1,0 +1,26 @@
+{
+  "name": "selenium-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha .\\tests\\login-tests.js --reporter spec"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "selenium-webdriver": "^4.47.0"
+  },
+  "devDependencies": {
+    "mocha": "^11.8.0"
+  },
+  "overrides": {
+    "serialize-javascript": "7.1.0"
+  }
+}
