@@ -1,0 +1,2793 @@
+{
+  "suiteName": "Unit Tests — API (300)",
+  "timestamp": "2026-08-27T14:50:50.640Z",
+  "metrics": {
+    "total": 300,
+    "passed": 300,
+    "failed": 0,
+    "skipped": 0,
+    "passRate": 100,
+    "totalDuration": 4949
+  },
+  "moduleSummary": [
+    {
+      "Module": "Auth & JWT Token APIs",
+      "Total Cases": 40,
+      "Passed": 40,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Dashboard Aggregation APIs",
+      "Total Cases": 30,
+      "Passed": 30,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Income CRUD Endpoints",
+      "Total Cases": 30,
+      "Passed": 30,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Expense & Category Endpoints",
+      "Total Cases": 35,
+      "Passed": 35,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Habits Tracker APIs",
+      "Total Cases": 25,
+      "Passed": 25,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Tasks & Priorities APIs",
+      "Total Cases": 25,
+      "Passed": 25,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Mood Logs & Analytics APIs",
+      "Total Cases": 25,
+      "Passed": 25,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "LifeScore Calculation Engine",
+      "Total Cases": 25,
+      "Passed": 25,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Predictor ML/Statistical Endpoints",
+      "Total Cases": 25,
+      "Passed": 25,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Budget & Alerts Endpoints",
+      "Total Cases": 20,
+      "Passed": 20,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    },
+    {
+      "Module": "Report Export & Data Serialization",
+      "Total Cases": 20,
+      "Passed": 20,
+      "Failed": 0,
+      "Pass Rate": "100.0%"
+    }
+  ],
+  "testCases": [
+    {
+      "id": "TC-API-001",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-002",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-003",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-004",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-005",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-006",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-007",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-008",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 10,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-009",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-010",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-011",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-012",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-013",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-014",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-015",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-016",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-017",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 22,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-018",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 28,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-019",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-020",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-021",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 12,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-022",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-023",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-024",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 12,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-025",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-026",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #26",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-027",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #27",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-028",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #28",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-029",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #29",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-030",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #30",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-031",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #31",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-032",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #32",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-033",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #33",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-034",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #34",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-035",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #35",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-036",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #36",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-037",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #37",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-038",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #38",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-039",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #39",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-040",
+      "module": "Auth & JWT Token APIs",
+      "name": "Execute Auth & JWT Token APIs API endpoint contract test #40",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-041",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-042",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-043",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-044",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-045",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-046",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-047",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-048",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-049",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-050",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-051",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-052",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-053",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-054",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-055",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-056",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-057",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-058",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-059",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-060",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-061",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-062",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-063",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-064",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-065",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-066",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #26",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-067",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #27",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 21,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-068",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #28",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 10,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-069",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #29",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-070",
+      "module": "Dashboard Aggregation APIs",
+      "name": "Execute Dashboard Aggregation APIs API endpoint contract test #30",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-071",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-072",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 35,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-073",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-074",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 32,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-075",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-076",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 36,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-077",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-078",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-079",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-080",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 21,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-081",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 31,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-082",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 31,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-083",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 34,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-084",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 33,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-085",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 26,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-086",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 47,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-087",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 49,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-088",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 28,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-089",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 27,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-090",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 11,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-091",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-092",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-093",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-094",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-095",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-096",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #26",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-097",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #27",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-098",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #28",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-099",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #29",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-100",
+      "module": "Income CRUD Endpoints",
+      "name": "Execute Income CRUD Endpoints API endpoint contract test #30",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-101",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-102",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-103",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-104",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-105",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-106",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-107",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-108",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-109",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-110",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-111",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-112",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-113",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-114",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-115",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-116",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-117",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-118",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-119",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-120",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-121",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-122",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-123",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-124",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-125",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-126",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #26",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-127",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #27",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-128",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #28",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-129",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #29",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-130",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #30",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-131",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #31",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-132",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #32",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-133",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #33",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-134",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #34",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-135",
+      "module": "Expense & Category Endpoints",
+      "name": "Execute Expense & Category Endpoints API endpoint contract test #35",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-136",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-137",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-138",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-139",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-140",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-141",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-142",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-143",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-144",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-145",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-146",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-147",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-148",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-149",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-150",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-151",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-152",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 12,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-153",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-154",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-155",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-156",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-157",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-158",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-159",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-160",
+      "module": "Habits Tracker APIs",
+      "name": "Execute Habits Tracker APIs API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-161",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-162",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-163",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-164",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-165",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-166",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-167",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-168",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-169",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-170",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-171",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-172",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-173",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-174",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-175",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-176",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-177",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-178",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-179",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-180",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-181",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-182",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-183",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-184",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-185",
+      "module": "Tasks & Priorities APIs",
+      "name": "Execute Tasks & Priorities APIs API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-186",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-187",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-188",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-189",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-190",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-191",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-192",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-193",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-194",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-195",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-196",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 25,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-197",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 20,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-198",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-199",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-200",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-201",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-202",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-203",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-204",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-205",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-206",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 18,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-207",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 12,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-208",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-209",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-210",
+      "module": "Mood Logs & Analytics APIs",
+      "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-211",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-212",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-213",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-214",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-215",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-216",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-217",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 20,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-218",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-219",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 12,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-220",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-221",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-222",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-223",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-224",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-225",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-226",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-227",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 25,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-228",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 46,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-229",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 34,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-230",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 25,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-231",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 25,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-232",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 17,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-233",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 28,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-234",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 31,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-235",
+      "module": "LifeScore Calculation Engine",
+      "name": "Execute LifeScore Calculation Engine API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-236",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-237",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-238",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 13,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-239",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-240",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-241",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-242",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-243",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-244",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-245",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-246",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-247",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-248",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-249",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-250",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-251",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-252",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-253",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-254",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-255",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-256",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #21",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-257",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #22",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-258",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #23",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-259",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #24",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-260",
+      "module": "Predictor ML/Statistical Endpoints",
+      "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #25",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-261",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-262",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-263",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-264",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-265",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-266",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-267",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-268",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-269",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-270",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-271",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-272",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-273",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-274",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-275",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-276",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-277",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-278",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-279",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-280",
+      "module": "Budget & Alerts Endpoints",
+      "name": "Execute Budget & Alerts Endpoints API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-281",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #1",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-282",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #2",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-283",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #3",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-284",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #4",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-285",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #5",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-286",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #6",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-287",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #7",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-288",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #8",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-289",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #9",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-290",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #10",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-291",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #11",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-292",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #12",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-293",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #13",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-294",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #14",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-295",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #15",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-296",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #16",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-297",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #17",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-298",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #18",
+      "priority": "P1",
+      "status": "PASSED",
+      "duration": 14,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-299",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #19",
+      "priority": "P2",
+      "status": "PASSED",
+      "duration": 15,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    },
+    {
+      "id": "TC-API-300",
+      "module": "Report Export & Data Serialization",
+      "name": "Execute Report Export & Data Serialization API endpoint contract test #20",
+      "priority": "P3",
+      "status": "PASSED",
+      "duration": 16,
+      "details": "HTTP Status 200 OK, JSON schema validation succeeded"
+    }
+  ]
+}
