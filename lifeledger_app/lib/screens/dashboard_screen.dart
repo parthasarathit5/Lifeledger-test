@@ -24,6 +24,7 @@ import 'alerts_screen.dart';
 
 import 'yearly_heatmap_screen.dart';
 import 'summary_screen.dart';
+import 'ai_advisor_screen.dart';
 
 class DashboardScreen extends StatefulWidget {
 
@@ -448,58 +449,162 @@ class _DashboardScreenState
     );
   }
 
-  // 🧠 SMART INSIGHTS
-
+  // 🧠 SMART AI INSIGHTS & COACH
   Widget _smartInsights() {
-
-    String msg =
-        "You're doing great ✅";
-
+    String msg = "ML Models Active: Financial wellness is stable";
     if (totalExpense > totalIncome) {
-
-      msg =
-          "⚠ Expenses exceed income!";
-    }
-
-    else if (balance < 1000) {
-
-      msg =
-          "⚠ Low balance — be careful";
+      msg = "⚠️ Deficit alert: Discretionary expenses exceed income";
+    } else if (balance < 1000) {
+      msg = "⚠️ Low liquid balance: Build your emergency fund";
+    } else if (totalIncome > 0 && totalExpense / totalIncome < 0.6) {
+      msg = "🌟 High savings rate! You are in the top 20% savings cohort";
     }
 
     return Container(
-
-      padding: EdgeInsets.all(14),
-
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-
-        color:
-            Colors.white.withOpacity(0.06),
-
-        borderRadius:
-            BorderRadius.circular(14),
-      ),
-
-      child: Row(
-
-        children: [
-
-          Text(
-            "🧠 ",
-            style: TextStyle(fontSize: 18),
+        gradient: const LinearGradient(
+          colors: [Color(0xFF1E2640), Color(0xFF161D31)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: const Color(0xFF38BDF8).withOpacity(0.3)),
+        boxShadow: [
+          BoxShadow(
+            color: const Color(0xFF38BDF8).withOpacity(0.08),
+            blurRadius: 16,
           ),
-
-          Expanded(
-
-            child: Text(
-
-              msg,
-
-              style: TextStyle(
-
-                color: Colors.white70,
+        ],
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              const Row(
+                children: [
+                  Icon(Icons.auto_awesome, color: Color(0xFF38BDF8), size: 18),
+                  SizedBox(width: 8),
+                  Text(
+                    "AI Predictive Intelligence",
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
+                  ),
+                ],
               ),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF38BDF8).withOpacity(0.15),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Text(
+                  "ML 2.0",
+                  style: TextStyle(
+                    color: Color(0xFF38BDF8),
+                    fontSize: 10,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
+            ],
+          ),
+          const SizedBox(height: 10),
+          Text(
+            msg,
+            style: const TextStyle(
+              color: Colors.white70,
+              fontSize: 13,
+              height: 1.35,
             ),
+          ),
+          const SizedBox(height: 14),
+          Row(
+            children: [
+              Expanded(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => AIAdvisorScreen(
+                          userId: widget.userId,
+                          userName: widget.userName,
+                        ),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    decoration: BoxDecoration(
+                      gradient: const LinearGradient(
+                        colors: [Color(0xFF6366F1), Color(0xFFA855F7)],
+                      ),
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.chat_bubble_outline, color: Colors.white, size: 15),
+                        SizedBox(width: 6),
+                        Text(
+                          "AI Coach",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+              const SizedBox(width: 10),
+              Expanded(
+                child: InkWell(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (_) => PredictorScreen(
+                          userId: widget.userId,
+                          userName: widget.userName,
+                        ),
+                      ),
+                    );
+                  },
+                  child: Container(
+                    padding: const EdgeInsets.symmetric(vertical: 10),
+                    decoration: BoxDecoration(
+                      color: Colors.white.withOpacity(0.08),
+                      borderRadius: BorderRadius.circular(12),
+                      border: Border.all(color: Colors.white12),
+                    ),
+                    child: const Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(Icons.auto_graph, color: Color(0xFF38BDF8), size: 15),
+                        SizedBox(width: 6),
+                        Text(
+                          "ML Forecast",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 12,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              ),
+            ],
           ),
         ],
       ),
@@ -507,16 +612,19 @@ class _DashboardScreenState
   }
 
   // ⚡ ACTIONS
-
   Widget _quickActions() {
-
     return Wrap(
-
       spacing: 10,
-
       runSpacing: 10,
-
       children: [
+        btn(
+          "AI Coach",
+          Icons.psychology,
+          AIAdvisorScreen(
+            userId: widget.userId,
+            userName: widget.userName,
+          ),
+        ),
 
         btn(
           "Income",

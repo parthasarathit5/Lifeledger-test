@@ -132,7 +132,43 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
         '💸';
   }
 
+  String? _aiSuggestedCategory;
+  double _aiConfidence = 0.0;
+  bool _isAutoCategorizing = false;
+
+  void _onTitleChanged(String text, StateSetter setSheetState) async {
+    if (text.trim().length < 3) {
+      setSheetState(() {
+        _aiSuggestedCategory = null;
+        _aiConfidence = 0.0;
+      });
+      return;
+    }
+
+    setSheetState(() => _isAutoCategorizing = true);
+    final res = await ApiService.aiCategorize(text.trim());
+    if (res["status"] == "success" && res["predicted_category"] != null) {
+      final predCat = res["predicted_category"];
+      final conf = (res["confidence_percent"] ?? (res["confidence"] ?? 0.0) * 100).toDouble();
+
+      setSheetState(() {
+        _isAutoCategorizing = false;
+        _aiSuggestedCategory = predCat;
+        _aiConfidence = conf;
+        // Auto-select if confident
+        if (conf >= 40.0) {
+          selectedCategory = predCat;
+        }
+      });
+    } else {
+      setSheetState(() => _isAutoCategorizing = false);
+    }
+  }
+
   void _showAddExpenseSheet() {
+    _aiSuggestedCategory = null;
+    _aiConfidence = 0.0;
+
     showModalBottomSheet(
       context: context,
       isScrollControlled: true,
@@ -142,11 +178,11 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
           padding: EdgeInsets.only(
               bottom: MediaQuery.of(context).viewInsets.bottom),
           child: Container(
-            padding: EdgeInsets.all(28),
+            padding: const EdgeInsets.all(28),
             decoration: BoxDecoration(
-              color: Color(0xFF101828),
+              color: const Color(0xFF101828),
               borderRadius:
-                  BorderRadius.vertical(top: Radius.circular(24)),
+                  const BorderRadius.vertical(top: Radius.circular(24)),
               border: Border.all(color: Colors.white.withOpacity(0.08)),
             ),
             child: Column(
@@ -162,35 +198,78 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                     ),
                   ),
                 ),
-                SizedBox(height: 20),
-                Text("Add Expense",
-                    style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 20,
-                        fontWeight: FontWeight.w700)),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
+                const Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text("Add Expense",
+                        style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 20,
+                            fontWeight: FontWeight.w700)),
+                    Row(
+                      children: [
+                        Icon(Icons.auto_awesome, color: Color(0xFF38BDF8), size: 16),
+                        SizedBox(width: 4),
+                        Text(
+                          "AI Smart NLP",
+                          style: TextStyle(color: Color(0xFF38BDF8), fontSize: 11, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 20),
                 _sheetInput(
                     controller: titleController,
-                    hint: "Title (e.g. Lunch)",
-                    icon: Icons.title_rounded),
-                SizedBox(height: 12),
+                    hint: "Title (e.g. Swiggy pizza, Uber cab)",
+                    icon: Icons.title_rounded,
+                    onChanged: (val) => _onTitleChanged(val, setSheetState)),
+                if (_aiSuggestedCategory != null) ...[
+                  const SizedBox(height: 10),
+                  Container(
+                    padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF38BDF8).withOpacity(0.12),
+                      borderRadius: BorderRadius.circular(10),
+                      border: Border.all(color: const Color(0xFF38BDF8).withOpacity(0.3)),
+                    ),
+                    child: Row(
+                      children: [
+                        const Icon(Icons.psychology, color: Color(0xFF38BDF8), size: 16),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: Text(
+                            "AI Predicted: ${_getCategoryLabel(_aiSuggestedCategory!)} (${_aiConfidence.toStringAsFixed(0)}% confidence)",
+                            style: const TextStyle(
+                              color: Color(0xFF38BDF8),
+                              fontSize: 12,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+                const SizedBox(height: 12),
                 _sheetInput(
                     controller: amountController,
                     hint: "Amount (₹)",
                     icon: Icons.currency_rupee_rounded,
                     keyboardType: TextInputType.number),
-                SizedBox(height: 12),
+                const SizedBox(height: 12),
                 _sheetInput(
                     controller: noteController,
                     hint: "Note (optional)",
                     icon: Icons.note_outlined),
-                SizedBox(height: 16),
+                const SizedBox(height: 16),
                 Text("Category",
                     style: TextStyle(
                         color: Colors.white.withOpacity(0.5),
                         fontSize: 12,
                         fontWeight: FontWeight.w600)),
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Wrap(
                   spacing: 8,
                   runSpacing: 8,
@@ -201,16 +280,16 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                       onTap: () => setSheetState(
                           () => selectedCategory = cat['value']),
                       child: Container(
-                        padding: EdgeInsets.symmetric(
+                        padding: const EdgeInsets.symmetric(
                             horizontal: 12, vertical: 8),
                         decoration: BoxDecoration(
                           color: isSelected
-                              ? Color(0xFFf87171).withOpacity(0.2)
+                              ? const Color(0xFFf87171).withOpacity(0.2)
                               : Colors.white.withOpacity(0.05),
                           borderRadius: BorderRadius.circular(10),
                           border: Border.all(
                             color: isSelected
-                                ? Color(0xFFf87171)
+                                ? const Color(0xFFf87171)
                                 : Colors.white.withOpacity(0.1),
                           ),
                         ),
@@ -218,7 +297,7 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                           "${cat['icon']} ${cat['label']}",
                           style: TextStyle(
                             color: isSelected
-                                ? Color(0xFFf87171)
+                                ? const Color(0xFFf87171)
                                 : Colors.white.withOpacity(0.6),
                             fontSize: 12,
                           ),
@@ -227,13 +306,13 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
                     );
                   }).toList(),
                 ),
-                SizedBox(height: 24),
+                const SizedBox(height: 24),
                 SizedBox(
                   width: double.infinity,
                   height: 52,
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      gradient: LinearGradient(
+                      gradient: const LinearGradient(
                           colors: [Color(0xFFf87171), Color(0xFFfb923c)]),
                       borderRadius: BorderRadius.circular(12),
                     ),
@@ -267,16 +346,26 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
     );
   }
 
+  String _getCategoryLabel(String val) {
+    final match = categories.firstWhere(
+      (c) => c['value'] == val,
+      orElse: () => {'label': val.toUpperCase()},
+    );
+    return match['label'] ?? val;
+  }
+
   Widget _sheetInput({
     required TextEditingController controller,
     required String hint,
     required IconData icon,
     TextInputType keyboardType = TextInputType.text,
+    ValueChanged<String>? onChanged,
   }) {
     return TextField(
       controller: controller,
       keyboardType: keyboardType,
-      style: TextStyle(color: Colors.white, fontSize: 15),
+      onChanged: onChanged,
+      style: const TextStyle(color: Colors.white, fontSize: 15),
       decoration: InputDecoration(
         hintText: hint,
         hintStyle: TextStyle(color: Colors.white.withOpacity(0.25)),
@@ -285,7 +374,7 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
         filled: true,
         fillColor: Colors.white.withOpacity(0.06),
         contentPadding:
-            EdgeInsets.symmetric(horizontal: 16, vertical: 14),
+            const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
         border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide:
@@ -294,7 +383,7 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
             borderRadius: BorderRadius.circular(12),
             borderSide:
                 BorderSide(color: Colors.white.withOpacity(0.1))),
-        focusedBorder: OutlineInputBorder(
+        focusedBorder: const OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide:
                 BorderSide(color: Color(0xFFf87171), width: 1.5)),

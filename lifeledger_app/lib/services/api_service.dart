@@ -304,33 +304,99 @@ static Future verifyOtp(
 
 // ================= RESET PASSWORD =================
 
-static Future resetPassword(
+  static Future resetPassword(
+    String email,
+    String password,
+  ) async {
+    final res = await http.post(
+      Uri.parse("$baseUrl/reset-password/"),
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: jsonEncode({
+        "email": email,
+        "password": password,
+      }),
+    );
+    return jsonDecode(res.body);
+  }
 
-  String email,
+  // ================= ADVANCED AI & MACHINE LEARNING =================
 
-  String password,
-) async {
+  /// NLP Auto-Categorization (TF-IDF + Random Forest)
+  static Future<Map<String, dynamic>> aiCategorize(String text, {double amount = 0.0}) async {
+    try {
+      final res = await http.post(
+        Uri.parse("$baseUrl/api/ai/categorize/"),
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"text": text, "amount": amount}),
+      );
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {
+        "status": "error",
+        "predicted_category": "other",
+        "confidence": 0.0,
+        "is_high_confidence": false
+      };
+    }
+  }
 
-  final res = await http.post(
+  /// AI Time-Series & Behavioral Expense / Savings Forecast
+  static Future<Map<String, dynamic>> getAIForecast(int userId) async {
+    try {
+      final res = await http.get(Uri.parse("$baseUrl/api/ai/predict/$userId/"));
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {"status": "error", "message": e.toString()};
+    }
+  }
 
-    Uri.parse(
-      "$baseUrl/reset-password/",
-    ),
+  /// AI Anomaly & Overspending Detection (IsolationForest)
+  static Future<Map<String, dynamic>> getAIAnomalies(int userId) async {
+    try {
+      final res = await http.get(Uri.parse("$baseUrl/api/ai/anomaly/$userId/"));
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {"status": "error", "anomalies_detected": 0, "anomaly_items": []};
+    }
+  }
 
-    headers: {
-      "Content-Type":
-          "application/json",
-    },
+  /// AI Conversational Financial Advisor (Q&A Coach)
+  static Future<Map<String, dynamic>> askAIAdvisor(int userId, String question) async {
+    try {
+      final res = await http.post(
+        Uri.parse("$baseUrl/api/ai/advisor/$userId/"),
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"question": question}),
+      );
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {
+        "status": "error",
+        "answer": "I am having trouble connecting to the AI engine. Please verify network connection.",
+        "suggested_actions": ["Try Again", "Check ML Forecast"]
+      };
+    }
+  }
 
-    body: jsonEncode({
+  /// AI Advisor Chat History
+  static Future<Map<String, dynamic>> getAIAdvisorHistory(int userId) async {
+    try {
+      final res = await http.get(Uri.parse("$baseUrl/api/ai/advisor/history/$userId/"));
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {"status": "error", "history": []};
+    }
+  }
 
-      "email": email,
-
-      "password": password,
-    }),
-  );
-
-  return jsonDecode(
-      res.body);
-}
+  /// Active AI Models Status and Accuracy Metrics
+  static Future<Map<String, dynamic>> getAIStatus() async {
+    try {
+      final res = await http.get(Uri.parse("$baseUrl/api/ai/status/"));
+      return jsonDecode(res.body);
+    } catch (e) {
+      return {"status": "offline"};
+    }
+  }
 }
