@@ -177,10 +177,26 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
                           style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
                         ),
                         const SizedBox(height: 16),
-                        _sliderRow("Monthly SIP Amount", "₹${_monthlyInvestment.toStringAsFixed(0)}", _monthlyInvestment, 1000, 100000, 1000, (v) => setState(() => _monthlyInvestment = v)),
-                        _sliderRow("Time Horizon", "${_years.toInt()} Years", _years, 1, 35, 1, (v) => setState(() => _years = v)),
-                        _sliderRow("Expected Annual Return (CAGR)", "${_expectedReturn.toStringAsFixed(1)}%", _expectedReturn, 6, 20, 0.5, (v) => setState(() => _expectedReturn = v)),
-                        _sliderRow("Existing Initial Corpus", "₹${_currentCorpus.toStringAsFixed(0)}", _currentCorpus, 0, 1000000, 10000, (v) => setState(() => _currentCorpus = v)),
+                        _sliderRow(
+                          "Monthly SIP Amount",
+                          "₹${_monthlyInvestment.toStringAsFixed(0)}",
+                          _monthlyInvestment,
+                          1000,
+                          (_monthlyInvestment * 2.0).clamp(100000.0, 5000000.0),
+                          1000,
+                          (v) => setState(() => _monthlyInvestment = v),
+                        ),
+                        _sliderRow("Time Horizon", "${_years.toInt()} Years", _years, 1, 40, 1, (v) => setState(() => _years = v)),
+                        _sliderRow("Expected Annual Return (CAGR)", "${_expectedReturn.toStringAsFixed(1)}%", _expectedReturn, 4, 30, 0.5, (v) => setState(() => _expectedReturn = v)),
+                        _sliderRow(
+                          "Existing Initial Corpus",
+                          "₹${_currentCorpus.toStringAsFixed(0)}",
+                          _currentCorpus,
+                          0,
+                          (_currentCorpus * 2.0).clamp(1000000.0, 50000000.0),
+                          10000,
+                          (v) => setState(() => _currentCorpus = v),
+                        ),
                       ],
                     ),
                   ),
@@ -192,14 +208,14 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
                     decoration: BoxDecoration(
                       color: const Color(0xFFFEF3C7),
                       borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: const Color(0xFFF59E0B).withOpacity(0.3)),
+                      border: Border.all(color: const Color(0xFFF59E0B).withValues(alpha: 0.3)),
                     ),
                     child: Row(
                       children: [
                         Container(
                           padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
-                            color: const Color(0xFFF59E0B).withOpacity(0.2),
+                            color: const Color(0xFFF59E0B).withValues(alpha: 0.2),
                             borderRadius: BorderRadius.circular(14),
                           ),
                           child: const Icon(Icons.rocket_launch, color: Color(0xFFD97706), size: 24),
@@ -215,7 +231,7 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
                               ),
                               const SizedBox(height: 4),
                               Text(
-                                "At ₹${_monthlyInvestment.toStringAsFixed(0)}/mo, you will achieve ₹1 Crore net worth in ~${(10000000 / (futureValue / _years)).clamp(3, 25).toStringAsFixed(1)} years.",
+                                "At ₹${_monthlyInvestment.toStringAsFixed(0)}/mo, you will achieve ₹1 Crore net worth in ~${(10000000 / (futureValue > 0 ? (futureValue / _years) : 100000)).clamp(1.0, 35.0).toStringAsFixed(1)} years.",
                                 style: const TextStyle(color: Color(0xFF78350F), fontSize: 12.5),
                               ),
                             ],
@@ -231,6 +247,9 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
   }
 
   Widget _sliderRow(String label, String valueStr, double val, double min, double max, double step, ValueChanged<double> onChanged) {
+    final double safeMax = max > min ? max : min + 1000.0;
+    final double safeVal = val.clamp(min, safeMax);
+
     return Padding(
       padding: const EdgeInsets.only(bottom: 16),
       child: Column(
@@ -250,9 +269,9 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
               thumbColor: const Color(0xFF059669),
             ),
             child: Slider(
-              value: val,
+              value: safeVal,
               min: min,
-              max: max,
+              max: safeMax,
               onChanged: onChanged,
             ),
           ),
