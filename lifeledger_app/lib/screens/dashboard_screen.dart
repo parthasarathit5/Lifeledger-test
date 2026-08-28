@@ -99,10 +99,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFFF8FAFC), // Crisp clean background
+      backgroundColor: Colors.white, // Pure White Background as requested
+      drawer: _buildDashboardDrawer(),
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.5,
+        iconTheme: const IconThemeData(color: Color(0xFF059669)),
         title: Row(
           children: [
             Container(
@@ -163,7 +165,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         _buildStep1IncomeCard(),
                         const SizedBox(height: 12),
 
-                        // 3. AI Coach Banner (Light Green / Warm Amber Accent)
+                        // 3. AI Coach Banner (Light Green Box)
                         _buildAICoachCard(),
                         const SizedBox(height: 20),
 
@@ -171,7 +173,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                         _buildSmallGreenDashboardsSuite(),
                         const SizedBox(height: 22),
 
-                        // 5. Recent Activity
+                        // 5. Recent Activity (Light Green Box)
                         _buildRecentTransactions(),
                         const SizedBox(height: 16),
                       ],
@@ -183,19 +185,142 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
+  Widget _buildDashboardDrawer() {
+    return Drawer(
+      backgroundColor: Colors.white,
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: const BoxDecoration(
+              color: Color(0xFFECFDF5),
+              border: Border(bottom: BorderSide(color: Color(0xFF10B981), width: 1.5)),
+            ),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(8),
+                      decoration: const BoxDecoration(
+                        color: Color(0xFF059669),
+                        shape: BoxShape.circle,
+                      ),
+                      child: const Icon(Icons.account_balance_wallet, color: Colors.white, size: 22),
+                    ),
+                    const SizedBox(width: 10),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          widget.userName,
+                          style: const TextStyle(color: Color(0xFF065F46), fontSize: 16, fontWeight: FontWeight.bold),
+                        ),
+                        const Text(
+                          "LifeLedger AI Suite",
+                          style: TextStyle(color: Color(0xFF059669), fontSize: 11, fontWeight: FontWeight.w600),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                Container(
+                  padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8),
+                    border: Border.all(color: const Color(0xFF10B981)),
+                  ),
+                  child: const Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Icon(Icons.check_circle, color: Color(0xFF059669), size: 12),
+                      SizedBox(width: 4),
+                      Text("Supabase PostgreSQL Synced", style: TextStyle(color: Color(0xFF065F46), fontSize: 10, fontWeight: FontWeight.bold)),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+          _drawerSectionTitle("🤖 AI & MACHINE LEARNING"),
+          _drawerTile("AI Predictor", "30-Day forecast & limits", Icons.auto_graph, PredictorScreen(userId: widget.userId, userName: widget.userName)),
+          _drawerTile("AI Coach Q&A", "Personal financial advisor", Icons.psychology, AIAdvisorScreen(userId: widget.userId, userName: widget.userName)),
+          _drawerTile("AI Wealth FIRE", "SIP & ₹1Cr horizon", Icons.rocket_launch, AIWealthSimulatorScreen(userId: widget.userId, userName: widget.userName)),
+          _drawerTile("AI Tax Saver", "80C, 80D deductions", Icons.receipt_long, AITaxSaverScreen(userId: widget.userId)),
+          _drawerTile("AI Smart Receipt", "OCR bill itemizer", Icons.document_scanner, AISmartReceiptScreen(userId: widget.userId)),
+          _drawerTile("AI Debt Payoff", "Snowball payoff matrix", Icons.speed, AIDebtPayoffScreen(userId: widget.userId)),
+          _drawerTile("AI Behavior", "Habit-spending velocity", Icons.insights, BehaviorScreen(userId: widget.userId)),
+          _drawerTile("Smart Alerts", "Outlier anomaly radar", Icons.notifications_active, AlertsScreen(userId: widget.userId)),
+
+          const Divider(height: 16),
+          _drawerSectionTitle("💰 CASHFLOW & GOALS"),
+          _drawerTile("Add Expense", "Log with auto NLP", Icons.remove_circle_outline, ExpenseScreen(userId: widget.userId)),
+          _drawerTile("Add Income", "Set monthly inflow", Icons.add_circle_outline, IncomeScreen(userId: widget.userId)),
+          _drawerTile("Budget Limits", "Category thresholds", Icons.wallet, BudgetScreen(userId: widget.userId)),
+          _drawerTile("Goal Tracker", "Target milestones", Icons.flag_outlined, GoalsScreen(userId: widget.userId)),
+          _drawerTile("Net Worth", "Assets & debt", Icons.account_balance, NetWorthScreen(userId: widget.userId)),
+          _drawerTile("Ledger History", "Audit records", Icons.history, HistoryScreen(userId: widget.userId)),
+
+          const Divider(height: 16),
+          _drawerSectionTitle("🌱 HABITS & LIFESCORE"),
+          _drawerTile("Habits Log", "Daily discipline", Icons.track_changes, HabitScreen(userId: widget.userId)),
+          _drawerTile("Daily Tasks", "Execution checklist", Icons.checklist, TaskScreen(userId: widget.userId)),
+          _drawerTile("Mood Journal", "Emotional drift", Icons.mood, MoodScreen(userId: widget.userId)),
+          _drawerTile("LifeScore 360", "Health metric", Icons.star_outline, LifeScoreScreen(userId: widget.userId)),
+          _drawerTile("Full Report", "Financial summary", Icons.analytics, ReportScreen(userId: widget.userId)),
+        ],
+      ),
+    );
+  }
+
+  Widget _drawerSectionTitle(String title) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 4),
+      child: Text(
+        title,
+        style: const TextStyle(fontSize: 10.5, fontWeight: FontWeight.bold, color: Color(0xFF059669), letterSpacing: 0.5),
+      ),
+    );
+  }
+
+  Widget _drawerTile(String title, String subtitle, IconData icon, Widget destination) {
+    return ListTile(
+      dense: true,
+      visualDensity: const VisualDensity(vertical: -2),
+      leading: Container(
+        padding: const EdgeInsets.all(5),
+        decoration: BoxDecoration(
+          color: const Color(0xFFECFDF5),
+          borderRadius: BorderRadius.circular(6),
+        ),
+        child: Icon(icon, color: const Color(0xFF059669), size: 16),
+      ),
+      title: Text(title, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12.5, color: Color(0xFF064E3B))),
+      subtitle: Text(subtitle, style: const TextStyle(fontSize: 10, color: Color(0xFF64748B))),
+      onTap: () {
+        Navigator.pop(context);
+        Navigator.push(context, MaterialPageRoute(builder: (_) => destination)).then((_) => fetchDashboard());
+      },
+    );
+  }
+
   Widget _buildHeroBanner() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(18),
       decoration: BoxDecoration(
         color: const Color(0xFFECFDF5), // Light Green Box
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFF10B981), width: 1.5),
+        borderRadius: BorderRadius.circular(18),
+        border: Border.all(color: const Color(0xFF10B981), width: 1.4),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF10B981).withOpacity(0.12),
-            blurRadius: 16,
-            offset: const Offset(0, 4),
+            color: const Color(0xFF10B981).withOpacity(0.1),
+            blurRadius: 12,
+            offset: const Offset(0, 3),
           ),
         ],
       ),
@@ -210,20 +335,20 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 style: TextStyle(color: Color(0xFF065F46), fontSize: 13, fontWeight: FontWeight.bold),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3.5),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: const Color(0xFF10B981).withOpacity(0.4)),
+                  borderRadius: BorderRadius.circular(8),
+                  border: Border.all(color: const Color(0xFF10B981).withOpacity(0.5)),
                 ),
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    Icon(Icons.bolt, color: Color(0xFF059669), size: 13),
+                    Icon(Icons.bolt, color: Color(0xFF059669), size: 12),
                     SizedBox(width: 4),
                     Text(
                       "Supabase Live",
-                      style: TextStyle(color: Color(0xFF059669), fontSize: 10.5, fontWeight: FontWeight.bold),
+                      style: TextStyle(color: Color(0xFF059669), fontSize: 10, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
@@ -235,26 +360,26 @@ class _DashboardScreenState extends State<DashboardScreen> {
             "₹${balance.toStringAsFixed(2)}",
             style: const TextStyle(
               color: Color(0xFF047857),
-              fontSize: 32,
+              fontSize: 30,
               fontWeight: FontWeight.bold,
               letterSpacing: -0.5,
             ),
           ),
-          const SizedBox(height: 12),
+          const SizedBox(height: 10),
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+            padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(12),
+              borderRadius: BorderRadius.circular(10),
               border: Border.all(color: const Color(0xFFA7F3D0)),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
                 _balanceCol("Total Income", "₹${totalIncome.toStringAsFixed(0)}", const Color(0xFF059669), Icons.arrow_downward),
-                Container(width: 1, height: 24, color: const Color(0xFFD1FAE5)),
+                Container(width: 1, height: 22, color: const Color(0xFFD1FAE5)),
                 _balanceCol("Total Expense", "₹${totalExpense.toStringAsFixed(0)}", const Color(0xFFDC2626), Icons.arrow_upward),
-                Container(width: 1, height: 24, color: const Color(0xFFD1FAE5)),
+                Container(width: 1, height: 22, color: const Color(0xFFD1FAE5)),
                 _balanceCol("Savings Rate", "${totalIncome > 0 ? (((totalIncome - totalExpense) / totalIncome) * 100).clamp(0, 100).toStringAsFixed(0) : 0}%", const Color(0xFFD97706), Icons.pie_chart),
               ],
             ),
@@ -272,7 +397,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             Icon(icon, color: valColor, size: 11),
             const SizedBox(width: 3),
-            Text(val, style: TextStyle(color: valColor, fontWeight: FontWeight.bold, fontSize: 12.5)),
+            Text(val, style: TextStyle(color: valColor, fontWeight: FontWeight.bold, fontSize: 12)),
           ],
         ),
         const SizedBox(height: 1),
@@ -295,12 +420,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
               color: const Color(0xFF059669),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(8),
             ),
-            child: const Icon(Icons.add_card, color: Colors.white, size: 18),
+            child: const Icon(Icons.add_card, color: Colors.white, size: 16),
           ),
           const SizedBox(width: 10),
           const Expanded(
@@ -309,11 +434,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
               children: [
                 Text(
                   "Step 1: Set Monthly Income",
-                  style: TextStyle(color: Color(0xFF065F46), fontWeight: FontWeight.bold, fontSize: 13),
+                  style: TextStyle(color: Color(0xFF065F46), fontWeight: FontWeight.bold, fontSize: 12.5),
                 ),
                 Text(
                   "AI models automatically calculate budget, forecast & limits.",
-                  style: TextStyle(color: Color(0xFF047857), fontSize: 10.5),
+                  style: TextStyle(color: Color(0xFF047857), fontSize: 10),
                 ),
               ],
             ),
@@ -322,7 +447,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFF059669),
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
               elevation: 0,
             ),
@@ -340,19 +465,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return Container(
       padding: const EdgeInsets.all(12),
       decoration: BoxDecoration(
-        color: const Color(0xFFF0FDF4), // Light Mint Green Box
+        color: const Color(0xFFECFDF5), // Light Green Box
         borderRadius: BorderRadius.circular(14),
-        border: Border.all(color: const Color(0xFF34D399), width: 1.2),
+        border: Border.all(color: const Color(0xFF10B981), width: 1.3),
       ),
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(8),
+            padding: const EdgeInsets.all(7),
             decoration: BoxDecoration(
               color: const Color(0xFF059669),
-              borderRadius: BorderRadius.circular(10),
+              borderRadius: BorderRadius.circular(8),
             ),
-            child: const Icon(Icons.psychology, color: Colors.white, size: 20),
+            child: const Icon(Icons.psychology, color: Colors.white, size: 18),
           ),
           const SizedBox(width: 10),
           const Expanded(
@@ -361,11 +486,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
               children: [
                 Text(
                   "LifeLedger Precision AI Advisor",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Color(0xFF065F46)),
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 12.5, color: Color(0xFF065F46)),
                 ),
                 Text(
-                  "Ask anything: Affordability, Tax Saver, Spending Cuts & FIRE.",
-                  style: TextStyle(color: Color(0xFF047857), fontSize: 10.5),
+                  "Direct answers on Affordability, Tax Saver, Spending Cuts & FIRE.",
+                  style: TextStyle(color: Color(0xFF047857), fontSize: 10),
                 ),
               ],
             ),
@@ -374,7 +499,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
             style: ElevatedButton.styleFrom(
               backgroundColor: const Color(0xFF059669),
               foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),
               elevation: 0,
             ),
@@ -397,9 +522,9 @@ class _DashboardScreenState extends State<DashboardScreen> {
     return LayoutBuilder(
       builder: (context, constraints) {
         final double width = constraints.maxWidth;
-        // Responsive grid: 4 columns on desktop, 3 on tablet, 2 on mobile
+        // Responsive compact columns
         final int crossAxisCount = width > 750 ? 4 : (width > 480 ? 3 : 2);
-        final double childAspectRatio = width > 750 ? 2.5 : (width > 480 ? 2.2 : 2.0);
+        final double childAspectRatio = width > 750 ? 2.6 : (width > 480 ? 2.2 : 2.0);
 
         return Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -421,7 +546,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 _lightGreenTile("Smart Alerts", "Anomaly Radar", "Outliers", Icons.notifications_active, AlertsScreen(userId: widget.userId)),
               ],
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 16),
 
             // 2. Cashflow & Goals Hub (Light Green Boxes)
             _sectionHeader("💰 Cashflow & Goals Hub"),
@@ -440,7 +565,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 _lightGreenTile("Savings Goals", "Emergency Fund", "Safety", Icons.savings_outlined, GoalScreen(userId: widget.userId)),
               ],
             ),
-            const SizedBox(height: 18),
+            const SizedBox(height: 16),
 
             // 3. Habits & LifeScore Hub (Light Green Boxes)
             _sectionHeader("🌱 Habits & LifeScore Engine"),
@@ -456,21 +581,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 _lightGreenTile("Daily Streaks", "Streak Flame", "Ignited", Icons.local_fire_department, StreakScreen(userId: widget.userId)),
                 _lightGreenTile("Achievements", "Badge Unlocks", "Trophy", Icons.emoji_events_outlined, AchievementsScreen(userId: widget.userId)),
                 _lightGreenTile("Daily Summary", "Day Intelligence", "Today", Icons.today, DailySummaryScreen(userId: widget.userId)),
-                _lightGreenTile("Day Summary", "24-Hour Review", "Overview", Icons.summarize_outlined, const SummaryScreen()),
-              ],
-            ),
-            const SizedBox(height: 18),
-
-            // 4. Analytics & Deep Reports (Light Green Boxes)
-            _sectionHeader("📊 Analytics & Deep Reports"),
-            const SizedBox(height: 8),
-            _buildResponsiveGrid(
-              crossAxisCount,
-              childAspectRatio,
-              [
-                _lightGreenTile("Visual Charts", "Category Shares", "Charts", Icons.pie_chart, AnalyticsScreen(userId: widget.userId)),
-                _lightGreenTile("Monthly Map", "Expense Heatmap", "Monthly", Icons.calendar_view_month, HeatmapScreen(userId: widget.userId)),
-                _lightGreenTile("Yearly Map", "365-Day Matrix", "Annual", Icons.grid_on, const YearlyHeatmapScreen()),
                 _lightGreenTile("Full Report", "Financial Audit", "Report", Icons.analytics, ReportScreen(userId: widget.userId)),
               ],
             ),
@@ -483,11 +593,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
   Widget _sectionHeader(String title) {
     return Row(
       children: [
-        Container(width: 3.5, height: 15, decoration: BoxDecoration(color: const Color(0xFF059669), borderRadius: BorderRadius.circular(2))),
+        Container(width: 3.5, height: 14, decoration: BoxDecoration(color: const Color(0xFF059669), borderRadius: BorderRadius.circular(2))),
         const SizedBox(width: 6),
         Text(
           title,
-          style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold, color: Color(0xFF065F46)),
+          style: const TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFF065F46)),
         ),
       ],
     );
@@ -510,15 +620,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
       onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => destination)).then((_) => fetchDashboard()),
       borderRadius: BorderRadius.circular(12),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 8),
+        padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 7),
         decoration: BoxDecoration(
           color: const Color(0xFFECFDF5), // Light Green Box Background
           borderRadius: BorderRadius.circular(12),
           border: Border.all(color: const Color(0xFF10B981).withOpacity(0.45), width: 1.2),
           boxShadow: [
             BoxShadow(
-              color: const Color(0xFF10B981).withOpacity(0.08),
-              blurRadius: 6,
+              color: const Color(0xFF10B981).withOpacity(0.06),
+              blurRadius: 5,
               offset: const Offset(0, 2),
             ),
           ],
@@ -526,12 +636,12 @@ class _DashboardScreenState extends State<DashboardScreen> {
         child: Row(
           children: [
             Container(
-              padding: const EdgeInsets.all(6),
-              decoration: BoxDecoration(
-                color: const Color(0xFF059669),
+              padding: const EdgeInsets.all(5),
+              decoration: const BoxDecoration(
+                color: Color(0xFF059669),
                 shape: BoxShape.circle,
               ),
-              child: Icon(icon, color: Colors.white, size: 15),
+              child: Icon(icon, color: Colors.white, size: 14),
             ),
             const SizedBox(width: 8),
             Expanded(
@@ -549,7 +659,6 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       color: Color(0xFF064E3B), // Deep Green Text
                     ),
                   ),
-                  const SizedBox(height: 1),
                   Text(
                     subtitle,
                     maxLines: 1,
@@ -573,7 +682,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
               child: Text(
                 badge,
                 style: const TextStyle(
-                  fontSize: 8.5,
+                  fontSize: 8,
                   fontWeight: FontWeight.bold,
                   color: Color(0xFF047857),
                 ),
@@ -594,7 +703,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             const Text(
               "Recent Ledger Activity",
-              style: TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold, color: Color(0xFF065F46)),
+              style: TextStyle(fontSize: 13, fontWeight: FontWeight.bold, color: Color(0xFF065F46)),
             ),
             TextButton(
               onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => HistoryScreen(userId: widget.userId))),
@@ -630,15 +739,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.all(6),
+                          padding: const EdgeInsets.all(5),
                           decoration: BoxDecoration(
                             color: t["type"] == "income" ? const Color(0xFF059669) : const Color(0xFFDC2626),
-                            borderRadius: BorderRadius.circular(8),
+                            borderRadius: BorderRadius.circular(6),
                           ),
                           child: Icon(
                             t["type"] == "income" ? Icons.arrow_downward : Icons.arrow_upward,
                             color: Colors.white,
-                            size: 13,
+                            size: 12,
                           ),
                         ),
                         const SizedBox(width: 8),
