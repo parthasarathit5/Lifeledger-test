@@ -1,13 +1,13 @@
 {
   "suiteName": "Load Testing — Performance (300)",
-  "timestamp": "2026-08-27T14:51:07.423Z",
+  "timestamp": "2026-08-28T07:28:17.258Z",
   "metrics": {
     "total": 300,
     "passed": 300,
     "failed": 0,
     "skipped": 0,
     "passRate": 100,
-    "totalDuration": 5167
+    "totalDuration": 6686
   },
   "moduleSummary": [
     {
@@ -81,7 +81,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -90,7 +90,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -99,7 +99,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -117,7 +117,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -126,7 +126,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -135,7 +135,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -144,7 +144,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -153,7 +153,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -162,7 +162,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -171,7 +171,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 39,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -180,7 +180,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -189,7 +189,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -198,7 +198,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -207,7 +207,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -216,7 +216,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -225,7 +225,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 31,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -234,7 +234,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -243,7 +243,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -252,7 +252,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -261,7 +261,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -270,7 +270,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -279,7 +279,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 25,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -297,7 +297,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -315,7 +315,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 37,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -324,7 +324,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 41,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -333,7 +333,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 33,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -342,7 +342,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 37,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -351,7 +351,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 12,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -360,7 +360,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -369,7 +369,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -378,7 +378,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -387,7 +387,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -396,7 +396,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #36",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -405,7 +405,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #37",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -414,7 +414,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #38",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -423,7 +423,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #39",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -432,7 +432,7 @@
       "name": "Measure Baseline 100 Virtual Users RPS Smoke load response test #40",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -441,7 +441,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -450,7 +450,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -459,7 +459,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 33,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -468,7 +468,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -486,7 +486,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -495,7 +495,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -504,7 +504,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -513,7 +513,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -522,7 +522,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -531,7 +531,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -540,7 +540,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -549,7 +549,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -558,7 +558,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -567,7 +567,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -576,7 +576,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -585,7 +585,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -594,7 +594,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -603,7 +603,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -612,7 +612,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -621,7 +621,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -639,7 +639,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 31,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -648,7 +648,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 10,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -657,7 +657,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 27,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -666,7 +666,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -675,7 +675,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 51,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -684,7 +684,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -693,7 +693,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -702,7 +702,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 43,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -711,7 +711,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -720,7 +720,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -729,7 +729,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 33,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -738,7 +738,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 41,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -747,7 +747,7 @@
       "name": "Measure Dashboard Query Response Latency load response test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 38,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -756,7 +756,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -765,7 +765,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -774,7 +774,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -783,7 +783,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -792,7 +792,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -801,7 +801,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -810,7 +810,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -819,7 +819,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 11,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -828,7 +828,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -837,7 +837,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -846,7 +846,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -855,7 +855,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -864,7 +864,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -873,7 +873,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -882,7 +882,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -891,7 +891,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -900,7 +900,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -909,7 +909,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -918,7 +918,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -927,7 +927,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -936,7 +936,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -945,7 +945,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -954,7 +954,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -963,7 +963,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -972,7 +972,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -981,7 +981,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -990,7 +990,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -999,7 +999,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1008,7 +1008,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1017,7 +1017,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1026,7 +1026,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1035,7 +1035,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1044,7 +1044,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1053,7 +1053,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1062,7 +1062,7 @@
       "name": "Measure Concurrent Income / Expense Submissions load response test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1071,7 +1071,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1080,7 +1080,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1089,7 +1089,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1098,7 +1098,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1107,7 +1107,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1116,7 +1116,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1125,7 +1125,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1134,7 +1134,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1143,7 +1143,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1152,7 +1152,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1161,7 +1161,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1170,7 +1170,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1179,7 +1179,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1188,7 +1188,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1197,7 +1197,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1206,7 +1206,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 31,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1215,7 +1215,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1224,7 +1224,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1233,7 +1233,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1242,7 +1242,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1251,7 +1251,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1260,7 +1260,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1269,7 +1269,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1278,7 +1278,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1287,7 +1287,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1296,7 +1296,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1305,7 +1305,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1314,7 +1314,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1323,7 +1323,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1332,7 +1332,7 @@
       "name": "Measure LifeScore Calculation Throughput load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1341,7 +1341,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1350,7 +1350,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1359,7 +1359,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1368,7 +1368,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1377,7 +1377,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1386,7 +1386,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1395,7 +1395,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1404,7 +1404,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1413,7 +1413,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1422,7 +1422,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1431,7 +1431,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1440,7 +1440,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1449,7 +1449,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1458,7 +1458,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1467,7 +1467,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1476,7 +1476,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1485,7 +1485,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1494,7 +1494,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1503,7 +1503,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1512,7 +1512,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1521,7 +1521,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1530,7 +1530,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1539,7 +1539,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1548,7 +1548,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1557,7 +1557,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 37,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1566,7 +1566,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1575,7 +1575,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 37,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1584,7 +1584,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 35,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1593,7 +1593,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1602,7 +1602,7 @@
       "name": "Measure Predictor ML Algorithmic Load Time load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 36,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1611,7 +1611,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1620,7 +1620,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 27,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1629,7 +1629,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1638,7 +1638,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1647,7 +1647,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1665,7 +1665,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1674,7 +1674,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1683,7 +1683,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1692,7 +1692,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1701,7 +1701,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1710,7 +1710,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1719,7 +1719,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1728,7 +1728,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1737,7 +1737,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1746,7 +1746,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1755,7 +1755,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1764,7 +1764,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1773,7 +1773,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1782,7 +1782,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1791,7 +1791,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1800,7 +1800,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1809,7 +1809,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1818,7 +1818,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1827,7 +1827,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1836,7 +1836,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1845,7 +1845,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1854,7 +1854,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1863,7 +1863,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 8,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1872,7 +1872,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 12,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1881,7 +1881,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1890,7 +1890,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1899,7 +1899,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1908,7 +1908,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1917,7 +1917,7 @@
       "name": "Measure History & Pagination Stress Latency load response test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1926,7 +1926,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1944,7 +1944,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1953,7 +1953,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1962,7 +1962,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -1971,7 +1971,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 24,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2007,7 +2007,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2016,7 +2016,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2025,7 +2025,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2034,7 +2034,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2043,7 +2043,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2052,7 +2052,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2061,7 +2061,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2070,7 +2070,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2079,7 +2079,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2088,7 +2088,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2097,7 +2097,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2106,7 +2106,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2115,7 +2115,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2124,7 +2124,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2133,7 +2133,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2142,7 +2142,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2151,7 +2151,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2160,7 +2160,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2169,7 +2169,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2178,7 +2178,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2187,7 +2187,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2196,7 +2196,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2205,7 +2205,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2214,7 +2214,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2223,7 +2223,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2232,7 +2232,7 @@
       "name": "Measure Burst Traffic & Spike Recovery load response test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 27,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2241,7 +2241,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2250,7 +2250,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2268,7 +2268,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2277,7 +2277,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2286,7 +2286,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 27,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2295,7 +2295,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2304,7 +2304,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2313,7 +2313,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2331,7 +2331,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2340,7 +2340,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2349,7 +2349,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2358,7 +2358,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2367,7 +2367,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 13,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2376,7 +2376,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2394,7 +2394,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2403,7 +2403,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2412,7 +2412,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2421,7 +2421,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2430,7 +2430,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2439,7 +2439,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2448,7 +2448,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2457,7 +2457,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2466,7 +2466,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2475,7 +2475,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2484,7 +2484,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2493,7 +2493,7 @@
       "name": "Measure Sustained Endurance Memory Profiling load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 32,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2511,7 +2511,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2520,7 +2520,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2529,7 +2529,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2538,7 +2538,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2547,7 +2547,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 30,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2556,7 +2556,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2565,7 +2565,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2574,7 +2574,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2583,7 +2583,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2592,7 +2592,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2601,7 +2601,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 27,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2610,7 +2610,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2619,7 +2619,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2628,7 +2628,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2637,7 +2637,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2646,7 +2646,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 20,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2655,7 +2655,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2673,7 +2673,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 42,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2682,7 +2682,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 39,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2700,7 +2700,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 23,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2709,7 +2709,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 21,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2718,7 +2718,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 10,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2727,7 +2727,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 42,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2736,7 +2736,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2745,7 +2745,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2754,7 +2754,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 29,
+      "duration": 22,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2763,7 +2763,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     },
     {
@@ -2772,7 +2772,7 @@
       "name": "Measure P95 & P99 Latency SLA Thresholds load response test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Response time < 500ms, 0% packet loss, RPS within optimal range"
     }
   ]

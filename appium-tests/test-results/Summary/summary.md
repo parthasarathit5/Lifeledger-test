@@ -2,7 +2,7 @@
 
 | Total Tests | Passed | Failed | Pass Rate | Duration |
 | :--- | :--- | :--- | :--- | :--- |
-| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `5261 ms` |
+| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `6921 ms` |
 
 ### 📦 Module Summary
 - **Android Device Initialization & Lifecycle**: `30/30` passed (`100.0%`)

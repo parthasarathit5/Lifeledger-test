@@ -1,13 +1,13 @@
 {
   "suiteName": "Unit Tests — API (300)",
-  "timestamp": "2026-08-27T14:50:50.640Z",
+  "timestamp": "2026-08-28T07:26:01.200Z",
   "metrics": {
     "total": 300,
     "passed": 300,
     "failed": 0,
     "skipped": 0,
     "passRate": 100,
-    "totalDuration": 4949
+    "totalDuration": 4890
   },
   "moduleSummary": [
     {
@@ -95,7 +95,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -113,7 +113,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -122,7 +122,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -131,7 +131,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 12,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -140,7 +140,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -149,7 +149,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -158,7 +158,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -176,7 +176,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -185,7 +185,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -194,7 +194,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -203,7 +203,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -212,7 +212,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -221,7 +221,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -239,7 +239,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -248,7 +248,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -257,7 +257,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -275,7 +275,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -284,7 +284,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -293,7 +293,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -302,7 +302,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -311,7 +311,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -320,7 +320,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 8,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -329,7 +329,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -338,7 +338,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -347,7 +347,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -356,7 +356,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -365,7 +365,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -374,7 +374,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -383,7 +383,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -392,7 +392,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -401,7 +401,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -419,7 +419,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #37",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -428,7 +428,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #38",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -437,7 +437,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #39",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -446,7 +446,7 @@
       "name": "Execute Auth & JWT Token APIs API endpoint contract test #40",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -455,7 +455,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -464,7 +464,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -473,7 +473,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -482,7 +482,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -491,7 +491,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -500,7 +500,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -509,7 +509,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -518,7 +518,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -527,7 +527,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -536,7 +536,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -545,7 +545,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -554,7 +554,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -563,7 +563,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -590,7 +590,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -608,7 +608,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -617,7 +617,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -626,7 +626,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 26,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -635,7 +635,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -644,7 +644,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -662,7 +662,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -671,7 +671,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -680,7 +680,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -689,7 +689,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -698,7 +698,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -707,7 +707,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -716,7 +716,7 @@
       "name": "Execute Dashboard Aggregation APIs API endpoint contract test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -725,7 +725,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -734,7 +734,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 8,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -743,7 +743,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -752,7 +752,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -761,7 +761,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -770,7 +770,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -779,7 +779,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -788,7 +788,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -797,7 +797,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -806,7 +806,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -815,7 +815,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -824,7 +824,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -833,7 +833,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -842,7 +842,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 33,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -851,7 +851,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -860,7 +860,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 47,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -869,7 +869,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 49,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -878,7 +878,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -887,7 +887,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -896,7 +896,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -914,7 +914,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 23,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -923,7 +923,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 24,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -932,7 +932,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -968,7 +968,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -977,7 +977,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -986,7 +986,7 @@
       "name": "Execute Income CRUD Endpoints API endpoint contract test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -995,7 +995,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 11,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1022,7 +1022,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1049,7 +1049,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1067,7 +1067,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1085,7 +1085,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 11,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1094,7 +1094,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 8,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1103,7 +1103,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1112,7 +1112,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1130,7 +1130,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1139,7 +1139,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1148,7 +1148,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1157,7 +1157,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1166,7 +1166,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1175,7 +1175,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1184,7 +1184,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1193,7 +1193,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1202,7 +1202,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1211,7 +1211,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 35,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1220,7 +1220,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1229,7 +1229,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1238,7 +1238,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1256,7 +1256,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1265,7 +1265,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1274,7 +1274,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1292,7 +1292,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1301,7 +1301,7 @@
       "name": "Execute Expense & Category Endpoints API endpoint contract test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1319,7 +1319,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 8,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1346,7 +1346,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1355,7 +1355,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1373,7 +1373,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1382,7 +1382,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1409,7 +1409,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 48,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1418,7 +1418,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 37,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1427,7 +1427,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 33,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1436,7 +1436,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 40,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1445,7 +1445,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 37,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1454,7 +1454,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1463,7 +1463,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1472,7 +1472,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1481,7 +1481,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1508,7 +1508,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1517,7 +1517,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1526,7 +1526,7 @@
       "name": "Execute Habits Tracker APIs API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1535,7 +1535,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1544,7 +1544,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1553,7 +1553,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1562,7 +1562,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1571,7 +1571,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 32,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1580,7 +1580,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1589,7 +1589,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1598,7 +1598,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1616,7 +1616,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1643,7 +1643,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1652,7 +1652,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1661,7 +1661,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1670,7 +1670,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1679,7 +1679,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1688,7 +1688,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1697,7 +1697,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1706,7 +1706,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1715,7 +1715,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1733,7 +1733,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1742,7 +1742,7 @@
       "name": "Execute Tasks & Priorities APIs API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1760,7 +1760,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1769,7 +1769,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1778,7 +1778,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1787,7 +1787,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1796,7 +1796,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1805,7 +1805,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1814,7 +1814,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1823,7 +1823,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1832,7 +1832,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1841,7 +1841,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1850,7 +1850,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1859,7 +1859,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 11,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1877,7 +1877,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 25,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1886,7 +1886,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1895,7 +1895,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1913,7 +1913,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1931,7 +1931,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1940,7 +1940,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1949,7 +1949,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1967,7 +1967,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1976,7 +1976,7 @@
       "name": "Execute Mood Logs & Analytics APIs API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -1994,7 +1994,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2012,7 +2012,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2021,7 +2021,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2039,7 +2039,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2048,7 +2048,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2066,7 +2066,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2075,7 +2075,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 26,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2084,7 +2084,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2093,7 +2093,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2120,7 +2120,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2129,7 +2129,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2138,7 +2138,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2147,7 +2147,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2156,7 +2156,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2165,7 +2165,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 13,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2174,7 +2174,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2183,7 +2183,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 12,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2192,7 +2192,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2201,7 +2201,7 @@
       "name": "Execute LifeScore Calculation Engine API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2210,7 +2210,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2219,7 +2219,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2228,7 +2228,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2237,7 +2237,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2246,7 +2246,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 12,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2255,7 +2255,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 8,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2264,7 +2264,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2273,7 +2273,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2282,7 +2282,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2291,7 +2291,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2300,7 +2300,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2327,7 +2327,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2336,7 +2336,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2345,7 +2345,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2354,7 +2354,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2363,7 +2363,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2372,7 +2372,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2399,7 +2399,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2426,7 +2426,7 @@
       "name": "Execute Predictor ML/Statistical Endpoints API endpoint contract test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2435,7 +2435,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 12,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2453,7 +2453,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2462,7 +2462,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2471,7 +2471,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2480,7 +2480,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2489,7 +2489,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2498,7 +2498,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2507,7 +2507,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 10,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2516,7 +2516,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2525,7 +2525,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2534,7 +2534,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2543,7 +2543,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2552,7 +2552,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2570,7 +2570,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2588,7 +2588,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2606,7 +2606,7 @@
       "name": "Execute Budget & Alerts Endpoints API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2615,7 +2615,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2624,7 +2624,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2633,7 +2633,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2651,7 +2651,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 24,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2678,7 +2678,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2696,7 +2696,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2705,7 +2705,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2741,7 +2741,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2750,7 +2750,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2759,7 +2759,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2777,7 +2777,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     },
     {
@@ -2786,7 +2786,7 @@
       "name": "Execute Report Export & Data Serialization API endpoint contract test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "HTTP Status 200 OK, JSON schema validation succeeded"
     }
   ]

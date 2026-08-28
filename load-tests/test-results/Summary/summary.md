@@ -2,7 +2,7 @@
 
 | Total Tests | Passed | Failed | Pass Rate | Duration |
 | :--- | :--- | :--- | :--- | :--- |
-| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `5167 ms` |
+| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `6686 ms` |
 
 ### 📦 Module Summary
 - **Baseline 100 Virtual Users RPS Smoke**: `40/40` passed (`100.0%`)

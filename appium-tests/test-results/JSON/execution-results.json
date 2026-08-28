@@ -1,13 +1,13 @@
 {
   "suiteName": "Appium — Android Tests (300)",
-  "timestamp": "2026-08-27T14:50:45.439Z",
+  "timestamp": "2026-08-28T07:29:26.910Z",
   "metrics": {
     "total": 300,
     "passed": 300,
     "failed": 0,
     "skipped": 0,
     "passRate": 100,
-    "totalDuration": 5261
+    "totalDuration": 6921
   },
   "moduleSummary": [
     {
@@ -95,7 +95,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -104,7 +104,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -113,7 +113,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -122,7 +122,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -131,7 +131,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -140,7 +140,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -149,7 +149,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -158,7 +158,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -167,7 +167,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -176,7 +176,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -185,7 +185,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -194,7 +194,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -212,7 +212,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -221,7 +221,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 25,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -230,7 +230,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -239,7 +239,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -248,7 +248,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -257,7 +257,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -266,7 +266,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -275,7 +275,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -284,7 +284,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -302,7 +302,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -320,7 +320,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -329,7 +329,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 13,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -338,7 +338,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 33,
+      "duration": 13,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -347,7 +347,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 24,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -356,7 +356,7 @@
       "name": "Verify Android Device Initialization & Lifecycle on Android device #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 13,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -374,7 +374,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -383,7 +383,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -392,7 +392,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -401,7 +401,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 38,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -410,7 +410,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 59,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -419,7 +419,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 48,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -428,7 +428,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -446,7 +446,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -455,7 +455,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -464,7 +464,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -473,7 +473,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -482,7 +482,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -491,7 +491,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -500,7 +500,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -509,7 +509,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 33,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -518,7 +518,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 63,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -527,7 +527,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -536,7 +536,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -545,7 +545,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -554,7 +554,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -563,7 +563,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -572,7 +572,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -581,7 +581,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -590,7 +590,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -599,7 +599,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -608,7 +608,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -617,7 +617,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -626,7 +626,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -635,7 +635,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -644,7 +644,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -653,7 +653,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -662,7 +662,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -671,7 +671,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -680,7 +680,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #36",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -689,7 +689,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #37",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -698,7 +698,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #38",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -707,7 +707,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #39",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -716,7 +716,7 @@
       "name": "Verify Mobile Authentication & Biometrics on Android device #40",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 40,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -725,7 +725,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 38,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -734,7 +734,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -743,7 +743,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 41,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -752,7 +752,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 12,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -761,7 +761,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -770,7 +770,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -779,7 +779,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 26,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -788,7 +788,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -797,7 +797,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -806,7 +806,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -815,7 +815,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -824,7 +824,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -833,7 +833,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -842,7 +842,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 24,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -851,7 +851,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -860,7 +860,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -869,7 +869,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -887,7 +887,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -896,7 +896,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -905,7 +905,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -914,7 +914,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -932,7 +932,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -941,7 +941,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -950,7 +950,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -959,7 +959,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -968,7 +968,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -977,7 +977,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -986,7 +986,7 @@
       "name": "Verify Native Navigation & Drawer Gestures on Android device #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -995,7 +995,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1004,7 +1004,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 23,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1013,7 +1013,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1022,7 +1022,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1031,7 +1031,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1040,7 +1040,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1049,7 +1049,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1058,7 +1058,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1067,7 +1067,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1076,7 +1076,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1085,7 +1085,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1094,7 +1094,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1103,7 +1103,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1112,7 +1112,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1121,7 +1121,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1130,7 +1130,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1139,7 +1139,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 32,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1148,7 +1148,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1157,7 +1157,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1166,7 +1166,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 42,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1175,7 +1175,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1184,7 +1184,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1193,7 +1193,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1202,7 +1202,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1211,7 +1211,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1220,7 +1220,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1238,7 +1238,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1247,7 +1247,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1256,7 +1256,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1265,7 +1265,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1274,7 +1274,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1283,7 +1283,7 @@
       "name": "Verify Mobile Dashboard & Touch Widgets on Android device #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1310,7 +1310,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1319,7 +1319,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1328,7 +1328,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1337,7 +1337,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1346,7 +1346,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1355,7 +1355,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1364,7 +1364,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1373,7 +1373,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1382,7 +1382,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1391,7 +1391,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1400,7 +1400,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1409,7 +1409,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1418,7 +1418,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1427,7 +1427,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1436,7 +1436,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1445,7 +1445,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1454,7 +1454,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1463,7 +1463,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1472,7 +1472,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 27,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1481,7 +1481,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1490,7 +1490,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1499,7 +1499,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1508,7 +1508,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1517,7 +1517,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1526,7 +1526,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1535,7 +1535,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1544,7 +1544,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 38,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1553,7 +1553,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1562,7 +1562,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1571,7 +1571,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1589,7 +1589,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 18,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1598,7 +1598,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1607,7 +1607,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 23,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1616,7 +1616,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 30,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1625,7 +1625,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #36",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1634,7 +1634,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #37",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1643,7 +1643,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #38",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1652,7 +1652,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #39",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 29,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1661,7 +1661,7 @@
       "name": "Verify Transaction Inputs (Income/Expense Form) on Android device #40",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1670,7 +1670,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1679,7 +1679,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1688,7 +1688,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1697,7 +1697,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1706,7 +1706,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1715,7 +1715,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1724,7 +1724,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1733,7 +1733,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1742,7 +1742,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1751,7 +1751,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1760,7 +1760,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1769,7 +1769,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1778,7 +1778,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1787,7 +1787,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1796,7 +1796,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1805,7 +1805,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1823,7 +1823,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 11,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1841,7 +1841,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1850,7 +1850,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1859,7 +1859,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 23,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1868,7 +1868,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 25,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1877,7 +1877,7 @@
       "name": "Verify Habits & Swipe Actions on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1895,7 +1895,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1904,7 +1904,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1913,7 +1913,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1922,7 +1922,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1931,7 +1931,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1940,7 +1940,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1949,7 +1949,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1958,7 +1958,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1976,7 +1976,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1985,7 +1985,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 9,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -1994,7 +1994,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2003,7 +2003,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2012,7 +2012,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2021,7 +2021,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2039,7 +2039,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2048,7 +2048,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2057,7 +2057,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 31,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2066,7 +2066,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 13,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2075,7 +2075,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2084,7 +2084,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2093,7 +2093,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2102,7 +2102,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2111,7 +2111,7 @@
       "name": "Verify Task Management & Keyboard Handling on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2120,7 +2120,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2129,7 +2129,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 26,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2138,7 +2138,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2147,7 +2147,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2156,7 +2156,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2165,7 +2165,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2174,7 +2174,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2183,7 +2183,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2192,7 +2192,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2201,7 +2201,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2210,7 +2210,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2219,7 +2219,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2228,7 +2228,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2246,7 +2246,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2255,7 +2255,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2264,7 +2264,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2273,7 +2273,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2282,7 +2282,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2291,7 +2291,7 @@
       "name": "Verify Mood Rating & Native Pickers on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2300,7 +2300,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2309,7 +2309,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2318,7 +2318,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2327,7 +2327,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2336,7 +2336,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2345,7 +2345,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2354,7 +2354,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2363,7 +2363,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 33,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2372,7 +2372,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 33,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2381,7 +2381,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 38,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2390,7 +2390,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 32,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2399,7 +2399,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 26,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2408,7 +2408,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2417,7 +2417,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2426,7 +2426,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2435,7 +2435,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2444,7 +2444,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2453,7 +2453,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2471,7 +2471,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2480,7 +2480,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2489,7 +2489,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2498,7 +2498,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2507,7 +2507,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2516,7 +2516,7 @@
       "name": "Verify Offline Storage & SQLite Synchronization on Android device #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 14,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2525,7 +2525,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2534,7 +2534,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2543,7 +2543,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2552,7 +2552,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2561,7 +2561,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2570,7 +2570,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2579,7 +2579,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 21,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2588,7 +2588,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2597,7 +2597,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2606,7 +2606,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 27,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2615,7 +2615,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2624,7 +2624,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2633,7 +2633,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2642,7 +2642,7 @@
       "name": "Verify Push Notifications & Background Services on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2660,7 +2660,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 24,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2669,7 +2669,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2678,7 +2678,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2687,7 +2687,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2696,7 +2696,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2705,7 +2705,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 25,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2714,7 +2714,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2723,7 +2723,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 30,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2732,7 +2732,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2759,7 +2759,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2768,7 +2768,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2777,7 +2777,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 29,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     },
     {
@@ -2786,7 +2786,7 @@
       "name": "Verify Device Orientation & Multi-Screen Scale on Android device #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Mobile view hierarchy validated, gesture simulated successfully"
     }
   ]

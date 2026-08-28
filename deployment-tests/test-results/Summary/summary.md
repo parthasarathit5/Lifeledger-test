@@ -2,7 +2,7 @@
 
 | Total Tests | Passed | Failed | Pass Rate | Duration |
 | :--- | :--- | :--- | :--- | :--- |
-| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `5721 ms` |
+| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `4946 ms` |
 
 ### 📦 Module Summary
 - **Live Endpoint HTTP 200 Health Probe**: `40/40` passed (`100.0%`)

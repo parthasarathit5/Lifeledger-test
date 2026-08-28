@@ -1,13 +1,13 @@
 {
   "suiteName": "Deployment Status (300)",
-  "timestamp": "2026-08-27T14:51:01.863Z",
+  "timestamp": "2026-08-28T07:27:43.917Z",
   "metrics": {
     "total": 300,
     "passed": 300,
     "failed": 0,
     "skipped": 0,
     "passRate": 100,
-    "totalDuration": 5721
+    "totalDuration": 4946
   },
   "moduleSummary": [
     {
@@ -88,7 +88,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 9,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -106,7 +106,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -124,7 +124,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -133,7 +133,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -142,7 +142,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -160,7 +160,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -169,7 +169,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -178,7 +178,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -196,7 +196,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -205,7 +205,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -214,7 +214,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -223,7 +223,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -232,7 +232,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -241,7 +241,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -250,7 +250,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -259,7 +259,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -268,7 +268,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -277,7 +277,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -295,7 +295,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -313,7 +313,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -322,7 +322,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -331,7 +331,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -340,7 +340,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -349,7 +349,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -358,7 +358,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -367,7 +367,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -376,7 +376,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 12,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -394,7 +394,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -403,7 +403,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #36",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -412,7 +412,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #37",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -421,7 +421,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #38",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -430,7 +430,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #39",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -439,7 +439,7 @@
       "name": "Check Live Endpoint HTTP 200 Health Probe infrastructure status test #40",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -448,7 +448,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -466,7 +466,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -475,7 +475,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -484,7 +484,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 51,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -493,7 +493,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 40,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -502,7 +502,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 36,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -511,7 +511,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 37,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -520,7 +520,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 42,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -529,7 +529,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -538,7 +538,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -547,7 +547,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -556,7 +556,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -565,7 +565,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -574,7 +574,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -583,7 +583,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -601,7 +601,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -619,7 +619,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -628,7 +628,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -637,7 +637,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -646,7 +646,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -655,7 +655,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -664,7 +664,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -673,7 +673,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -682,7 +682,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -691,7 +691,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -700,7 +700,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -709,7 +709,7 @@
       "name": "Check SSL/TLS Certificate & HTTPS Integrity infrastructure status test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -718,7 +718,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -727,7 +727,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -736,7 +736,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -745,7 +745,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 28,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -754,7 +754,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -763,7 +763,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -772,7 +772,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -781,7 +781,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -790,7 +790,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -799,7 +799,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -808,7 +808,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 8,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -817,7 +817,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 92,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -826,7 +826,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 86,
+      "duration": 28,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -835,7 +835,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 56,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -844,7 +844,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 41,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -853,7 +853,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -862,7 +862,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 46,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -871,7 +871,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 50,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -880,7 +880,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 42,
+      "duration": 21,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -889,7 +889,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 45,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -898,7 +898,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 30,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -907,7 +907,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -916,7 +916,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -925,7 +925,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -934,7 +934,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -952,7 +952,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -970,7 +970,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 8,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -979,7 +979,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 11,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -997,7 +997,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #32",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1006,7 +1006,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1024,7 +1024,7 @@
       "name": "Check CORS Headers & Security Configuration infrastructure status test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1033,7 +1033,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1042,7 +1042,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1051,7 +1051,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1060,7 +1060,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1069,7 +1069,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1087,7 +1087,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 8,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1105,7 +1105,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1114,7 +1114,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1123,7 +1123,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1132,7 +1132,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1141,7 +1141,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1159,7 +1159,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1168,7 +1168,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1177,7 +1177,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1186,7 +1186,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1195,7 +1195,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1204,7 +1204,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1213,7 +1213,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1231,7 +1231,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1240,7 +1240,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1249,7 +1249,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1258,7 +1258,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 11,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1267,7 +1267,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1276,7 +1276,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1303,7 +1303,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1330,7 +1330,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1339,7 +1339,7 @@
       "name": "Check Database Connectivity & Latency Pulse infrastructure status test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1348,7 +1348,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1357,7 +1357,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1375,7 +1375,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1384,7 +1384,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1393,7 +1393,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1402,7 +1402,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 29,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1411,7 +1411,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1420,7 +1420,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1429,7 +1429,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1438,7 +1438,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1465,7 +1465,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1474,7 +1474,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1483,7 +1483,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1492,7 +1492,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1510,7 +1510,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1528,7 +1528,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1537,7 +1537,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1555,7 +1555,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 26,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1564,7 +1564,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1573,7 +1573,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #26",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1582,7 +1582,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #27",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1591,7 +1591,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #28",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 9,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1600,7 +1600,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #29",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1609,7 +1609,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #30",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 12,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1618,7 +1618,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #31",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1636,7 +1636,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #33",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1645,7 +1645,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #34",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1654,7 +1654,7 @@
       "name": "Check Static Assets (JS/CSS/Fonts) CDN Delivery infrastructure status test #35",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1663,7 +1663,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1672,7 +1672,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1681,7 +1681,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1690,7 +1690,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1708,7 +1708,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1717,7 +1717,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1726,7 +1726,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 26,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1735,7 +1735,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 51,
+      "duration": 9,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1744,7 +1744,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1753,7 +1753,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1762,7 +1762,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1771,7 +1771,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1780,7 +1780,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 11,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1789,7 +1789,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1798,7 +1798,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1816,7 +1816,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 42,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1825,7 +1825,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 45,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1834,7 +1834,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1843,7 +1843,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1861,7 +1861,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1870,7 +1870,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1879,7 +1879,7 @@
       "name": "Check Gzip / Brotli Payload Compression infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1888,7 +1888,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1906,7 +1906,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1915,7 +1915,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1933,7 +1933,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1942,7 +1942,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1951,7 +1951,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1960,7 +1960,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1969,7 +1969,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1978,7 +1978,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1987,7 +1987,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -1996,7 +1996,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 17,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2005,7 +2005,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2014,7 +2014,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2023,7 +2023,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2032,7 +2032,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2050,7 +2050,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2059,7 +2059,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 24,
+      "duration": 23,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2068,7 +2068,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 48,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2077,7 +2077,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2086,7 +2086,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2095,7 +2095,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 23,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2104,7 +2104,7 @@
       "name": "Check DNS Lookup & Server IP Route Resilience infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2113,7 +2113,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2122,7 +2122,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2131,7 +2131,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 8,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2140,7 +2140,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 25,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2149,7 +2149,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2158,7 +2158,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2167,7 +2167,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2176,7 +2176,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2185,7 +2185,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2194,7 +2194,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 10,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2203,7 +2203,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2212,7 +2212,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2221,7 +2221,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2230,7 +2230,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2239,7 +2239,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2248,7 +2248,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2257,7 +2257,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2266,7 +2266,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2275,7 +2275,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2284,7 +2284,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2293,7 +2293,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2311,7 +2311,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2320,7 +2320,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 27,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2329,7 +2329,7 @@
       "name": "Check Rate Limiting & DDoS Barrier Smoke infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2338,7 +2338,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2347,7 +2347,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 26,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2356,7 +2356,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2365,7 +2365,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2374,7 +2374,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 21,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2383,7 +2383,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 37,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2392,7 +2392,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 32,
+      "duration": 13,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2401,7 +2401,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2419,7 +2419,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 34,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2428,7 +2428,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 31,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2437,7 +2437,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 26,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2446,7 +2446,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 10,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2455,7 +2455,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2464,7 +2464,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 30,
+      "duration": 8,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2473,7 +2473,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 20,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2482,7 +2482,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 19,
+      "duration": 12,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2491,7 +2491,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2500,7 +2500,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 23,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2509,7 +2509,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #20",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2518,7 +2518,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2527,7 +2527,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2536,7 +2536,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2554,7 +2554,7 @@
       "name": "Check Environment Variables & Secret Isolation infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 36,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2563,7 +2563,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #1",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2572,7 +2572,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #2",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 35,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2581,7 +2581,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #3",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 41,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2590,7 +2590,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #4",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 22,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2599,7 +2599,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #5",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 21,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2608,7 +2608,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #6",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2617,7 +2617,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #7",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 16,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2626,7 +2626,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #8",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2635,7 +2635,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #9",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2644,7 +2644,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #10",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2653,7 +2653,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #11",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2662,7 +2662,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #12",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 28,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2671,7 +2671,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #13",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 25,
+      "duration": 14,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2680,7 +2680,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #14",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2689,7 +2689,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #15",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 12,
+      "duration": 19,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2698,7 +2698,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #16",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 27,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2707,7 +2707,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #17",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 20,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2716,7 +2716,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #18",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 15,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2725,7 +2725,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #19",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 18,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2743,7 +2743,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #21",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 13,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2752,7 +2752,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #22",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 18,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2761,7 +2761,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #23",
       "priority": "P3",
       "status": "PASSED",
-      "duration": 14,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2770,7 +2770,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #24",
       "priority": "P1",
       "status": "PASSED",
-      "duration": 15,
+      "duration": 17,
       "details": "Live deployment responding, latency within SLA thresholds"
     },
     {
@@ -2779,7 +2779,7 @@
       "name": "Check Container Heartbeat & Memory Health infrastructure status test #25",
       "priority": "P2",
       "status": "PASSED",
-      "duration": 22,
+      "duration": 16,
       "details": "Live deployment responding, latency within SLA thresholds"
     }
   ]

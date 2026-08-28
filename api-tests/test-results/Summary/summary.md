@@ -2,7 +2,7 @@
 
 | Total Tests | Passed | Failed | Pass Rate | Duration |
 | :--- | :--- | :--- | :--- | :--- |
-| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `4949 ms` |
+| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `4890 ms` |
 
 ### 📦 Module Summary
 - **Auth & JWT Token APIs**: `40/40` passed (`100.0%`)

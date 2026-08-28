@@ -1,9 +1,20 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class ApiService {
-  static const String baseUrl =
-      "https://lifeledger-backend.onrender.com";
+  static const String cloudBaseUrl = "https://lifeledger-backend.onrender.com";
+  static const String localBaseUrl = "http://127.0.0.1:8000";
+
+  static String get baseUrl {
+    if (kIsWeb) {
+      final host = Uri.base.host;
+      if (host == 'localhost' || host == '127.0.0.1' || host.isEmpty) {
+        return localBaseUrl;
+      }
+    }
+    return cloudBaseUrl;
+  }
 
   // ================= DASHBOARD =================
   static Future<Map> getDashboard(int userId) async {
@@ -245,53 +256,74 @@ static Future compareData(
 }
   // ================= FORGOT PASSWORD =================
   static Future<Map<String, dynamic>> forgotPassword(String email) async {
-    try {
-      final res = await http.post(
-        Uri.parse("$baseUrl/forgot-password/"),
-        headers: {"Content-Type": "application/json"},
-        body: jsonEncode({"email": email}),
-      ).timeout(const Duration(seconds: 45));
-      return Map<String, dynamic>.from(jsonDecode(res.body));
-    } catch (e) {
-      return {
-        "status": "error",
-        "message": "Connection error: Server is starting up. Please try again in a few moments."
-      };
+    final urls = [
+      "$baseUrl/forgot-password/",
+      baseUrl == localBaseUrl ? "$cloudBaseUrl/forgot-password/" : "$localBaseUrl/forgot-password/"
+    ];
+    for (final url in urls) {
+      try {
+        final res = await http.post(
+          Uri.parse(url),
+          headers: {"Content-Type": "application/json"},
+          body: jsonEncode({"email": email}),
+        ).timeout(const Duration(seconds: 12));
+        if (res.statusCode == 200 || res.statusCode == 400 || res.statusCode == 404) {
+          return Map<String, dynamic>.from(jsonDecode(res.body));
+        }
+      } catch (_) {}
     }
+    return {
+      "status": "error",
+      "message": "Connection error: Unable to reach authentication server. Please verify network connection."
+    };
   }
 
   // ================= VERIFY OTP =================
   static Future<Map<String, dynamic>> verifyOtp(String email, String otp) async {
-    try {
-      final res = await http.post(
-        Uri.parse("$baseUrl/verify-otp/"),
-        headers: {"Content-Type": "application/json"},
-        body: jsonEncode({"email": email, "otp": otp}),
-      ).timeout(const Duration(seconds: 30));
-      return Map<String, dynamic>.from(jsonDecode(res.body));
-    } catch (e) {
-      return {
-        "status": "error",
-        "message": "Connection error verifying OTP."
-      };
+    final urls = [
+      "$baseUrl/verify-otp/",
+      baseUrl == localBaseUrl ? "$cloudBaseUrl/verify-otp/" : "$localBaseUrl/verify-otp/"
+    ];
+    for (final url in urls) {
+      try {
+        final res = await http.post(
+          Uri.parse(url),
+          headers: {"Content-Type": "application/json"},
+          body: jsonEncode({"email": email, "otp": otp}),
+        ).timeout(const Duration(seconds: 12));
+        if (res.statusCode == 200 || res.statusCode == 400) {
+          return Map<String, dynamic>.from(jsonDecode(res.body));
+        }
+      } catch (_) {}
     }
+    return {
+      "status": "error",
+      "message": "Connection error verifying OTP."
+    };
   }
 
   // ================= RESET PASSWORD =================
   static Future<Map<String, dynamic>> resetPassword(String email, String password) async {
-    try {
-      final res = await http.post(
-        Uri.parse("$baseUrl/reset-password/"),
-        headers: {"Content-Type": "application/json"},
-        body: jsonEncode({"email": email, "password": password}),
-      ).timeout(const Duration(seconds: 30));
-      return Map<String, dynamic>.from(jsonDecode(res.body));
-    } catch (e) {
-      return {
-        "status": "error",
-        "message": "Connection error resetting password."
-      };
+    final urls = [
+      "$baseUrl/reset-password/",
+      baseUrl == localBaseUrl ? "$cloudBaseUrl/reset-password/" : "$localBaseUrl/reset-password/"
+    ];
+    for (final url in urls) {
+      try {
+        final res = await http.post(
+          Uri.parse(url),
+          headers: {"Content-Type": "application/json"},
+          body: jsonEncode({"email": email, "password": password}),
+        ).timeout(const Duration(seconds: 12));
+        if (res.statusCode == 200 || res.statusCode == 400 || res.statusCode == 404) {
+          return Map<String, dynamic>.from(jsonDecode(res.body));
+        }
+      } catch (_) {}
     }
+    return {
+      "status": "error",
+      "message": "Connection error resetting password."
+    };
   }
 
   // ================= ADVANCED AI & MACHINE LEARNING =================

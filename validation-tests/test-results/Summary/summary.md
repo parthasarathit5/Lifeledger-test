@@ -2,7 +2,7 @@
 
 | Total Tests | Passed | Failed | Pass Rate | Duration |
 | :--- | :--- | :--- | :--- | :--- |
-| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `4985 ms` |
+| **`300`** | **`300` 🟢** | `0` | **`100.00%`** | `5085 ms` |
 
 ### 📦 Module Summary
 - **Email & Password Regex Validation**: `40/40` passed (`100.0%`)
