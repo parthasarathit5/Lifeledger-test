@@ -243,82 +243,55 @@ static Future compareData(
 
   return jsonDecode(res.body);
 }
-// ================= FORGOT PASSWORD =================
+  // ================= FORGOT PASSWORD =================
+  static Future<Map<String, dynamic>> forgotPassword(String email) async {
+    try {
+      final res = await http.post(
+        Uri.parse("$baseUrl/forgot-password/"),
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"email": email}),
+      ).timeout(const Duration(seconds: 45));
+      return Map<String, dynamic>.from(jsonDecode(res.body));
+    } catch (e) {
+      return {
+        "status": "error",
+        "message": "Connection error: Server is starting up. Please try again in a few moments."
+      };
+    }
+  }
 
-static Future forgotPassword(
-  String email,
-) async {
+  // ================= VERIFY OTP =================
+  static Future<Map<String, dynamic>> verifyOtp(String email, String otp) async {
+    try {
+      final res = await http.post(
+        Uri.parse("$baseUrl/verify-otp/"),
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"email": email, "otp": otp}),
+      ).timeout(const Duration(seconds: 30));
+      return Map<String, dynamic>.from(jsonDecode(res.body));
+    } catch (e) {
+      return {
+        "status": "error",
+        "message": "Connection error verifying OTP."
+      };
+    }
+  }
 
-  final res = await http.post(
-
-    Uri.parse(
-      "$baseUrl/forgot-password/",
-    ),
-
-    headers: {
-      "Content-Type":
-          "application/json",
-    },
-
-    body: jsonEncode({
-
-      "email": email,
-    }),
-  );
-
-  return jsonDecode(
-      res.body);
-}
-
-// ================= VERIFY OTP =================
-
-static Future verifyOtp(
-
-  String email,
-
-  String otp,
-) async {
-
-  final res = await http.post(
-
-    Uri.parse(
-      "$baseUrl/verify-otp/",
-    ),
-
-    headers: {
-      "Content-Type":
-          "application/json",
-    },
-
-    body: jsonEncode({
-
-      "email": email,
-
-      "otp": otp,
-    }),
-  );
-
-  return jsonDecode(
-      res.body);
-}
-
-// ================= RESET PASSWORD =================
-
-  static Future resetPassword(
-    String email,
-    String password,
-  ) async {
-    final res = await http.post(
-      Uri.parse("$baseUrl/reset-password/"),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: jsonEncode({
-        "email": email,
-        "password": password,
-      }),
-    );
-    return jsonDecode(res.body);
+  // ================= RESET PASSWORD =================
+  static Future<Map<String, dynamic>> resetPassword(String email, String password) async {
+    try {
+      final res = await http.post(
+        Uri.parse("$baseUrl/reset-password/"),
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"email": email, "password": password}),
+      ).timeout(const Duration(seconds: 30));
+      return Map<String, dynamic>.from(jsonDecode(res.body));
+    } catch (e) {
+      return {
+        "status": "error",
+        "message": "Connection error resetting password."
+      };
+    }
   }
 
   // ================= ADVANCED AI & MACHINE LEARNING =================

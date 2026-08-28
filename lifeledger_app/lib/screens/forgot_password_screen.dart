@@ -38,11 +38,15 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       setState(() => loading = false);
 
       if (res["status"] == "success") {
+        final otp = res["otp"] ?? "";
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
-            content: Text(res["message"] ?? "OTP verification code sent!"),
+            content: Text(otp.toString().isNotEmpty
+                ? "✅ OTP: $otp (Sent to $email)"
+                : (res["message"] ?? "OTP verification code sent!")),
             backgroundColor: const Color(0xFF059669),
             behavior: SnackBarBehavior.floating,
+            duration: const Duration(seconds: 6),
           ),
         );
         Navigator.push(
@@ -54,6 +58,7 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
           SnackBar(
             content: Text(res["message"] ?? "Account not found with this email"),
             backgroundColor: const Color(0xFFEF4444),
+            behavior: SnackBarBehavior.floating,
           ),
         );
       }
@@ -61,7 +66,10 @@ class _ForgotPasswordScreenState extends State<ForgotPasswordScreen> {
       if (!mounted) return;
       setState(() => loading = false);
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text("Network error connecting to backend")),
+        SnackBar(
+          content: Text("Error: $e"),
+          backgroundColor: const Color(0xFFEF4444),
+        ),
       );
     }
   }
