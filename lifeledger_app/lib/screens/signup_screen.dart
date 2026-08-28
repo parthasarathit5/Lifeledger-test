@@ -1,47 +1,29 @@
 import 'package:flutter/material.dart';
-import 'dart:math' as math;
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+
 import 'login_screen.dart';
-import 'dashboard_screen.dart';
 
 class SignupScreen extends StatefulWidget {
   @override
   _SignupScreenState createState() => _SignupScreenState();
 }
 
-class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderStateMixin {
+class _SignupScreenState extends State<SignupScreen> {
   final nameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
-  bool _passwordVisible = false;
   bool _isLoading = false;
 
-  late AnimationController _waveController;
+  Future<void> signupUser() async {
+    final name = nameController.text.trim();
+    final email = emailController.text.trim();
+    final password = passwordController.text.trim();
 
-  @override
-  void initState() {
-    super.initState();
-    _waveController = AnimationController(
-      vsync: this,
-      duration: const Duration(seconds: 6),
-    )..repeat();
-  }
-
-  @override
-  void dispose() {
-    nameController.dispose();
-    emailController.dispose();
-    passwordController.dispose();
-    _waveController.dispose();
-    super.dispose();
-  }
-
-  void signupUser() async {
-    if (nameController.text.isEmpty ||
-        emailController.text.isEmpty ||
-        passwordController.text.isEmpty) {
-      _showSnack("Please fill in all fields");
+    if (name.isEmpty || email.isEmpty || password.isEmpty) {
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Please fill all required fields")),
+      );
       return;
     }
 
@@ -49,399 +31,175 @@ class _SignupScreenState extends State<SignupScreen> with SingleTickerProviderSt
 
     try {
       var url = Uri.parse("https://lifeledger-backend.onrender.com/signup/");
-
-      var response = await http
-          .post(
-            url,
-            headers: {"Content-Type": "application/json"},
-            body: jsonEncode({
-              "name": nameController.text.trim(),
-              "email": emailController.text.trim(),
-              "password": passwordController.text.trim(),
-            }),
-          )
-          .timeout(Duration(seconds: 180));
+      var response = await http.post(
+        url,
+        headers: {"Content-Type": "application/json"},
+        body: jsonEncode({"name": name, "email": email, "password": password}),
+      );
 
       var data = jsonDecode(response.body);
 
       if (data["status"] == "success") {
-        Navigator.pushReplacement(
-          context,
-          MaterialPageRoute(
-            builder: (_) => DashboardScreen(
-              userName: nameController.text.trim(),
-              userId: data["user_id"],
-            ),
+        ScaffoldMessenger.of(context).showSnackBar(
+          const SnackBar(
+            content: Text("Account created! Please sign in."),
+            backgroundColor: Color(0xFF059669),
           ),
         );
+        Navigator.pushReplacement(
+          context,
+          MaterialPageRoute(builder: (_) => LoginScreen()),
+        );
       } else {
-        _showSnack(data["message"] ?? "Signup failed");
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(data["message"] ?? "Signup failed"),
+            backgroundColor: const Color(0xFFEF4444),
+          ),
+        );
       }
     } catch (e) {
-      print("ERROR: $e");
-      _showSnack("Server is starting, please wait and try again...");
+      ScaffoldMessenger.of(context).showSnackBar(
+        const SnackBar(content: Text("Error connecting to backend")),
+      );
     } finally {
       setState(() => _isLoading = false);
     }
   }
 
-  void _showSnack(String msg) {
-    ScaffoldMessenger.of(context).showSnackBar(
-      SnackBar(
-        content: Text(msg),
-        backgroundColor: Color(0xFF1e2a4a),
-        behavior: SnackBarBehavior.floating,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      ),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          // Base dark gradient
-          Container(
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [Color(0xFF061019), Color(0xFF0a1a2e), Color(0xFF0d1533)],
-                begin: Alignment.topLeft,
-                end: Alignment.bottomRight,
+      backgroundColor: const Color(0xFFF8FAFC),
+      appBar: AppBar(
+        backgroundColor: Colors.transparent,
+        elevation: 0,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Color(0xFF0F172A)),
+          onPressed: () => Navigator.pop(context),
+        ),
+      ),
+      body: Center(
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.all(24),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Container(
+                padding: const EdgeInsets.all(16),
+                decoration: BoxDecoration(
+                  gradient: const LinearGradient(colors: [Color(0xFF059669), Color(0xFF10B981)]),
+                  shape: BoxShape.circle,
+                  boxShadow: [
+                    BoxShadow(color: const Color(0xFF10B981).withOpacity(0.3), blurRadius: 20, offset: const Offset(0, 6)),
+                  ],
+                ),
+                child: const Icon(Icons.person_add_alt_1, color: Colors.white, size: 32),
               ),
-            ),
-          ),
-          // Animated ocean waves (same as login)
-          Positioned.fill(
-            child: AnimatedBuilder(
-              animation: _waveController,
-              builder: (context, _) {
-                return CustomPaint(
-                  painter: _OceanWavePainter(_waveController.value),
-                  size: Size.infinite,
-                );
-              },
-            ),
-          ),
-          SafeArea(
-            child: Center(
-              child: SingleChildScrollView(
-                padding: EdgeInsets.symmetric(horizontal: 28, vertical: 40),
+              const SizedBox(height: 16),
+              const Text(
+                "Create AI Account",
+                style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
+              ),
+              const SizedBox(height: 4),
+              const Text(
+                "Unlock personal financial ML models & coach",
+                style: TextStyle(color: Color(0xFF059669), fontSize: 12.5, fontWeight: FontWeight.w600),
+              ),
+              const SizedBox(height: 28),
+
+              Container(
+                padding: const EdgeInsets.all(24),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(24),
+                  boxShadow: [
+                    BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 20, offset: const Offset(0, 8)),
+                  ],
+                  border: Border.all(color: const Color(0xFFE2E8F0)),
+                ),
                 child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    _buildBrand(),
-                    SizedBox(height: 36),
-                    _buildCard(),
+                    TextField(
+                      controller: nameController,
+                      style: const TextStyle(color: Color(0xFF0F172A), fontSize: 14),
+                      decoration: InputDecoration(
+                        labelText: "Full Name",
+                        labelStyle: const TextStyle(color: Color(0xFF64748B)),
+                        prefixIcon: const Icon(Icons.person_outline, color: Color(0xFF059669), size: 20),
+                        filled: true,
+                        fillColor: const Color(0xFFF8FAFC),
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFF059669), width: 1.5)),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: emailController,
+                      keyboardType: TextInputType.emailAddress,
+                      style: const TextStyle(color: Color(0xFF0F172A), fontSize: 14),
+                      decoration: InputDecoration(
+                        labelText: "Email Address",
+                        labelStyle: const TextStyle(color: Color(0xFF64748B)),
+                        prefixIcon: const Icon(Icons.email_outlined, color: Color(0xFF059669), size: 20),
+                        filled: true,
+                        fillColor: const Color(0xFFF8FAFC),
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFF059669), width: 1.5)),
+                      ),
+                    ),
+                    const SizedBox(height: 16),
+                    TextField(
+                      controller: passwordController,
+                      obscureText: true,
+                      style: const TextStyle(color: Color(0xFF0F172A), fontSize: 14),
+                      decoration: InputDecoration(
+                        labelText: "Password",
+                        labelStyle: const TextStyle(color: Color(0xFF64748B)),
+                        prefixIcon: const Icon(Icons.lock_outline, color: Color(0xFF059669), size: 20),
+                        filled: true,
+                        fillColor: const Color(0xFFF8FAFC),
+                        border: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFFE2E8F0))),
+                        focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(14), borderSide: const BorderSide(color: Color(0xFF059669), width: 1.5)),
+                      ),
+                    ),
+                    const SizedBox(height: 24),
+                    SizedBox(
+                      width: double.infinity,
+                      height: 48,
+                      child: ElevatedButton(
+                        style: ElevatedButton.styleFrom(
+                          backgroundColor: const Color(0xFF059669),
+                          foregroundColor: Colors.white,
+                          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(14)),
+                        ),
+                        onPressed: _isLoading ? null : signupUser,
+                        child: _isLoading
+                            ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(color: Colors.white, strokeWidth: 2))
+                            : const Text("Sign Up", style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold)),
+                      ),
+                    ),
                   ],
                 ),
               ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildBrand() {
-    return Column(
-      children: [
-        Container(
-          width: 72,
-          height: 72,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              colors: [Color(0xFF6c8fff), Color(0xFFa78bfa)],
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-            ),
-            borderRadius: BorderRadius.circular(20),
-            boxShadow: [
-              BoxShadow(
-                  color: Color(0xFF6c8fff).withOpacity(0.45),
-                  blurRadius: 24,
-                  spreadRadius: 2)
-            ],
-          ),
-          child: Icon(Icons.account_balance_wallet,
-              color: Colors.white, size: 36),
-        ),
-        SizedBox(height: 16),
-        Text("LifeLedger",
-            style: TextStyle(
-                color: Colors.white,
-                fontSize: 30,
-                fontWeight: FontWeight.w700,
-                letterSpacing: -0.5)),
-        SizedBox(height: 6),
-        Text("Your personal life companion",
-            style: TextStyle(
-                color: Colors.white.withOpacity(0.55), fontSize: 13)),
-      ],
-    );
-  }
-
-  Widget _buildCard() {
-    return Container(
-      decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.07),
-        borderRadius: BorderRadius.circular(24),
-        border: Border.all(color: Colors.white.withOpacity(0.12)),
-        boxShadow: [
-          BoxShadow(
-              color: Colors.black.withOpacity(0.4),
-              blurRadius: 60,
-              spreadRadius: 10),
-        ],
-      ),
-      padding: EdgeInsets.all(28),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Text("Create account",
-              style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 22,
-                  fontWeight: FontWeight.w700)),
-          SizedBox(height: 6),
-          Text("Start managing your life today",
-              style: TextStyle(
-                  color: Colors.white.withOpacity(0.5), fontSize: 13)),
-          SizedBox(height: 28),
-          _buildInput(
-            controller: nameController,
-            label: "FULL NAME",
-            hint: "John Doe",
-            icon: Icons.person_outline_rounded,
-          ),
-          SizedBox(height: 16),
-          _buildInput(
-            controller: emailController,
-            label: "EMAIL ADDRESS",
-            hint: "you@example.com",
-            icon: Icons.mail_outline_rounded,
-            keyboardType: TextInputType.emailAddress,
-          ),
-          SizedBox(height: 16),
-          _buildInput(
-            controller: passwordController,
-            label: "PASSWORD",
-            hint: "Create a strong password",
-            icon: Icons.lock_outline_rounded,
-            isPassword: true,
-            isVisible: _passwordVisible,
-            onToggle: () =>
-                setState(() => _passwordVisible = !_passwordVisible),
-          ),
-          SizedBox(height: 28),
-          _buildPrimaryButton("Create Account →", signupUser),
-          SizedBox(height: 24),
-          Row(
-            children: [
-              Expanded(child: Divider(color: Colors.white.withOpacity(0.12))),
-              Padding(
-                padding: EdgeInsets.symmetric(horizontal: 12),
-                child: Text("or",
-                    style: TextStyle(
-                        color: Colors.white.withOpacity(0.4),
-                        fontSize: 12)),
-              ),
-              Expanded(child: Divider(color: Colors.white.withOpacity(0.12))),
-            ],
-          ),
-          SizedBox(height: 24),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text("Already have an account? ",
-                  style: TextStyle(
-                      color: Colors.white.withOpacity(0.5),
-                      fontSize: 13)),
-              GestureDetector(
-                onTap: () => Navigator.pushReplacement(
-                  context,
-                  MaterialPageRoute(builder: (_) => LoginScreen()),
-                ),
-                child: Text("Sign in",
-                    style: TextStyle(
-                        color: Color(0xFF7dd3fc),
-                        fontSize: 13,
-                        fontWeight: FontWeight.w600)),
+              const SizedBox(height: 20),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  const Text("Already have an account? ", style: TextStyle(color: Color(0xFF64748B), fontSize: 13)),
+                  GestureDetector(
+                    onTap: () => Navigator.pop(context),
+                    child: const Text("Sign In", style: TextStyle(color: Color(0xFF059669), fontWeight: FontWeight.bold, fontSize: 13)),
+                  ),
+                ],
               ),
             ],
           ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildInput({
-    required TextEditingController controller,
-    required String label,
-    required String hint,
-    required IconData icon,
-    TextInputType keyboardType = TextInputType.text,
-    bool isPassword = false,
-    bool isVisible = false,
-    VoidCallback? onToggle,
-  }) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Text(label,
-            style: TextStyle(
-                color: Colors.white.withOpacity(0.5),
-                fontSize: 11,
-                fontWeight: FontWeight.w600,
-                letterSpacing: 0.8)),
-        SizedBox(height: 8),
-        TextField(
-          controller: controller,
-          obscureText: isPassword && !isVisible,
-          keyboardType: keyboardType,
-          style: TextStyle(color: Colors.white, fontSize: 15),
-          decoration: InputDecoration(
-            hintText: hint,
-            hintStyle: TextStyle(color: Colors.white.withOpacity(0.3)),
-            prefixIcon: Icon(icon,
-                color: Colors.white.withOpacity(0.5), size: 20),
-            suffixIcon: isPassword
-                ? IconButton(
-                    icon: Icon(
-                      isVisible
-                          ? Icons.visibility_off
-                          : Icons.visibility,
-                      color: Colors.white.withOpacity(0.5),
-                      size: 20,
-                    ),
-                    onPressed: onToggle,
-                  )
-                : null,
-            filled: true,
-            fillColor: Colors.white.withOpacity(0.08),
-            contentPadding:
-                EdgeInsets.symmetric(horizontal: 16, vertical: 14),
-            border: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide:
-                    BorderSide(color: Colors.white.withOpacity(0.12))),
-            enabledBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide:
-                    BorderSide(color: Colors.white.withOpacity(0.12))),
-            focusedBorder: OutlineInputBorder(
-                borderRadius: BorderRadius.circular(12),
-                borderSide:
-                    BorderSide(color: Color(0xFF7dd3fc), width: 1.5)),
-          ),
-        ),
-      ],
-    );
-  }
-
-  Widget _buildPrimaryButton(String label, VoidCallback onPressed) {
-    return SizedBox(
-      width: double.infinity,
-      height: 52,
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-              colors: [Color(0xFF38bdf8), Color(0xFF6366f1)]),
-          borderRadius: BorderRadius.circular(12),
-          boxShadow: [
-            BoxShadow(
-                color: Color(0xFF38bdf8).withOpacity(0.4),
-                blurRadius: 20,
-                spreadRadius: 1)
-          ],
-        ),
-        child: ElevatedButton(
-          onPressed: _isLoading ? null : onPressed,
-          style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.transparent,
-            shadowColor: Colors.transparent,
-            shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(12)),
-          ),
-          child: _isLoading
-              ? SizedBox(
-                  width: 22,
-                  height: 22,
-                  child: CircularProgressIndicator(
-                      color: Colors.white, strokeWidth: 2))
-              : Text(label,
-                  style: TextStyle(
-                      fontSize: 15,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.white)),
         ),
       ),
     );
   }
-}
-
-/// Same layered ocean wave painter as login_screen.dart, kept in sync
-/// so both auth screens feel visually consistent.
-class _OceanWavePainter extends CustomPainter {
-  final double t;
-
-  _OceanWavePainter(this.t);
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    _drawWaveLayer(
-      canvas,
-      size,
-      baseHeight: size.height * 0.72,
-      amplitude: 18,
-      speed: 1.0,
-      color: const Color(0xFF1e3a5f).withOpacity(0.55),
-    );
-    _drawWaveLayer(
-      canvas,
-      size,
-      baseHeight: size.height * 0.80,
-      amplitude: 24,
-      speed: 1.6,
-      color: const Color(0xFF14304d).withOpacity(0.6),
-    );
-    _drawWaveLayer(
-      canvas,
-      size,
-      baseHeight: size.height * 0.90,
-      amplitude: 14,
-      speed: 0.7,
-      color: const Color(0xFF0b2038).withOpacity(0.75),
-    );
-  }
-
-  void _drawWaveLayer(
-    Canvas canvas,
-    Size size, {
-    required double baseHeight,
-    required double amplitude,
-    required double speed,
-    required Color color,
-  }) {
-    final path = Path();
-    final phase = t * 2 * math.pi * speed;
-
-    path.moveTo(0, baseHeight);
-
-    for (double x = 0; x <= size.width; x += 4) {
-      final y = baseHeight +
-          amplitude * math.sin((x / size.width * 2 * math.pi) + phase);
-      path.lineTo(x, y);
-    }
-
-    path.lineTo(size.width, size.height);
-    path.lineTo(0, size.height);
-    path.close();
-
-    final paint = Paint()..color = color;
-    canvas.drawPath(path, paint);
-  }
-
-  @override
-  bool shouldRepaint(covariant _OceanWavePainter oldDelegate) => oldDelegate.t != t;
 }

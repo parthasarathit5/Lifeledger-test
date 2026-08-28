@@ -25,11 +25,11 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
 
   final List<String> _suggestedPrompts = [
     "Can I afford a ₹50,000 purchase?",
-    "Where am I overspending?",
+    "Where am I spending the most?",
     "Forecast next month cashflow",
-    "How to reach my ₹1 Lakh goal?",
-    "Analyze habit and spending correlation",
-    "Give me a 30-day savings plan",
+    "How to save on tax (80C & 80D)?",
+    "Simulate my FIRE retirement target",
+    "How do my daily habits affect savings?",
   ];
 
   @override
@@ -81,7 +81,7 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
         _messages.add({
           "sender": "ai",
           "text":
-              "👋 Hello ${widget.userName}! I am your **LifeLedger AI Financial & Lifestyle Coach** powered by real-time Machine Learning models.\n\nAsk me anything about affordability, expense forecasts, spending leaks, habits correlation, or custom savings plans!",
+              "👋 Hello ${widget.userName}! I am your **LifeLedger Precision AI Financial Coach**.\n\nAsk me specific questions about affordability, expense forecasts, tax savings, debt strategies, or wealth planning!",
           "time": "Just now",
         });
       }
@@ -92,7 +92,7 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (_scrollController.hasClients) {
         _scrollController.animateTo(
-          _scrollController.position.maxScrollExtent + 120,
+          _scrollController.position.maxScrollExtent + 140,
           duration: const Duration(milliseconds: 300),
           curve: Curves.easeOut,
         );
@@ -141,7 +141,7 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
       setState(() {
         _messages.add({
           "sender": "ai",
-          "text": "⚠️ Network communication error with AI engine.",
+          "text": "⚠️ Network error connecting to the AI inference engine.",
           "time": "Just now",
         });
         _isLoading = false;
@@ -159,21 +159,11 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
       child: Container(
         margin: const EdgeInsets.symmetric(vertical: 8),
         constraints: BoxConstraints(
-          maxWidth: MediaQuery.of(context).size.width * 0.84,
+          maxWidth: MediaQuery.of(context).size.width * 0.86,
         ),
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
-          gradient: isUser
-              ? const LinearGradient(
-                  colors: [Color(0xFF4F46E5), Color(0xFF7C3AED)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                )
-              : const LinearGradient(
-                  colors: [Color(0xFF1E2640), Color(0xFF161D31)],
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                ),
+          color: isUser ? const Color(0xFF059669) : Colors.white,
           borderRadius: BorderRadius.only(
             topLeft: const Radius.circular(20),
             topRight: const Radius.circular(20),
@@ -181,16 +171,11 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
             bottomRight: Radius.circular(isUser ? 4 : 20),
           ),
           border: Border.all(
-            color: isUser
-                ? Colors.transparent
-                : const Color(0xFF38BDF8).withOpacity(0.25),
-            width: 1,
+            color: isUser ? Colors.transparent : const Color(0xFFE2E8F0),
           ),
           boxShadow: [
             BoxShadow(
-              color: isUser
-                  ? const Color(0xFF7C3AED).withOpacity(0.25)
-                  : Colors.black26,
+              color: isUser ? const Color(0xFF059669).withOpacity(0.2) : Colors.black.withOpacity(0.04),
               blurRadius: 10,
               offset: const Offset(0, 4),
             ),
@@ -206,33 +191,29 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
                   Container(
                     padding: const EdgeInsets.all(4),
                     decoration: BoxDecoration(
-                      color: const Color(0xFF38BDF8).withOpacity(0.2),
+                      color: const Color(0xFFECFDF5),
                       shape: BoxShape.circle,
                     ),
-                    child: const Icon(
-                      Icons.auto_awesome,
-                      color: Color(0xFF38BDF8),
-                      size: 14,
-                    ),
+                    child: const Icon(Icons.psychology, color: Color(0xFF059669), size: 16),
                   ),
                   const SizedBox(width: 6),
                   const Text(
-                    "LifeLedger ML Coach",
+                    "LifeLedger Precision AI",
                     style: TextStyle(
-                      color: Color(0xFF38BDF8),
+                      color: Color(0xFF059669),
                       fontSize: 12,
                       fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 8),
             ],
             Text(
               text,
-              style: const TextStyle(
-                color: Colors.white,
-                fontSize: 14.5,
+              style: TextStyle(
+                color: isUser ? Colors.white : const Color(0xFF1E293B),
+                fontSize: 14,
                 height: 1.45,
               ),
             ),
@@ -242,7 +223,7 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
               child: Text(
                 msg["time"] ?? "",
                 style: TextStyle(
-                  color: Colors.white.withOpacity(0.4),
+                  color: isUser ? Colors.white70 : const Color(0xFF94A3B8),
                   fontSize: 10,
                 ),
               ),
@@ -256,40 +237,35 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xFF0A0F1E),
+      backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
-        backgroundColor: const Color(0xFF121826),
-        elevation: 0,
+        backgroundColor: Colors.white,
+        elevation: 0.5,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back, color: Color(0xFF0F172A)),
+          onPressed: () => Navigator.pop(context),
+        ),
         title: Row(
           children: [
             Container(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(7),
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFF6366F1), Color(0xFFA855F7)],
-                ),
-                borderRadius: BorderRadius.circular(12),
+                gradient: const LinearGradient(colors: [Color(0xFF059669), Color(0xFF10B981)]),
+                borderRadius: BorderRadius.circular(10),
               ),
-              child: const Icon(Icons.psychology, color: Colors.white, size: 22),
+              child: const Icon(Icons.psychology, color: Colors.white, size: 20),
             ),
-            const SizedBox(width: 12),
+            const SizedBox(width: 10),
             const Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  "AI Financial Advisor",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 17,
-                    fontWeight: FontWeight.bold,
-                  ),
+                  "AI Financial Coach",
+                  style: TextStyle(color: Color(0xFF0F172A), fontSize: 16, fontWeight: FontWeight.bold),
                 ),
                 Text(
-                  "ML Models Online • RandomForest & NLP",
-                  style: TextStyle(
-                    color: Color(0xFF34D399),
-                    fontSize: 11,
-                  ),
+                  "RandomForest & NLP Engine Active",
+                  style: TextStyle(color: Color(0xFF059669), fontSize: 11, fontWeight: FontWeight.w600),
                 ),
               ],
             ),
@@ -298,10 +274,11 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
       ),
       body: Column(
         children: [
-          // Suggested prompts carousel
+          // Prompt suggestions
           Container(
             height: 48,
-            margin: const EdgeInsets.only(top: 8, bottom: 4),
+            color: Colors.white,
+            padding: const EdgeInsets.symmetric(vertical: 6),
             child: ListView.builder(
               scrollDirection: Axis.horizontal,
               padding: const EdgeInsets.symmetric(horizontal: 14),
@@ -311,14 +288,11 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
                 return Padding(
                   padding: const EdgeInsets.only(right: 8),
                   child: ActionChip(
-                    backgroundColor: const Color(0xFF1E2640),
-                    side: const BorderSide(color: Color(0xFF334155)),
+                    backgroundColor: const Color(0xFFF1F5F9),
+                    side: const BorderSide(color: Color(0xFFE2E8F0)),
                     label: Text(
                       p,
-                      style: const TextStyle(
-                        color: Color(0xFF94A3B8),
-                        fontSize: 12,
-                      ),
+                      style: const TextStyle(color: Color(0xFF334155), fontSize: 12, fontWeight: FontWeight.w500),
                     ),
                     onPressed: () => _sendMessage(p),
                   ),
@@ -330,44 +304,30 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
           // Message stream
           Expanded(
             child: _isFetchingHistory
-                ? const Center(
-                    child: CircularProgressIndicator(color: Color(0xFF6366F1)),
-                  )
+                ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
                 : ListView.builder(
                     controller: _scrollController,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 16,
-                      vertical: 8,
-                    ),
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                     itemCount: _messages.length,
-                    itemBuilder: (context, idx) {
-                      return _buildMessageBubble(_messages[idx]);
-                    },
+                    itemBuilder: (context, idx) => _buildMessageBubble(_messages[idx]),
                   ),
           ),
 
-          // Thinking / loading indicator
+          // Typing indicator
           if (_isLoading)
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 6),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 8),
               child: Row(
                 children: [
                   const SizedBox(
                     width: 16,
                     height: 16,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 2,
-                      color: Color(0xFF38BDF8),
-                    ),
+                    child: CircularProgressIndicator(strokeWidth: 2, color: Color(0xFF059669)),
                   ),
                   const SizedBox(width: 10),
-                  Text(
-                    "AI is analyzing your dataset & forecasting...",
-                    style: TextStyle(
-                      color: Colors.white.withOpacity(0.6),
-                      fontSize: 12,
-                      fontStyle: FontStyle.italic,
-                    ),
+                  const Text(
+                    "AI is computing your customized mathematical verdict...",
+                    style: TextStyle(color: Color(0xFF64748B), fontSize: 12, fontStyle: FontStyle.italic),
                   ),
                 ],
               ),
@@ -375,12 +335,12 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
 
           // Input field
           Container(
-            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
-            decoration: const BoxDecoration(
-              color: Color(0xFF121826),
-              border: Border(
-                top: BorderSide(color: Color(0xFF1E293B), width: 1),
-              ),
+            padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 10),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              boxShadow: [
+                BoxShadow(color: Colors.black.withOpacity(0.04), blurRadius: 10, offset: const Offset(0, -3)),
+              ],
             ),
             child: SafeArea(
               child: Row(
@@ -389,41 +349,32 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
                     child: Container(
                       padding: const EdgeInsets.symmetric(horizontal: 16),
                       decoration: BoxDecoration(
-                        color: const Color(0xFF1E2640),
+                        color: const Color(0xFFF8FAFC),
                         borderRadius: BorderRadius.circular(24),
-                        border: Border.all(color: const Color(0xFF334155)),
+                        border: Border.all(color: const Color(0xFFCBD5E1)),
                       ),
                       child: TextField(
                         controller: _textController,
-                        style: const TextStyle(color: Colors.white, fontSize: 14),
+                        style: const TextStyle(color: Color(0xFF0F172A), fontSize: 14),
                         decoration: const InputDecoration(
-                          hintText: "Ask AI about budget, goals, spending...",
-                          hintStyle: TextStyle(
-                            color: Color(0xFF64748B),
-                            fontSize: 13,
-                          ),
+                          hintText: "Ask AI (e.g. Can I afford a 60k laptop?)...",
+                          hintStyle: TextStyle(color: Color(0xFF94A3B8), fontSize: 13),
                           border: InputBorder.none,
                         ),
                         onSubmitted: (val) => _sendMessage(val),
                       ),
                     ),
                   ),
-                  const SizedBox(width: 10),
+                  const SizedBox(width: 8),
                   GestureDetector(
                     onTap: () => _sendMessage(_textController.text),
                     child: Container(
                       padding: const EdgeInsets.all(12),
                       decoration: const BoxDecoration(
-                        gradient: LinearGradient(
-                          colors: [Color(0xFF6366F1), Color(0xFF9333EA)],
-                        ),
+                        gradient: LinearGradient(colors: [Color(0xFF059669), Color(0xFF10B981)]),
                         shape: BoxShape.circle,
                       ),
-                      child: const Icon(
-                        Icons.send_rounded,
-                        color: Colors.white,
-                        size: 20,
-                      ),
+                      child: const Icon(Icons.send_rounded, color: Colors.white, size: 20),
                     ),
                   ),
                 ],
