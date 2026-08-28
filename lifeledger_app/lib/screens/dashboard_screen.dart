@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
 
-import 'login_screen.dart';
 import 'expense_screen.dart';
 import 'income_screen.dart';
 import 'habit_screen.dart';
@@ -26,10 +25,9 @@ import 'yearly_heatmap_screen.dart';
 import 'heatmap_screen.dart';
 import 'summary_screen.dart';
 import 'daily_summary_screen.dart';
-import 'settings_screen.dart';
 import 'report_screen.dart';
 
-// New Advanced AI Modules
+// Advanced AI Modules
 import 'ai_advisor_screen.dart';
 import 'ai_wealth_simulator_screen.dart';
 import 'ai_tax_saver_screen.dart';
@@ -108,14 +106,13 @@ class _DashboardScreenState extends State<DashboardScreen> {
         title: Row(
           children: [
             Container(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(7),
               decoration: BoxDecoration(
-                gradient: const LinearGradient(
-                  colors: [Color(0xFF059669), Color(0xFF10B981)],
-                ),
-                borderRadius: BorderRadius.circular(12),
+                color: const Color(0xFFECFDF5),
+                borderRadius: BorderRadius.circular(10),
+                border: Border.all(color: const Color(0xFF10B981).withOpacity(0.3)),
               ),
-              child: const Icon(Icons.account_balance_wallet, color: Colors.white, size: 20),
+              child: const Icon(Icons.account_balance_wallet, color: Color(0xFF059669), size: 18),
             ),
             const SizedBox(width: 10),
             Column(
@@ -123,11 +120,11 @@ class _DashboardScreenState extends State<DashboardScreen> {
               children: [
                 Text(
                   "${greet()}, ${widget.userName}",
-                  style: const TextStyle(color: Color(0xFF0F172A), fontSize: 16, fontWeight: FontWeight.bold),
+                  style: const TextStyle(color: Color(0xFF0F172A), fontSize: 15, fontWeight: FontWeight.bold),
                 ),
                 const Text(
-                  "LifeLedger AI Platform",
-                  style: TextStyle(color: Color(0xFF059669), fontSize: 11, fontWeight: FontWeight.w600),
+                  "LifeLedger AI Intelligence",
+                  style: TextStyle(color: Color(0xFF059669), fontSize: 10.5, fontWeight: FontWeight.w600),
                 ),
               ],
             ),
@@ -135,46 +132,43 @@ class _DashboardScreenState extends State<DashboardScreen> {
         ),
         actions: [
           IconButton(
-            icon: const Icon(Icons.notifications_outlined, color: Color(0xFF334155)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (_) => AlertsScreen(userId: widget.userId)),
-              );
-            },
+            icon: const Icon(Icons.notifications_outlined, color: Color(0xFF334155), size: 22),
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => AlertsScreen(userId: widget.userId))),
           ),
           IconButton(
-            icon: const Icon(Icons.person_outline, color: Color(0xFF334155)),
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (_) => ProfileScreen(userName: widget.userName, userId: widget.userId),
-                ),
-              );
-            },
+            icon: const Icon(Icons.person_outline, color: Color(0xFF334155), size: 22),
+            onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ProfileScreen(userName: widget.userName, userId: widget.userId))),
           ),
         ],
       ),
       body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: Color(0xFF10B981)))
+          ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
           : RefreshIndicator(
               onRefresh: fetchDashboard,
-              color: const Color(0xFF10B981),
+              color: const Color(0xFF059669),
               child: SingleChildScrollView(
                 physics: const AlwaysScrollableScrollPhysics(),
-                padding: const EdgeInsets.all(20),
+                padding: const EdgeInsets.all(16),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    _buildHeroBalanceCard(),
-                    const SizedBox(height: 18),
-                    _buildAICoachBanner(),
-                    const SizedBox(height: 24),
-                    _buildQuickMetricStats(),
-                    const SizedBox(height: 28),
-                    _buildCategorizedSuite(),
-                    const SizedBox(height: 28),
+                    // 1. Crisp Pure White Hero Balance Card
+                    _buildWhiteHeroCard(),
+                    const SizedBox(height: 14),
+
+                    // 2. Step 1: Add Income Quick Banner
+                    _buildStep1IncomeCard(),
+                    const SizedBox(height: 14),
+
+                    // 3. AI Coach Banner
+                    _buildAICoachCard(),
+                    const SizedBox(height: 20),
+
+                    // 4. Compact 30+ AI & Finance Suite
+                    _buildCompactSuite(),
+                    const SizedBox(height: 20),
+
+                    // 5. Recent Activity
                     _buildRecentTransactions(),
                   ],
                 ),
@@ -183,22 +177,19 @@ class _DashboardScreenState extends State<DashboardScreen> {
     );
   }
 
-  Widget _buildHeroBalanceCard() {
+  Widget _buildWhiteHeroCard() {
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(24),
+      padding: const EdgeInsets.all(20),
       decoration: BoxDecoration(
-        gradient: const LinearGradient(
-          colors: [Color(0xFF059669), Color(0xFF10B981)],
-          begin: Alignment.topLeft,
-          end: Alignment.bottomRight,
-        ),
-        borderRadius: BorderRadius.circular(26),
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(20),
+        border: Border.all(color: const Color(0xFF10B981).withOpacity(0.35), width: 1.2),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF10B981).withOpacity(0.3),
-            blurRadius: 20,
-            offset: const Offset(0, 8),
+            color: const Color(0xFF10B981).withOpacity(0.08),
+            blurRadius: 16,
+            offset: const Offset(0, 4),
           ),
         ],
       ),
@@ -209,47 +200,56 @@ class _DashboardScreenState extends State<DashboardScreen> {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               const Text(
-                "Total Net Balance",
-                style: TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w600),
+                "Current Net Balance",
+                style: TextStyle(color: Color(0xFF64748B), fontSize: 12.5, fontWeight: FontWeight.w600),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 9, vertical: 3.5),
                 decoration: BoxDecoration(
-                  color: Colors.white.withOpacity(0.2),
-                  borderRadius: BorderRadius.circular(12),
+                  color: const Color(0xFFECFDF5),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: const Color(0xFF10B981).withOpacity(0.4)),
                 ),
-                child: const Text(
-                  "AI ML Live",
-                  style: TextStyle(color: Colors.white, fontSize: 10.5, fontWeight: FontWeight.bold),
+                child: const Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Icon(Icons.auto_awesome, color: Color(0xFF059669), size: 11),
+                    SizedBox(width: 4),
+                    Text(
+                      "AI ML Synced",
+                      style: TextStyle(color: Color(0xFF059669), fontSize: 10, fontWeight: FontWeight.bold),
+                    ),
+                  ],
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 10),
+          const SizedBox(height: 6),
           Text(
             "₹${balance.toStringAsFixed(2)}",
             style: const TextStyle(
-              color: Colors.white,
-              fontSize: 34,
+              color: Color(0xFF059669),
+              fontSize: 30,
               fontWeight: FontWeight.bold,
               letterSpacing: -0.5,
             ),
           ),
-          const SizedBox(height: 18),
+          const SizedBox(height: 14),
           Container(
-            padding: const EdgeInsets.all(14),
+            padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 10),
             decoration: BoxDecoration(
-              color: Colors.black.withOpacity(0.12),
-              borderRadius: BorderRadius.circular(16),
+              color: const Color(0xFFF8FAFC),
+              borderRadius: BorderRadius.circular(14),
+              border: Border.all(color: const Color(0xFFE2E8F0)),
             ),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceAround,
               children: [
-                _balanceCol("Total Income", "₹${totalIncome.toStringAsFixed(0)}", const Color(0xFFFDE047), Icons.arrow_downward),
-                Container(width: 1, height: 30, color: Colors.white24),
-                _balanceCol("Total Expense", "₹${totalExpense.toStringAsFixed(0)}", Colors.white, Icons.arrow_upward),
-                Container(width: 1, height: 30, color: Colors.white24),
-                _balanceCol("Savings Rate", "${totalIncome > 0 ? (((totalIncome - totalExpense) / totalIncome) * 100).clamp(0, 100).toStringAsFixed(0) : 0}%", const Color(0xFF6EE7B7), Icons.pie_chart),
+                _balanceCol("Total Income", "₹${totalIncome.toStringAsFixed(0)}", const Color(0xFF059669), Icons.arrow_downward),
+                Container(width: 1, height: 26, color: const Color(0xFFCBD5E1)),
+                _balanceCol("Total Expense", "₹${totalExpense.toStringAsFixed(0)}", const Color(0xFFEF4444), Icons.arrow_upward),
+                Container(width: 1, height: 26, color: const Color(0xFFCBD5E1)),
+                _balanceCol("Savings Rate", "${totalIncome > 0 ? (((totalIncome - totalExpense) / totalIncome) * 100).clamp(0, 100).toStringAsFixed(0) : 0}%", const Color(0xFFD97706), Icons.pie_chart),
               ],
             ),
           ),
@@ -264,74 +264,122 @@ class _DashboardScreenState extends State<DashboardScreen> {
         Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Icon(icon, color: valColor, size: 12),
-            const SizedBox(width: 4),
-            Text(val, style: TextStyle(color: valColor, fontWeight: FontWeight.bold, fontSize: 13)),
+            Icon(icon, color: valColor, size: 11),
+            const SizedBox(width: 3),
+            Text(val, style: TextStyle(color: valColor, fontWeight: FontWeight.bold, fontSize: 12)),
           ],
         ),
         const SizedBox(height: 2),
-        Text(label, style: const TextStyle(color: Colors.white70, fontSize: 10.5)),
+        Text(label, style: const TextStyle(color: Color(0xFF64748B), fontSize: 10)),
       ],
     );
   }
 
-  Widget _buildAICoachBanner() {
+  Widget _buildStep1IncomeCard() {
     return Container(
-      padding: const EdgeInsets.all(18),
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 14),
       decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(20),
-        border: Border.all(color: const Color(0xFF10B981).withOpacity(0.3)),
+        gradient: const LinearGradient(
+          colors: [Color(0xFF059669), Color(0xFF10B981)],
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+        ),
+        borderRadius: BorderRadius.circular(16),
         boxShadow: [
-          BoxShadow(
-            color: const Color(0xFF10B981).withOpacity(0.08),
-            blurRadius: 16,
-            offset: const Offset(0, 4),
-          ),
+          BoxShadow(color: const Color(0xFF10B981).withOpacity(0.25), blurRadius: 12, offset: const Offset(0, 4)),
         ],
       ),
       child: Row(
         children: [
           Container(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.all(9),
             decoration: BoxDecoration(
-              gradient: const LinearGradient(colors: [Color(0xFF059669), Color(0xFF10B981)]),
-              borderRadius: BorderRadius.circular(14),
+              color: Colors.white.withOpacity(0.2),
+              borderRadius: BorderRadius.circular(12),
             ),
-            child: const Icon(Icons.psychology, color: Colors.white, size: 24),
+            child: const Icon(Icons.add_card, color: Colors.white, size: 20),
           ),
-          const SizedBox(width: 14),
-          Expanded(
+          const SizedBox(width: 12),
+          const Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                const Text(
-                  "Ask LifeLedger AI Coach",
-                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14.5, color: Color(0xFF0F172A)),
-                ),
-                const SizedBox(height: 2),
                 Text(
-                  totalExpense > totalIncome
-                      ? "⚠️ High burn alert: Discretionary expenses exceed income."
-                      : "✨ Models active: Positive monthly savings trajectory.",
-                  style: TextStyle(
-                    color: totalExpense > totalIncome ? const Color(0xFFEF4444) : const Color(0xFF059669),
-                    fontSize: 12,
-                    fontWeight: FontWeight.w500,
-                  ),
+                  "Step 1: Set Monthly Income",
+                  style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 13.5),
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "AI models automatically calculate budget, savings & forecast.",
+                  style: TextStyle(color: Colors.white70, fontSize: 11),
                 ),
               ],
             ),
           ),
           ElevatedButton(
             style: ElevatedButton.styleFrom(
-              backgroundColor: const Color(0xFF059669),
-              foregroundColor: Colors.white,
-              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 8),
+              backgroundColor: Colors.white,
+              foregroundColor: const Color(0xFF059669),
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
               elevation: 0,
             ),
-            child: const Text("Chat AI", style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (_) => IncomeScreen(userId: widget.userId))).then((_) => fetchDashboard());
+            },
+            child: const Text("+ Add Income", style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
+          ),
+        ],
+      ),
+    );
+  }
+
+  Widget _buildAICoachCard() {
+    return Container(
+      padding: const EdgeInsets.all(14),
+      decoration: BoxDecoration(
+        color: Colors.white,
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0xFFF59E0B).withOpacity(0.4)),
+        boxShadow: [
+          BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 10, offset: const Offset(0, 2)),
+        ],
+      ),
+      child: Row(
+        children: [
+          Container(
+            padding: const EdgeInsets.all(9),
+            decoration: BoxDecoration(
+              color: const Color(0xFFFEF3C7),
+              borderRadius: BorderRadius.circular(12),
+            ),
+            child: const Icon(Icons.psychology, color: Color(0xFFD97706), size: 22),
+          ),
+          const SizedBox(width: 12),
+          const Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  "LifeLedger Precision AI Advisor",
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 13.5, color: Color(0xFF0F172A)),
+                ),
+                SizedBox(height: 2),
+                Text(
+                  "Ask anything: Affordability, tax saver, spending cuts & FIRE.",
+                  style: TextStyle(color: Color(0xFF64748B), fontSize: 11),
+                ),
+              ],
+            ),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color(0xFFD97706),
+              foregroundColor: Colors.white,
+              padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
+              shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
+              elevation: 0,
+            ),
             onPressed: () {
               Navigator.push(
                 context,
@@ -340,126 +388,83 @@ class _DashboardScreenState extends State<DashboardScreen> {
                 ),
               );
             },
+            child: const Text("Ask AI", style: TextStyle(fontSize: 11.5, fontWeight: FontWeight.bold)),
           ),
         ],
       ),
     );
   }
 
-  Widget _buildQuickMetricStats() {
-    return Row(
-      children: [
-        Expanded(
-          child: _statCard("Habits Done", "$completedHabits / $totalHabits", Icons.check_circle_outline, const Color(0xFF10B981)),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _statCard("Pending Tasks", "$pendingTasks", Icons.assignment_outlined, const Color(0xFFF59E0B)),
-        ),
-        const SizedBox(width: 12),
-        Expanded(
-          child: _statCard("Completed", "$completedTasks", Icons.task_alt, const Color(0xFF3B82F6)),
-        ),
-      ],
-    );
-  }
-
-  Widget _statCard(String title, String val, IconData icon, Color color) {
-    return Container(
-      padding: const EdgeInsets.all(14),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(16),
-        boxShadow: [
-          BoxShadow(color: Colors.black.withOpacity(0.03), blurRadius: 10, offset: const Offset(0, 3)),
-        ],
-      ),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Icon(icon, color: color, size: 20),
-          const SizedBox(height: 8),
-          Text(val, style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 16, color: Color(0xFF0F172A))),
-          Text(title, style: const TextStyle(color: Color(0xFF64748B), fontSize: 11)),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildCategorizedSuite() {
+  Widget _buildCompactSuite() {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         // 1. AI & Machine Learning Suite
-        _sectionHeader("🤖 AI & Machine Learning Suite", const Color(0xFF059669)),
-        const SizedBox(height: 12),
+        _sectionTitle("🤖 AI & Machine Learning Suite", const Color(0xFF059669)),
+        const SizedBox(height: 10),
         _gridSuite([
-          _suiteItem("AI Predictor", Icons.auto_graph, const Color(0xFF10B981), PredictorScreen(userId: widget.userId, userName: widget.userName)),
-          _suiteItem("AI Coach Q&A", Icons.psychology, const Color(0xFF059669), AIAdvisorScreen(userId: widget.userId, userName: widget.userName)),
-          _suiteItem("AI Wealth FIRE", Icons.rocket_launch, const Color(0xFFF59E0B), AIWealthSimulatorScreen(userId: widget.userId, userName: widget.userName)),
-          _suiteItem("AI Tax Saver", Icons.receipt_long, const Color(0xFF3B82F6), AITaxSaverScreen(userId: widget.userId)),
-          _suiteItem("AI Receipt OCR", Icons.document_scanner, const Color(0xFF8B5CF6), AISmartReceiptScreen(userId: widget.userId)),
-          _suiteItem("AI Debt Payoff", Icons.speed, const Color(0xFF0D9488), AIDebtPayoffScreen(userId: widget.userId)),
-          _suiteItem("AI Behavior", Icons.insights, const Color(0xFFEC4899), BehaviorScreen(userId: widget.userId)),
-          _suiteItem("Smart Alerts", Icons.notifications_active, const Color(0xFFEF4444), AlertsScreen(userId: widget.userId)),
+          _compactTile("AI Predictor", Icons.auto_graph, const Color(0xFF059669), PredictorScreen(userId: widget.userId, userName: widget.userName)),
+          _compactTile("AI Coach Q&A", Icons.psychology, const Color(0xFFD97706), AIAdvisorScreen(userId: widget.userId, userName: widget.userName)),
+          _compactTile("AI Wealth FIRE", Icons.rocket_launch, const Color(0xFF0284C7), AIWealthSimulatorScreen(userId: widget.userId, userName: widget.userName)),
+          _compactTile("AI Tax Saver", Icons.receipt_long, const Color(0xFF7C3AED), AITaxSaverScreen(userId: widget.userId)),
+          _compactTile("AI Receipt OCR", Icons.document_scanner, const Color(0xFF0D9488), AISmartReceiptScreen(userId: widget.userId)),
+          _compactTile("AI Debt Payoff", Icons.speed, const Color(0xFFEA580C), AIDebtPayoffScreen(userId: widget.userId)),
+          _compactTile("AI Behavior", Icons.insights, const Color(0xFFDB2777), BehaviorScreen(userId: widget.userId)),
+          _compactTile("Smart Alerts", Icons.notifications_active, const Color(0xFFDC2626), AlertsScreen(userId: widget.userId)),
         ]),
-        const SizedBox(height: 24),
+        const SizedBox(height: 18),
 
-        // 2. Cashflow & Wealth Hub
-        _sectionHeader("💰 Cashflow & Wealth Hub", const Color(0xFFD97706)),
-        const SizedBox(height: 12),
+        // 2. Cashflow & Goals Hub
+        _sectionTitle("💰 Cashflow & Goals Hub", const Color(0xFFD97706)),
+        const SizedBox(height: 10),
         _gridSuite([
-          _suiteItem("Add Expense", Icons.remove_circle_outline, const Color(0xFFEF4444), ExpenseScreen(userId: widget.userId)),
-          _suiteItem("Add Income", Icons.add_circle_outline, const Color(0xFF10B981), IncomeScreen(userId: widget.userId)),
-          _suiteItem("Budget Matrix", Icons.wallet, const Color(0xFF6366F1), BudgetScreen(userId: widget.userId)),
-          _suiteItem("Goal Tracker", Icons.flag_outlined, const Color(0xFFF59E0B), GoalsScreen(userId: widget.userId)),
-          _suiteItem("Net Worth", Icons.account_balance, const Color(0xFF059669), NetWorthScreen(userId: widget.userId)),
-          _suiteItem("Compare Months", Icons.compare_arrows, const Color(0xFF06B6D4), CompareScreen(userId: widget.userId)),
-          _suiteItem("Ledger History", Icons.history, const Color(0xFF64748B), HistoryScreen(userId: widget.userId)),
-          _suiteItem("Savings Goals", Icons.savings_outlined, const Color(0xFF84CC16), GoalScreen(userId: widget.userId)),
+          _compactTile("Add Expense", Icons.remove_circle_outline, const Color(0xFFDC2626), ExpenseScreen(userId: widget.userId)),
+          _compactTile("Add Income", Icons.add_circle_outline, const Color(0xFF059669), IncomeScreen(userId: widget.userId)),
+          _compactTile("Budget Matrix", Icons.wallet, const Color(0xFF4F46E5), BudgetScreen(userId: widget.userId)),
+          _compactTile("Goal Tracker", Icons.flag_outlined, const Color(0xFFD97706), GoalsScreen(userId: widget.userId)),
+          _compactTile("Net Worth", Icons.account_balance, const Color(0xFF059669), NetWorthScreen(userId: widget.userId)),
+          _compactTile("Compare Months", Icons.compare_arrows, const Color(0xFF0891B2), CompareScreen(userId: widget.userId)),
+          _compactTile("Ledger History", Icons.history, const Color(0xFF475569), HistoryScreen(userId: widget.userId)),
+          _compactTile("Savings Goals", Icons.savings_outlined, const Color(0xFF65A30D), GoalScreen(userId: widget.userId)),
         ]),
-        const SizedBox(height: 24),
+        const SizedBox(height: 18),
 
-        // 3. Habits & LifeScore
-        _sectionHeader("🌱 Habits & LifeScore Engine", const Color(0xFF2563EB)),
-        const SizedBox(height: 12),
+        // 3. Habits & LifeScore Hub
+        _sectionTitle("🌱 Habits & LifeScore Engine", const Color(0xFF2563EB)),
+        const SizedBox(height: 10),
         _gridSuite([
-          _suiteItem("Habits Log", Icons.track_changes, const Color(0xFF10B981), HabitScreen(userId: widget.userId)),
-          _suiteItem("Daily Tasks", Icons.checklist, const Color(0xFF3B82F6), TaskScreen(userId: widget.userId)),
-          _suiteItem("Mood Journal", Icons.mood, const Color(0xFFF59E0B), MoodScreen(userId: widget.userId)),
-          _suiteItem("LifeScore 360", Icons.star_outline, const Color(0xFF8B5CF6), LifeScoreScreen(userId: widget.userId)),
-          _suiteItem("Daily Streaks", Icons.local_fire_department, const Color(0xFFEA580C), StreakScreen(userId: widget.userId)),
-          _suiteItem("Achievements", Icons.emoji_events_outlined, const Color(0xFFEAB308), AchievementsScreen(userId: widget.userId)),
-          _suiteItem("Daily Summary", Icons.today, const Color(0xFF0D9488), DailySummaryScreen(userId: widget.userId)),
-          _suiteItem("Day Summary", Icons.summarize_outlined, const Color(0xFF64748B), const SummaryScreen()),
+          _compactTile("Habits Log", Icons.track_changes, const Color(0xFF059669), HabitScreen(userId: widget.userId)),
+          _compactTile("Daily Tasks", Icons.checklist, const Color(0xFF2563EB), TaskScreen(userId: widget.userId)),
+          _compactTile("Mood Journal", Icons.mood, const Color(0xFFD97706), MoodScreen(userId: widget.userId)),
+          _compactTile("LifeScore 360", Icons.star_outline, const Color(0xFF7C3AED), LifeScoreScreen(userId: widget.userId)),
+          _compactTile("Daily Streaks", Icons.local_fire_department, const Color(0xFFEA580C), StreakScreen(userId: widget.userId)),
+          _compactTile("Achievements", Icons.emoji_events_outlined, const Color(0xFFCA8A04), AchievementsScreen(userId: widget.userId)),
+          _compactTile("Daily Summary", Icons.today, const Color(0xFF0D9488), DailySummaryScreen(userId: widget.userId)),
+          _compactTile("Day Summary", Icons.summarize_outlined, const Color(0xFF64748B), const SummaryScreen()),
         ]),
-        const SizedBox(height: 24),
+        const SizedBox(height: 18),
 
-        // 4. Analytics & Heatmaps
-        _sectionHeader("📊 Analytics & Deep Reports", const Color(0xFF7C3AED)),
-        const SizedBox(height: 12),
+        // 4. Analytics & Deep Reports
+        _sectionTitle("📊 Analytics & Deep Reports", const Color(0xFF7C3AED)),
+        const SizedBox(height: 10),
         _gridSuite([
-          _suiteItem("Visual Analytics", Icons.pie_chart, const Color(0xFF8B5CF6), AnalyticsScreen(userId: widget.userId)),
-          _suiteItem("Monthly Heatmap", Icons.calendar_view_month, const Color(0xFF06B6D4), HeatmapScreen(userId: widget.userId)),
-          _suiteItem("Yearly Heatmap", Icons.grid_on, const Color(0xFF10B981), const YearlyHeatmapScreen()),
-          _suiteItem("Financial Report", Icons.analytics, const Color(0xFFF59E0B), ReportScreen(userId: widget.userId)),
-          _suiteItem("Profile Settings", Icons.person_outline, const Color(0xFF64748B), ProfileScreen(userName: widget.userName, userId: widget.userId)),
-          _suiteItem("Security Settings", Icons.security, const Color(0xFF475569), const SettingsScreen()),
-          _suiteItem("Smart Alerts", Icons.notifications_none, const Color(0xFF3B82F6), AlertsScreen(userId: widget.userId)),
-          _suiteItem("Logout / Exit", Icons.logout, const Color(0xFFEF4444), LoginScreen()),
+          _compactTile("Visual Charts", Icons.pie_chart, const Color(0xFF7C3AED), AnalyticsScreen(userId: widget.userId)),
+          _compactTile("Monthly Map", Icons.calendar_view_month, const Color(0xFF0891B2), HeatmapScreen(userId: widget.userId)),
+          _compactTile("Yearly Map", Icons.grid_on, const Color(0xFF059669), const YearlyHeatmapScreen()),
+          _compactTile("Full Report", Icons.analytics, const Color(0xFFD97706), ReportScreen(userId: widget.userId)),
         ]),
       ],
     );
   }
 
-  Widget _sectionHeader(String title, Color accent) {
+  Widget _sectionTitle(String title, Color accent) {
     return Row(
       children: [
-        Container(width: 4, height: 16, decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(2))),
-        const SizedBox(width: 8),
+        Container(width: 3.5, height: 14, decoration: BoxDecoration(color: accent, borderRadius: BorderRadius.circular(2))),
+        const SizedBox(width: 6),
         Text(
           title,
-          style: const TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
+          style: const TextStyle(fontSize: 13.5, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
         ),
       ],
     );
@@ -470,45 +475,45 @@ class _DashboardScreenState extends State<DashboardScreen> {
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
       crossAxisCount: 4,
-      mainAxisSpacing: 12,
-      crossAxisSpacing: 12,
-      childAspectRatio: 0.88,
+      mainAxisSpacing: 8,
+      crossAxisSpacing: 8,
+      childAspectRatio: 0.95,
       children: items,
     );
   }
 
-  Widget _suiteItem(String label, IconData icon, Color color, Widget destination) {
+  Widget _compactTile(String label, IconData icon, Color color, Widget destination) {
     return InkWell(
-      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => destination)),
-      borderRadius: BorderRadius.circular(16),
+      onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => destination)).then((_) => fetchDashboard()),
+      borderRadius: BorderRadius.circular(12),
       child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 6, vertical: 10),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 8),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(16),
+          borderRadius: BorderRadius.circular(12),
           border: Border.all(color: const Color(0xFFE2E8F0)),
           boxShadow: [
-            BoxShadow(color: Colors.black.withOpacity(0.02), blurRadius: 6, offset: const Offset(0, 2)),
+            BoxShadow(color: Colors.black.withOpacity(0.015), blurRadius: 4, offset: const Offset(0, 1)),
           ],
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-              padding: const EdgeInsets.all(8),
+              padding: const EdgeInsets.all(6),
               decoration: BoxDecoration(
-                color: color.withOpacity(0.12),
+                color: color.withOpacity(0.1),
                 shape: BoxShape.circle,
               ),
-              child: Icon(icon, color: color, size: 20),
+              child: Icon(icon, color: color, size: 17),
             ),
-            const SizedBox(height: 6),
+            const SizedBox(height: 4),
             Text(
               label,
               textAlign: TextAlign.center,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,
-              style: const TextStyle(fontSize: 10.5, fontWeight: FontWeight.w600, color: Color(0xFF334155)),
+              style: const TextStyle(fontSize: 9.5, fontWeight: FontWeight.w600, color: Color(0xFF334155)),
             ),
           ],
         ),
@@ -525,34 +530,34 @@ class _DashboardScreenState extends State<DashboardScreen> {
           children: [
             const Text(
               "Recent Ledger Activity",
-              style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
+              style: TextStyle(fontSize: 14, fontWeight: FontWeight.bold, color: Color(0xFF0F172A)),
             ),
             TextButton(
               onPressed: () => Navigator.push(context, MaterialPageRoute(builder: (_) => HistoryScreen(userId: widget.userId))),
-              child: const Text("See All", style: TextStyle(color: Color(0xFF059669), fontWeight: FontWeight.bold, fontSize: 12)),
+              child: const Text("See All", style: TextStyle(color: Color(0xFF059669), fontWeight: FontWeight.bold, fontSize: 11.5)),
             ),
           ],
         ),
-        const SizedBox(height: 8),
+        const SizedBox(height: 6),
         if (transactions.isEmpty)
           Container(
-            padding: const EdgeInsets.all(20),
+            padding: const EdgeInsets.all(16),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(16),
+              borderRadius: BorderRadius.circular(14),
               border: Border.all(color: const Color(0xFFE2E8F0)),
             ),
             child: const Center(
-              child: Text("No transactions recorded yet. Tap + to add income or expenses.", style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12.5)),
+              child: Text("No transactions recorded yet. Tap + Add Income to start.", style: TextStyle(color: Color(0xFF94A3B8), fontSize: 12)),
             ),
           )
         else
-          ...transactions.take(5).map((t) => Container(
+          ...transactions.take(4).map((t) => Container(
                 margin: const EdgeInsets.only(bottom: 8),
-                padding: const EdgeInsets.all(14),
+                padding: const EdgeInsets.all(12),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(14),
+                  borderRadius: BorderRadius.circular(12),
                   border: Border.all(color: const Color(0xFFE2E8F0)),
                 ),
                 child: Row(
@@ -561,23 +566,23 @@ class _DashboardScreenState extends State<DashboardScreen> {
                     Row(
                       children: [
                         Container(
-                          padding: const EdgeInsets.all(8),
+                          padding: const EdgeInsets.all(7),
                           decoration: BoxDecoration(
                             color: t["type"] == "income" ? const Color(0xFFECFDF5) : const Color(0xFFFEF2F2),
-                            borderRadius: BorderRadius.circular(10),
+                            borderRadius: BorderRadius.circular(8),
                           ),
                           child: Icon(
                             t["type"] == "income" ? Icons.arrow_downward : Icons.arrow_upward,
                             color: t["type"] == "income" ? const Color(0xFF059669) : const Color(0xFFEF4444),
-                            size: 16,
+                            size: 14,
                           ),
                         ),
-                        const SizedBox(width: 12),
+                        const SizedBox(width: 10),
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(t["title"] ?? "Untitled", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 13, color: Color(0xFF0F172A))),
-                            Text(t["category"] ?? "other", style: const TextStyle(color: Color(0xFF64748B), fontSize: 11)),
+                            Text(t["title"] ?? "Untitled", style: const TextStyle(fontWeight: FontWeight.bold, fontSize: 12.5, color: Color(0xFF0F172A))),
+                            Text(t["category"] ?? "other", style: const TextStyle(color: Color(0xFF64748B), fontSize: 10.5)),
                           ],
                         ),
                       ],
@@ -586,7 +591,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
                       "${t['type'] == 'income' ? '+' : '-'}₹${t['amount']}",
                       style: TextStyle(
                         fontWeight: FontWeight.bold,
-                        fontSize: 13.5,
+                        fontSize: 12.5,
                         color: t["type"] == "income" ? const Color(0xFF059669) : const Color(0xFFEF4444),
                       ),
                     ),
