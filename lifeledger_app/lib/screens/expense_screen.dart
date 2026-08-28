@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';
+import '../services/api_service.dart';
 
 class ExpenseScreen extends StatefulWidget {
   final int userId;
@@ -383,10 +384,10 @@ class _ExpenseScreenState extends State<ExpenseScreen> {
             borderRadius: BorderRadius.circular(12),
             borderSide:
                 BorderSide(color: Colors.white.withOpacity(0.1))),
-        focusedBorder: const OutlineInputBorder(
+        focusedBorder: OutlineInputBorder(
             borderRadius: BorderRadius.circular(12),
             borderSide:
-                BorderSide(color: Color(0xFFf87171), width: 1.5)),
+                const BorderSide(color: Color(0xFFf87171), width: 1.5)),
       ),
     );
   }
