@@ -103,15 +103,19 @@ class _AITaxSaverScreenState extends State<AITaxSaverScreen> {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            // HERO OLD VS NEW REGIME VERDICT
-            Container(
-              width: double.infinity,
-              padding: const EdgeInsets.all(22),
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 900),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  // HERO OLD VS NEW REGIME VERDICT
+                  Container(
+                    width: double.infinity,
+                    padding: const EdgeInsets.all(20),
               decoration: BoxDecoration(
                 gradient: const LinearGradient(
                   colors: [Color(0xFF059669), Color(0xFF0D9488)],
@@ -284,8 +288,11 @@ class _AITaxSaverScreenState extends State<AITaxSaverScreen> {
           ],
         ),
       ),
-    );
-  }
+    ),
+  ),
+),
+);
+}
 
   Widget _taxCol(String label, String val, bool isWinner) {
     return Column(

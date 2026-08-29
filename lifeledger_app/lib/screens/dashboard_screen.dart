@@ -195,64 +195,66 @@ class _DashboardScreenState extends State<DashboardScreen> {
           ),
         ],
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
-          : RefreshIndicator(
-              onRefresh: fetchDashboard,
-              color: const Color(0xFF059669),
-              child: Center(
-                child: ConstrainedBox(
-                  constraints: const BoxConstraints(maxWidth: 1050),
-                  child: SingleChildScrollView(
-                    physics: const AlwaysScrollableScrollPhysics(),
-                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        // 1. TOP FINANCIAL FOUNDATION CARD (Income, Debt, Expense & Surplus)
-                        _buildFinancialFoundationHeader(),
-                        const SizedBox(height: 14),
+      body: SafeArea(
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
+            : RefreshIndicator(
+                onRefresh: fetchDashboard,
+                color: const Color(0xFF059669),
+                child: Center(
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 1050),
+                    child: SingleChildScrollView(
+                      physics: const AlwaysScrollableScrollPhysics(),
+                      padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          // 1. TOP FINANCIAL FOUNDATION CARD (Income, Debt, Expense & Surplus)
+                          _buildFinancialFoundationHeader(),
+                          const SizedBox(height: 14),
 
-                        // 2. QUICK FINANCIAL ACTIONS BAR (+ Income, + Debt/Card, + OCR Bill, Chat AI)
-                        _buildQuickActionPills(),
-                        const SizedBox(height: 14),
+                          // 2. QUICK FINANCIAL ACTIONS BAR (+ Income, + Debt/Card, + OCR Bill, Chat AI)
+                          _buildQuickActionPills(),
+                          const SizedBox(height: 14),
 
-                        // 3. AI AUTOMATION PIPELINE BANNER (How AI Connects Everything)
-                        _buildAIAutomationBanner(),
-                        const SizedBox(height: 20),
+                          // 3. AI AUTOMATION PIPELINE BANNER (How AI Connects Everything)
+                          _buildAIAutomationBanner(),
+                          const SizedBox(height: 18),
 
-                        // 4. AI & CORE MODULES MATRIX
-                        _buildSmallGreenDashboardsSuite(),
-                        const SizedBox(height: 22),
+                          // 4. AI & CORE MODULES MATRIX
+                          _buildSmallGreenDashboardsSuite(),
+                          const SizedBox(height: 20),
 
-                        // 5. RECENT ACTIVITY FEED
-                        _buildRecentTransactions(),
-                        const SizedBox(height: 16),
-                      ],
+                          // 5. RECENT ACTIVITY FEED
+                          _buildRecentTransactions(),
+                          const SizedBox(height: 16),
+                        ],
+                      ),
                     ),
                   ),
                 ),
               ),
-            ),
+      ),
     );
   }
 
-  /// 1. TOP FINANCIAL FOUNDATION CARD
+  /// 1. TOP FINANCIAL FOUNDATION CARD (100% Mobile Responsive)
   Widget _buildFinancialFoundationHeader() {
     double surplus = (totalIncome - totalExpense);
     double savingsRate = totalIncome > 0 ? ((surplus / totalIncome) * 100).clamp(0, 100) : 0;
 
     return Container(
       width: double.infinity,
-      padding: const EdgeInsets.all(20),
+      padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         color: const Color(0xFFECFDF5),
-        borderRadius: BorderRadius.circular(22),
+        borderRadius: BorderRadius.circular(20),
         border: Border.all(color: const Color(0xFF10B981), width: 1.5),
         boxShadow: [
           BoxShadow(
-            color: const Color(0xFF10B981).withOpacity(0.12),
-            blurRadius: 16,
+            color: const Color(0xFF10B981).withOpacity(0.10),
+            blurRadius: 14,
             offset: const Offset(0, 4),
           ),
         ],
@@ -263,112 +265,133 @@ class _DashboardScreenState extends State<DashboardScreen> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Row(
-                children: [
-                  Container(
-                    padding: const EdgeInsets.all(6),
-                    decoration: BoxDecoration(
-                      color: const Color(0xFF059669),
-                      borderRadius: BorderRadius.circular(8),
+              Expanded(
+                child: Row(
+                  children: [
+                    Container(
+                      padding: const EdgeInsets.all(5),
+                      decoration: BoxDecoration(
+                        color: const Color(0xFF059669),
+                        borderRadius: BorderRadius.circular(7),
+                      ),
+                      child: const Icon(Icons.account_balance, color: Colors.white, size: 14),
                     ),
-                    child: const Icon(Icons.account_balance, color: Colors.white, size: 16),
-                  ),
-                  const SizedBox(width: 8),
-                  const Text(
-                    "Monthly Financial Foundation",
-                    style: TextStyle(color: Color(0xFF065F46), fontSize: 14, fontWeight: FontWeight.bold),
-                  ),
-                ],
+                    const SizedBox(width: 7),
+                    const Flexible(
+                      child: Text(
+                        "Financial Foundation",
+                        style: TextStyle(color: Color(0xFF065F46), fontSize: 13.5, fontWeight: FontWeight.bold),
+                        overflow: TextOverflow.ellipsis,
+                      ),
+                    ),
+                  ],
+                ),
               ),
               Container(
-                padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(8),
                   border: Border.all(color: const Color(0xFF10B981)),
                 ),
                 child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
-                    const Icon(Icons.bolt, color: Color(0xFF059669), size: 13),
-                    const SizedBox(width: 4),
+                    const Icon(Icons.bolt, color: Color(0xFF059669), size: 12),
+                    const SizedBox(width: 3),
                     Text(
                       "LifeScore: $lifeScore/100",
-                      style: const TextStyle(color: Color(0xFF059669), fontSize: 11, fontWeight: FontWeight.bold),
+                      style: const TextStyle(color: Color(0xFF059669), fontSize: 10.5, fontWeight: FontWeight.bold),
                     ),
                   ],
                 ),
               ),
             ],
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 10),
 
-          // Total Net Cash Surplus
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
+          // Total Net Cash Surplus (Responsive Layout)
+          Wrap(
+            crossAxisAlignment: WrapCrossAlignment.center,
+            spacing: 8,
+            runSpacing: 2,
             children: [
-              Text(
-                "₹${surplus.toStringAsFixed(0)}",
-                style: const TextStyle(
-                  color: Color(0xFF047857),
-                  fontSize: 32,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: -0.5,
+              FittedBox(
+                fit: BoxFit.scaleDown,
+                child: Text(
+                  "₹${surplus.toStringAsFixed(0)}",
+                  style: const TextStyle(
+                    color: Color(0xFF047857),
+                    fontSize: 28,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: -0.5,
+                  ),
                 ),
               ),
-              const SizedBox(width: 8),
-              Padding(
-                padding: const EdgeInsets.only(bottom: 6),
-                child: Text(
-                  "Monthly Surplus Available (${savingsRate.toStringAsFixed(0)}% Saved)",
-                  style: const TextStyle(color: Color(0xFF047857), fontSize: 12, fontWeight: FontWeight.w600),
-                ),
+              Text(
+                "Monthly Surplus (${savingsRate.toStringAsFixed(0)}% Saved)",
+                style: const TextStyle(color: Color(0xFF047857), fontSize: 11.5, fontWeight: FontWeight.w600),
               ),
             ],
           ),
-          const SizedBox(height: 14),
+          const SizedBox(height: 12),
 
-          // 4 Grid Columns: Inflow, Debt & Cards, Outflow, Net Worth
+          // 4 Responsive Grid Items: Inflow, Debt, Expense, Net Worth
           Container(
-            padding: const EdgeInsets.all(12),
+            padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 6),
             decoration: BoxDecoration(
               color: Colors.white,
-              borderRadius: BorderRadius.circular(14),
+              borderRadius: BorderRadius.circular(12),
               border: Border.all(color: const Color(0xFFA7F3D0)),
             ),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
+            child: Column(
               children: [
-                _foundationItem(
-                  "Monthly Income",
-                  "₹${totalIncome > 0 ? totalIncome.toStringAsFixed(0) : '0'}",
-                  const Color(0xFF059669),
-                  Icons.arrow_downward,
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => IncomeScreen(userId: widget.userId))).then((_) => fetchDashboard()),
+                Row(
+                  children: [
+                    Expanded(
+                      child: _foundationItem(
+                        "Monthly Income",
+                        "₹${totalIncome > 0 ? totalIncome.toStringAsFixed(0) : '0'}",
+                        const Color(0xFF059669),
+                        Icons.arrow_downward,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => IncomeScreen(userId: widget.userId))).then((_) => fetchDashboard()),
+                      ),
+                    ),
+                    Container(width: 1, height: 28, color: const Color(0xFFE2E8F0)),
+                    Expanded(
+                      child: _foundationItem(
+                        "Debts & Cards",
+                        totalDebt > 0 ? "₹${totalDebt.toStringAsFixed(0)}" : "₹0 (Debt-Free)",
+                        totalDebt > 0 ? const Color(0xFFE11D48) : const Color(0xFF059669),
+                        Icons.credit_card,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => AIDebtPayoffScreen(userId: widget.userId))).then((_) => fetchDashboard()),
+                      ),
+                    ),
+                  ],
                 ),
-                Container(width: 1, height: 34, color: const Color(0xFFE2E8F0)),
-                _foundationItem(
-                  "Debts & Cards",
-                  totalDebt > 0 ? "₹${totalDebt.toStringAsFixed(0)}" : "₹0 (Debt-Free)",
-                  totalDebt > 0 ? const Color(0xFFE11D48) : const Color(0xFF059669),
-                  Icons.credit_card,
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => AIDebtPayoffScreen(userId: widget.userId))).then((_) => fetchDashboard()),
-                ),
-                Container(width: 1, height: 34, color: const Color(0xFFE2E8F0)),
-                _foundationItem(
-                  "Expenses Spent",
-                  "₹${totalExpense.toStringAsFixed(0)}",
-                  const Color(0xFFD97706),
-                  Icons.arrow_upward,
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ExpenseScreen(userId: widget.userId))).then((_) => fetchDashboard()),
-                ),
-                Container(width: 1, height: 34, color: const Color(0xFFE2E8F0)),
-                _foundationItem(
-                  "Total Net Worth",
-                  "₹${balance.toStringAsFixed(0)}",
-                  const Color(0xFF2563EB),
-                  Icons.account_balance_wallet,
-                  onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => NetWorthScreen(userId: widget.userId))),
+                const Divider(height: 12, thickness: 0.8, color: Color(0xFFF1F5F9)),
+                Row(
+                  children: [
+                    Expanded(
+                      child: _foundationItem(
+                        "Expenses Spent",
+                        "₹${totalExpense.toStringAsFixed(0)}",
+                        const Color(0xFFD97706),
+                        Icons.arrow_upward,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => ExpenseScreen(userId: widget.userId))).then((_) => fetchDashboard()),
+                      ),
+                    ),
+                    Container(width: 1, height: 28, color: const Color(0xFFE2E8F0)),
+                    Expanded(
+                      child: _foundationItem(
+                        "Total Net Worth",
+                        "₹${balance.toStringAsFixed(0)}",
+                        const Color(0xFF2563EB),
+                        Icons.account_balance_wallet,
+                        onTap: () => Navigator.push(context, MaterialPageRoute(builder: (_) => NetWorthScreen(userId: widget.userId))),
+                      ),
+                    ),
+                  ],
                 ),
               ],
             ),
@@ -383,19 +406,32 @@ class _DashboardScreenState extends State<DashboardScreen> {
       onTap: onTap,
       borderRadius: BorderRadius.circular(8),
       child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 2),
+        padding: const EdgeInsets.symmetric(horizontal: 4, vertical: 4),
         child: Column(
           children: [
             Row(
+              mainAxisAlignment: MainAxisAlignment.center,
               mainAxisSize: MainAxisSize.min,
               children: [
                 Icon(icon, color: color, size: 12),
                 const SizedBox(width: 3),
-                Text(value, style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13)),
+                Flexible(
+                  child: FittedBox(
+                    fit: BoxFit.scaleDown,
+                    child: Text(
+                      value,
+                      style: TextStyle(color: color, fontWeight: FontWeight.bold, fontSize: 13),
+                    ),
+                  ),
+                ),
               ],
             ),
             const SizedBox(height: 2),
-            Text(label, style: const TextStyle(color: Color(0xFF64748B), fontSize: 10.5, fontWeight: FontWeight.w500)),
+            Text(
+              label,
+              style: const TextStyle(color: Color(0xFF64748B), fontSize: 10, fontWeight: FontWeight.w500),
+              overflow: TextOverflow.ellipsis,
+            ),
           ],
         ),
       ),

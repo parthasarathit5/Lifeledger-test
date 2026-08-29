@@ -100,86 +100,92 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: _isLoading
-          ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
-          : SingleChildScrollView(
-              padding: const EdgeInsets.all(20),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  // HERO WEALTH CORPUS CARD
-                  Container(
-                    width: double.infinity,
-                    padding: const EdgeInsets.all(24),
-                    decoration: BoxDecoration(
-                      gradient: const LinearGradient(
-                        colors: [Color(0xFF059669), Color(0xFF0D9488)],
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight,
-                      ),
-                      borderRadius: BorderRadius.circular(24),
-                      boxShadow: [
-                        BoxShadow(
-                          color: const Color(0xFF059669).withOpacity(0.25),
-                          blurRadius: 18,
-                          offset: const Offset(0, 6),
-                        ),
-                      ],
-                    ),
+      body: SafeArea(
+        child: _isLoading
+            ? const Center(child: CircularProgressIndicator(color: Color(0xFF059669)))
+            : Center(
+                child: ConstrainedBox(
+                  constraints: const BoxConstraints(maxWidth: 900),
+                  child: SingleChildScrollView(
+                    padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 16),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            const Text(
-                              "Projected Compounded Corpus",
-                              style: TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w600),
-                            ),
-                            Container(
-                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-                              decoration: BoxDecoration(
-                                color: Colors.white.withOpacity(0.2),
-                                borderRadius: BorderRadius.circular(12),
-                              ),
-                              child: Text(
-                                "${_years.toInt()} Years Horizon",
-                                style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
-                              ),
-                            ),
-                          ],
-                        ),
-                        const SizedBox(height: 12),
-                        Text(
-                          "₹${futureValue.toStringAsFixed(0)}",
-                          style: const TextStyle(
-                            color: Colors.white,
-                            fontSize: 34,
-                            fontWeight: FontWeight.bold,
-                            letterSpacing: -0.5,
-                          ),
-                        ),
-                        const SizedBox(height: 14),
+                        // HERO WEALTH CORPUS CARD
                         Container(
-                          padding: const EdgeInsets.all(12),
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(20),
                           decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.15),
-                            borderRadius: BorderRadius.circular(14),
+                            gradient: const LinearGradient(
+                              colors: [Color(0xFF059669), Color(0xFF0D9488)],
+                              begin: Alignment.topLeft,
+                              end: Alignment.bottomRight,
+                            ),
+                            borderRadius: BorderRadius.circular(24),
+                            boxShadow: [
+                              BoxShadow(
+                                color: const Color(0xFF059669).withOpacity(0.25),
+                                blurRadius: 18,
+                                offset: const Offset(0, 6),
+                              ),
+                            ],
                           ),
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceAround,
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
-                              _statItem("Total Invested", "₹${totalInvested.toStringAsFixed(0)}", Colors.white70),
-                              Container(width: 1, height: 28, color: Colors.white24),
-                              _statItem("Compound Gains", "+₹${wealthGained.toStringAsFixed(0)}", const Color(0xFFFDE047)),
-                              Container(width: 1, height: 28, color: Colors.white24),
-                              _statItem("CAGR %", "${_expectedReturn.toStringAsFixed(1)}%", Colors.white),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                children: [
+                                  const Text(
+                                    "Projected Compounded Corpus",
+                                    style: TextStyle(color: Colors.white70, fontSize: 13, fontWeight: FontWeight.w600),
+                                  ),
+                                  Container(
+                                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
+                                    decoration: BoxDecoration(
+                                      color: Colors.white.withOpacity(0.2),
+                                      borderRadius: BorderRadius.circular(12),
+                                    ),
+                                    child: Text(
+                                      "${_years.toInt()} Years Horizon",
+                                      style: const TextStyle(color: Colors.white, fontWeight: FontWeight.bold, fontSize: 11),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 12),
+                              FittedBox(
+                                fit: BoxFit.scaleDown,
+                                child: Text(
+                                  "₹${futureValue.toStringAsFixed(0)}",
+                                  style: const TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 32,
+                                    fontWeight: FontWeight.bold,
+                                    letterSpacing: -0.5,
+                                  ),
+                                ),
+                              ),
+                              const SizedBox(height: 14),
+                              Container(
+                                padding: const EdgeInsets.all(12),
+                                decoration: BoxDecoration(
+                                  color: Colors.black.withOpacity(0.15),
+                                  borderRadius: BorderRadius.circular(14),
+                                ),
+                                child: Row(
+                                  children: [
+                                    Expanded(child: _statItem("Total Invested", "₹${totalInvested.toStringAsFixed(0)}", Colors.white70)),
+                                    Container(width: 1, height: 28, color: Colors.white24),
+                                    Expanded(child: _statItem("Compound Gains", "+₹${wealthGained.toStringAsFixed(0)}", const Color(0xFFFDE047))),
+                                    Container(width: 1, height: 28, color: Colors.white24),
+                                    Expanded(child: _statItem("CAGR %", "${_expectedReturn.toStringAsFixed(1)}%", Colors.white)),
+                                  ],
+                                ),
+                              ),
                             ],
                           ),
                         ),
-                      ],
-                    ),
-                  ),
 
                   const SizedBox(height: 22),
 
@@ -297,6 +303,9 @@ class _AIWealthSimulatorScreenState extends State<AIWealthSimulatorScreen> {
                 ],
               ),
             ),
+          ),
+        ),
+      ),
     );
   }
 

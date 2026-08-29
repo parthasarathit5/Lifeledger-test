@@ -840,8 +840,9 @@ class _AISmartReceiptScreenState extends State<AISmartReceiptScreen>
       backgroundColor: const Color(0xFFF8FAFC),
       appBar: AppBar(
         title: const Text(
-          "AI Smart Receipt OCR & Itemizer",
-          style: TextStyle(color: Color(0xFF0F172A), fontWeight: FontWeight.bold, fontSize: 18),
+          "AI Smart Receipt OCR",
+          style: TextStyle(color: Color(0xFF0F172A), fontWeight: FontWeight.bold, fontSize: 16),
+          overflow: TextOverflow.ellipsis,
         ),
         backgroundColor: Colors.white,
         elevation: 0.5,
@@ -857,11 +858,15 @@ class _AISmartReceiptScreenState extends State<AISmartReceiptScreen>
           ),
         ],
       ),
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
+      body: SafeArea(
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 850),
+            child: SingleChildScrollView(
+              padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 14),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
             // CAMERA VIEWFINDER
             if (_isCameraActive) ...[
               Container(
@@ -1409,13 +1414,16 @@ class _AISmartReceiptScreenState extends State<AISmartReceiptScreen>
                         ),
                       ],
                     ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
             ],
           ],
         ),
       ),
-    );
-  }
+    ),
+  ),
+),
+);
+}
 }
