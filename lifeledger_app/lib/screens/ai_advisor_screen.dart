@@ -24,11 +24,14 @@ class _AIAdvisorScreenState extends State<AIAdvisorScreen> {
   final List<Map<String, dynamic>> _messages = [];
 
   final List<String> _suggestedPrompts = [
+    "📊 Current Status, Alerts & Future Outlook",
+    "🌟 Complete 360° App & Future Review",
+    "What is going on in my account right now?",
     "Can I afford a ₹50,000 purchase?",
     "Where am I spending the most?",
     "Forecast next month cashflow",
     "How to save on tax (80C & 80D)?",
-    "Simulate my FIRE retirement target",
+    "Simulate my ₹1 Crore FIRE milestone",
     "How do my daily habits affect savings?",
   ];
 
