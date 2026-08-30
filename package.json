@@ -1,0 +1,9 @@
+{
+  "name": "lifeledger-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bash vercel-build.sh",
+    "vercel-build": "bash vercel-build.sh"
+  }
+}
